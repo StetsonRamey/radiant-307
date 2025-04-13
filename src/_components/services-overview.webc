@@ -1,0 +1,154 @@
+<section class="services-overview">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="heading-2">Our Services</h2>
+      <p class="paragraph">
+        Providing high quality plumbing and HVAC services to Cheyenne and
+        surrounding areas.
+      </p>
+    </div>
+
+    <div class="services-grid">
+      <!-- Service Card 1 -->
+      <div class="service-card">
+        <img
+          src="https://placehold.co/600x400"
+          alt="Service 1 Placeholder"
+          width="600"
+          height="400"
+        />
+        <h3 class="heading-2">Emergency Plumbing</h3>
+        <p class="paragraph">
+          Providing high quality plumbing and HVAC services to Cheyenne and
+          surrounding areas.
+        </p>
+        <a href="#" class="btn btn-card-learn-more">Emergency Plumbing</a>
+      </div>
+
+      <!-- Service Card 2 -->
+      <div class="service-card">
+        <img
+          src="https://placehold.co/600x400"
+          alt="Service 2 Placeholder"
+          width="600"
+          height="400"
+        />
+        <h3 class="heading-2">Drain Cleaning</h3>
+        <p class="paragraph">
+          Expert cleaning for clogged drains in kitchens, bathrooms, and main
+          sewer lines.
+        </p>
+        <a href="#" class="btn btn-card-learn-more">Drain Cleaning</a>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="service-card">
+        <img
+          src="https://placehold.co/600x400"
+          alt="Service 3 Placeholder"
+          width="600"
+          height="400"
+        />
+        <h3 class="heading-2">Water Heater Repair</h3>
+        <p class="paragraph">
+          Repair and maintenance services for all types of water heaters.
+        </p>
+        <a href="#" class="btn btn-card-learn-more">Water Heater Repair</a>
+      </div>
+
+      <!-- Add more cards as needed -->
+    </div>
+  </div>
+</section>
+
+<style webc:scoped>
+  .services-overview {
+    padding: 5rem 1rem 15rem 1rem;
+    background-color: var(--light-color); /* Light background */
+  }
+
+  .services-overview .container {
+    text-align: center;
+  }
+
+  .services-overview .heading-2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #111827;
+  }
+
+  .services-grid {
+    display: grid;
+    padding-block-start: 2rem;
+    grid-template-columns: repeat(3, 1fr); /* Default 3 columns */
+    gap: 1.5rem;
+    text-align: left;
+  }
+
+  .service-card {
+    background-color: var(--light-color);
+    border: 1px solid #e5e7eb;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .service-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .service-card .heading-2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.25rem;
+  }
+
+  .service-card .paragraph {
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 1rem; /* Add margin below paragraph */
+  }
+
+  /* Button Styles for Cards */
+  .btn-card-learn-more {
+    display: inline-block;
+    padding: 0.5rem 1rem; /* Slightly smaller padding */
+    border-radius: 0.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background-color: #e5e7eb; /* Light gray background */
+    color: #1f2937; /* Darker text */
+    border: 1px solid #d1d5db;
+    margin-top: auto;
+  }
+
+  .btn-card-learn-more:hover {
+    background-color: #d1d5db; /* Darken on hover */
+  }
+
+  /* Responsive Grid */
+  @media (max-width: 992px) {
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+  }
+</style>

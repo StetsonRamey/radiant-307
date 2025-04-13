@@ -1,0 +1,196 @@
+<!-- src/_components/cta-section.webc -->
+<section class="cta-section">
+  <div class="container cta-grid">
+    <div class="cta-text">
+      <h2>Ready to Solve Your Plumbing Problems?</h2>
+      <p>
+        Don't wait for a small leak to become a big disaster. Contact Radiant 307 Plumbing today for fast, reliable service. Call us directly or fill out the form to schedule an appointment.
+      </p>
+      <a href="tel:307-XXX-XXXX" class="cta-phone">Call Now: (307) XXX-XXXX</a> 
+      <!-- Replace XXX-XXXX with actual number -->
+    </div>
+    <div class="cta-form-container">
+      <form action="#" method="POST" class="cta-form">
+        <div class="form-group">
+          <label for="cta-name">Name:</label>
+          <input type="text" id="cta-name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="cta-phone">Phone Number:</label>
+          <input type="tel" id="cta-phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="cta-project">Project Type:</label>
+          <select id="cta-project" name="project" required>
+            <option value="" disabled selected>Select your project...</option>
+            <option value="Boiler">Boiler</option>
+            <option value="HVAC">HVAC</option>
+            <option value="General Plumbing">General Plumbing</option>
+            <option value="Other">Other (Describe briefly)</option> 
+          </select>
+        </div>
+         <div class="form-group">
+          <label for="cta-message">Brief Description (Optional):</label>
+          <textarea id="cta-message" name="message" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Request Service</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<style webc:scoped>
+  .cta-section {
+    /* Example Blue Gradient - Adjust colors as needed */
+    background-image: linear-gradient(to right, #4f46e5, #6366f1); 
+    color: #ffffff; /* White text for contrast */
+    padding: 5rem 0; /* Generous padding */
+  }
+
+  .container {
+     max-width: 1100px; /* Slightly narrower container */
+     margin: 0 auto;
+     padding: 0 1rem;
+  }
+
+  .cta-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile: single column */
+    gap: 3rem; 
+    align-items: center;
+  }
+
+  @media (min-width: 768px) { /* Tablet and up: two columns */
+    .cta-grid {
+      grid-template-columns: 1fr 1fr; 
+    }
+  }
+
+  .cta-text h2 {
+    font-size: 2.5rem; /* Larger heading */
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+  }
+
+  .cta-text p {
+    font-size: 1.125rem; /* Slightly larger paragraph */
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+  }
+
+  .cta-phone {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+
+  .cta-phone:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.8);
+  }
+
+  /* Form Styling */
+  .cta-form-container {
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background for form */
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .cta-form .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+  }
+
+  .cta-form input[type="text"],
+  .cta-form input[type="tel"],
+  .cta-form select,
+  .cta-form textarea {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    color: #ffffff;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+
+  .cta-form input::placeholder,
+  .cta-form textarea::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .cta-form select {
+     /* Basic appearance reset */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Add custom arrow */
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23ffffff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 1em;
+    padding-right: 2.5rem; /* Space for arrow */
+  }
+  
+  /* Style for the disabled option */
+  .cta-form select:required:invalid {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .cta-form option {
+      background-color: #4f46e5; /* Match background for dropdown */
+      color: #ffffff;
+  }
+  .cta-form option[disabled] {
+      color: rgba(255, 255, 255, 0.5);
+  }
+
+  .cta-form input:focus,
+  .cta-form select:focus,
+  .cta-form textarea:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .cta-form textarea {
+      resize: vertical;
+      min-height: 80px;
+  }
+
+  .btn-submit {
+    display: block;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background-color: #f6821f; /* Orange accent color from other sections */
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn-submit:hover {
+    background-color: #dd7016; /* Darker orange */
+  }
+
+</style>

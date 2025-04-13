@@ -1,0 +1,168 @@
+:root {
+  --primary-color: #1e3a8a;
+  --secondary-color: #3b82f6;
+  --text-color: #333;
+  --dark-text: #111827;
+  --light-color: #fff;
+  --gray-color: #f1f5f9;
+
+  /* GRAYS */
+  --color-gray-50: oklch(98.46% 0.0017 247.84);
+  --color-gray-100: oklch(96.7% 0.0029 264.54);
+  --color-gray-200: oklch(92.76% 0.0058 264.53);
+  --color-gray-300: oklch(87.17% 0.0093 258.34);
+  --color-gray-400: oklch(71.37% 0.0192 261.32);
+  --color-gray-500: oklch(55.1% 0.0234 264.36);
+  --color-gray-600: oklch(55.1% 0.0234 264.36);
+  --color-gray-700: oklch(37.29% 0.0306 259.73);
+  --color-gray-800: oklch(27.81% 0.0296 256.85);
+  --color-gray-900: oklch(21.01% 0.0318 264.66);
+  --color-gray-950: oklch(12.96% 0.0274 261.69);
+
+  /* PRIMARY */
+  --color-flush-orange-50: #fff8ed;
+  --color-flush-orange-100: #feefd6;
+  --color-flush-orange-200: #fddbab;
+  --color-flush-orange-300: #fbc176;
+  --color-flush-orange-400: #f89b3f;
+  --color-flush-orange-500: #f6821f;
+  --color-flush-orange-600: #e7640f;
+  --color-flush-orange-700: #bf4b0f;
+  --color-flush-orange-800: #983c14;
+  --color-flush-orange-900: #7a3314;
+  --color-flush-orange-950: #421708;
+
+  /* Primary glare */
+  --color-yellow-orange-50: #fff7eb;
+  --color-yellow-orange-100: #fee9c7;
+  --color-yellow-orange-200: #fdd18a;
+  --color-yellow-orange-300: #fbad41;
+  --color-yellow-orange-400: #fa9825;
+  --color-yellow-orange-500: #f4730c;
+  --color-yellow-orange-600: #d85007;
+  --color-yellow-orange-700: #b3340a;
+  --color-yellow-orange-800: #91280f;
+  --color-yellow-orange-900: #78220f;
+  --color-yellow-orange-950: #450e03;
+
+  /* Secondary */
+  --color-blue-violet-50: #efeeff;
+  --color-blue-violet-100: #e2e0ff;
+  --color-blue-violet-200: #cac7fe;
+  --color-blue-violet-300: #aaa5fc;
+  --color-blue-violet-400: #8881f8;
+  --color-blue-violet-500: #6b63f1;
+  --color-blue-violet-600: #4f46e5;
+  --color-blue-violet-700: #4038ca;
+  --color-blue-violet-800: #3730a3;
+  --color-blue-violet-900: #332e81;
+  --color-blue-violet-950: #1e1b4b;
+
+  /* Secondary glare */
+  --color-royal-blue-50: #eeeeff;
+  --color-royal-blue-100: #e0e1ff;
+  --color-royal-blue-200: #c7c8fe;
+  --color-royal-blue-300: #a5a7fc;
+  --color-royal-blue-400: #8184f8;
+  --color-royal-blue-500: #6366f1;
+  --color-royal-blue-600: #4649e5;
+  --color-royal-blue-700: #383bca;
+  --color-royal-blue-800: #3032a3;
+  --color-royal-blue-900: #2e3081;
+  --color-royal-blue-950: #1b1c4b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === LAYOUT & CONTAINER === */
+.container {
+  width: 100%;
+  max-width: 1200px; /* Adjust max-width as needed */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* === TYPOGRAPHY === */
+.heading-1 {
+  font-size: 3rem; /* Example size */
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--dark-text);
+}
+
+.heading-2 {
+  font-size: 2.25rem; /* Example size */
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: var(--dark-text);
+}
+
+.heading-3 {
+  font-size: 1.75rem; /* Example size */
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--dark-text);
+}
+
+.paragraph {
+  font-size: 1rem; /* Base paragraph size */
+  line-height: 1.6;
+  color: var(--color-gray-600); /* Default text color */
+  margin-bottom: 1rem;
+}
+
+/* === TEXT COLOR UTILITIES === */
+.text-primary {
+  color: var(--color-flush-orange-500);
+}
+
+.text-secondary {
+  color: var(--color-yellow-orange-500); /* Or another secondary color */
+}
+
+.text-dark {
+  color: var(--dark-text);
+}
+
+.text-light {
+  color: var(--light-color);
+}
+
+.text-gray-600 {
+  color: var(--color-gray-600);
+}
+
+.text-gray-700 {
+  color: var(--color-gray-700);
+}
+
+/* === OTHER UTILITIES === */
+.text-center {
+  text-align: center;
+}
+
+/* Any global styles not covered in the hero component */

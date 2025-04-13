@@ -1,0 +1,175 @@
+<!-- src/_components/footer-section.webc -->
+<footer class="footer-section">
+  <div class="container footer-grid">
+    <!-- Column 1: Business Info -->
+    <div class="footer-col business-info">
+      <img
+        src="https://placehold.co/150x50/ffffff/1B252B?text=Radiant307+Logo"
+        alt="Radiant 307 Plumbing Logo"
+        class="footer-logo"
+      />
+      <p class="business-name">Radiant 307 Plumbing</p>
+      <p>123 Main Street<br />Cheyenne, WY 82001</p>
+      <p>
+        <a href="tel:307-555-1212" class="footer-link">(307) 555-1212</a>
+      </p>
+      <p>
+        <a href="mailto:contact@radiant307plumbing.com" class="footer-link"
+          >contact@radiant307plumbing.com</a
+        >
+      </p>
+      <!-- Optional: Add social media icons here -->
+    </div>
+
+    <!-- Column 2: Company Links -->
+    <div class="footer-col links-col">
+      <h4 class="footer-heading">Company</h4>
+      <ul>
+        <li><a href="#" class="footer-link">About Us</a></li>
+        <li><a href="#" class="footer-link">Contact</a></li>
+        <li><a href="#" class="footer-link">Careers</a></li>
+        <li><a href="#" class="footer-link">Blog</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Services Links -->
+    <div class="footer-col links-col">
+      <h4 class="footer-heading">Services</h4>
+      <ul>
+        <li><a href="#" class="footer-link">Emergency Plumbing</a></li>
+        <li><a href="#" class="footer-link">Installation</a></li>
+        <li><a href="#" class="footer-link">Maintenance</a></li>
+        <li><a href="#" class="footer-link">Drain Cleaning</a></li>
+        <li><a href="#" class="footer-link">Water Heaters</a></li>
+        <li><a href="#" class="footer-link">Commercial</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 4: Service Areas Links -->
+    <div class="footer-col links-col">
+      <h4 class="footer-heading">Service Areas</h4>
+      <ul>
+        <li><a href="#" class="footer-link">Downtown Cheyenne</a></li>
+        <li><a href="#" class="footer-link">The Point</a></li>
+        <li><a href="#" class="footer-link">South Cheyenne</a></li>
+        <li><a href="#" class="footer-link">Laramie County</a></li>
+        <!-- Add more specific areas or a general 'Surrounding Areas' -->
+      </ul>
+    </div>
+  </div>
+
+  <!-- Copyright Bar -->
+  <div class="footer-copyright">
+    <div class="container">
+      <!-- Optional: Add privacy policy/terms links here -->
+      <a href="#" class="footer-link">Privacy Policy</a>
+      <a href="#" class="footer-link">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<style webc:scoped>
+  .footer-section {
+    background-color: rgb(27, 37, 43); /* Dark background like testimonials */
+    color: rgb(209, 213, 219); /* Light gray text (Tailwind gray-300) */
+    padding: 4rem 0 0; /* Padding top, no padding bottom initially */
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile: single column */
+    gap: 2.5rem;
+    padding-bottom: 3rem;
+  }
+
+  @media (min-width: 768px) {
+    /* Tablet: two columns */
+    .footer-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    /* Desktop: four columns */
+    .footer-grid {
+      grid-template-columns: 1.5fr 1fr 1fr 1fr; /* Give business info slightly more space */
+      gap: 2rem; /* Adjust gap */
+    }
+  }
+
+  .business-info p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-logo {
+    max-width: 180px; /* Adjust logo size */
+    margin-bottom: 1.5rem;
+    filter: brightness(0) invert(0.9); /* Make placeholder logo light */
+  }
+
+  .business-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #ffffff; /* White for name */
+    margin-bottom: 1rem;
+  }
+
+  .footer-heading {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff; /* White heading */
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .links-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .links-col li {
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-link {
+    color: rgb(209, 213, 219); /* Tailwind gray-300 */
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+  }
+
+  .footer-link:hover {
+    color: #ffffff; /* White on hover */
+    text-decoration: underline;
+  }
+
+  /* Copyright Bar */
+  .footer-copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+  }
+
+  .footer-copyright .container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .footer-copyright p {
+    font-size: 0.85rem;
+    color: rgb(156, 163, 175); /* Tailwind gray-400 */
+    margin: 0;
+  }
+</style>

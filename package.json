@@ -1,0 +1,22 @@
+{
+  "name": "radiant-plumbing-site",
+  "version": "1.0.0",
+  "description": "Radiant 307 Plumbing website with WebC components",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [
+    "eleventy",
+    "11ty",
+    "webc"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-webc": "^0.11.1"
+  }
+}

@@ -1,0 +1,211 @@
+<!-- hero-section.webc -->
+<div class="top-banner">
+  <div class="hero-contact">
+    <div class="contact-item">
+      <span class="icon">📞</span>
+      <a href="tel:3071234567">(307) 123-4567</a>
+    </div>
+    <div class="contact-item">
+      <span class="icon">🕒</span>
+      <span>24/7 Emergency Service</span>
+    </div>
+  </div>
+</div>
+
+<section class="hero-section" webc:scoped>
+  <div class="container hero-content">
+    <div class="hero-text">
+      <h1 class="heading-1 text-light">Radiant 307 Plumbing</h1>
+      <p class="paragraph text-light">
+        Expert Plumbing Solutions with a Commitment to Excellence
+      </p>
+      <div class="hero-buttons">
+        <a href="tel:3071234567" class="btn btn-primary">Call Now</a>
+        <a href="/estimate" class="btn btn-secondary">Free Estimate</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img
+        src="https://placehold.co/600x400"
+        alt="Plumbing services"
+        width="800"
+        height="600"
+      />
+    </div>
+  </div>
+</section>
+
+<style webc:scoped>
+  .top-banner {
+    background-color: var(--color-blue-violet-500);
+    padding: 0.75rem 1rem;
+    width: 100%;
+  }
+
+  /* Styles for hero-contact specifically within the banner */
+  .top-banner .hero-contact {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: flex-end; /* Align items to the right */
+  }
+
+  .top-banner .contact-item a,
+  .top-banner .contact-item span {
+    color: #f9fafb; /* Light text for dark banner */
+  }
+
+  .top-banner .contact-item a:hover {
+    color: #d1d5db; /* Slightly dimmer hover */
+  }
+
+  .hero-section {
+    /* Updated gradient using CSS variables */
+    /* background-image: linear-gradient(to right, var(--saddle-brown), var(--desert-sand-dark)); */
+    /* New, less extreme gradient */
+    background-image: linear-gradient(
+      to right,
+      var(--color-blue-violet-500),
+      var(--color-royal-blue-400)
+    );
+    color: white;
+    width: 100%;
+    padding: 2rem 1rem;
+  }
+
+  .container.hero-content {
+    max-width: 1200px;
+    padding-block: 6rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .hero-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: var(--light-color);
+  }
+
+  .hero-location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .icon {
+    font-size: 1.2rem;
+  }
+
+  .heading-1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.1;
+  }
+
+  .paragraph {
+    font-size: 1.5rem;
+    margin: 0;
+    max-width: 500px;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary {
+    background-color: var(--color-flush-orange-500);
+    color: var(--gray-color);
+  }
+
+  .btn-primary:hover {
+    filter: brightness(0.9);
+  }
+
+  .btn-secondary {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--gray-color);
+  }
+
+  .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .container.hero-content {
+      flex-direction: column;
+    }
+
+    .hero-text {
+      order: 2;
+      text-align: center;
+    }
+
+    .hero-image {
+      order: 1;
+      margin-bottom: 1.5rem;
+    }
+
+    .heading-1 {
+      font-size: 2.5rem;
+    }
+
+    .paragraph {
+      font-size: 1.25rem;
+      margin: 0 auto;
+    }
+
+    .hero-buttons {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .heading-1 {
+      font-size: 2rem;
+    }
+
+    .hero-buttons {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .btn {
+      width: 100%;
+    }
+  }
+</style>

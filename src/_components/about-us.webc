@@ -1,0 +1,83 @@
+<!-- src/_components/about-us.webc -->
+<section class="about-us-section">
+  <div class="container about-grid">
+    <div class="about-text">
+      <h2>About Radiant 307 Plumbing</h2>
+      <p>
+        Founded on principles of honesty, reliability, and quality craftsmanship, Radiant 307 Plumbing has been serving the Cheyenne community for over [Number] years. We are a family-owned business dedicated to providing exceptional plumbing solutions for both residential and commercial clients.
+      </p>
+      <p>
+        Our team of licensed and experienced plumbers is committed to resolving your plumbing issues efficiently and effectively, from minor repairs to major installations. We pride ourselves on transparent pricing, timely service, and leaving your space clean.
+      </p>
+      <!-- Optional: Add a button/link -->
+      <!-- <a href="/about" class="btn-primary">Learn More About Us</a> -->
+    </div>
+    <div class="about-image-container">
+      <img
+        src="https://placehold.co/600x800/cccccc/969696?text=Our+Team"
+        alt="Radiant 307 Plumbing Team or Van"
+        class="about-image"
+      />
+    </div>
+  </div>
+</section>
+
+<style webc:scoped>
+  .about-us-section {
+    padding: 4rem 0; /* Adjust vertical padding as needed */
+    background-color: #ffffff; /* Light background */
+    color: #1f2937; /* Dark text */
+  }
+
+  .container {
+     max-width: 1200px;
+     margin: 0 auto;
+     padding: 0 1rem; /* Standard container padding */
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile: single column */
+    gap: 2rem; /* Space between text and image on mobile */
+    align-items: center; /* Vertically align items */
+  }
+
+  @media (min-width: 768px) { /* Tablet and up: two columns */
+    .about-grid {
+      grid-template-columns: 1fr 1fr; /* Equal columns */
+      gap: 3rem; /* Wider gap for larger screens */
+    }
+    /* Optional: Reverse order on tablet/desktop if needed */
+    /* .about-image-container {
+      order: -1;
+    } */
+  }
+
+  .about-text h2 {
+    font-size: 2.25rem; /* Tailwind size-3xl */
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    color: #111827; /* Slightly darker heading */
+  }
+
+  .about-text p {
+    font-size: 1rem; /* Tailwind size-base */
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #4b5563; /* Gray text */
+  }
+
+  .about-image-container {
+    border-radius: 8px; /* Slightly rounded corners for the image container */
+    overflow: hidden; /* Ensures image stays within rounded bounds */
+    height: 100%; /* Make container take full height of grid cell */
+    min-height: 300px; /* Ensure minimum height on mobile */
+  }
+
+  .about-image {
+    width: 100%;
+    height: 100%; /* Make image fill the container height */
+    object-fit: cover; /* Scale image nicely while covering */
+    display: block; /* Remove extra space below image */
+  }
+</style>

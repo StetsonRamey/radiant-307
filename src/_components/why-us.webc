@@ -1,0 +1,198 @@
+<!-- customer-tabs.webc -->
+<section class="customer-tabs-section">
+  <div class="container">
+    <div class="tabs-content-container">
+      <div class="tabs-title-container text-center">
+        <h2 class="heading-2">Trusted by Homeowners and Businesses</h2>
+        <p class="paragraph">
+          See why Radiant 307 Plumbing is the go-to choice.
+        </p>
+      </div>
+      <!-- Content for "Emergency" Tab (visible by default) -->
+      <div class="tab-content-panel active">
+        <div class="two-column-layout">
+          <!-- Left Column -->
+          <div class="column left-column">
+            <h3 class="heading-3">24/7 Emergency Response</h3>
+            <p class="paragraph">
+              Fast, reliable help when you need it most. Burst pipes, major
+              leaks, no heat - we're ready day or night.
+            </p>
+            <div class="button-container">
+              <a href="tel:3071234567" class="btn btn-primary"
+                >Call Now (Emergency)</a
+              >
+              <a href="/services/emergency" class="learn-more-link">
+                Learn More
+                <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </div>
+          <!-- Right Column (Testimonial) -->
+          <div class="column right-column">
+            <div class="testimonial">
+              <img
+                src="https://placehold.co/100x40?text=Client+Logo"
+                alt="Client Logo"
+                class="testimonial-logo"
+              />
+              <p class="testimonial-quote paragraph">
+                "Radiant 307 saved us during a late-night pipe burst! Fast
+                response and professional service. Highly recommend!"
+              </p>
+              <div class="testimonial-attribution">
+                <p class="attribution-name text-primary">John D.</p>
+                <p class="attribution-title paragraph text-gray-600">
+                  Cheyenne Homeowner
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content for "Residential" Tab (hidden) -->
+      <div class="tab-content-panel">
+        <!-- Add content similar to above for Residential -->
+        <p style="color: var(--secondary-color)">
+          Residential Services Content Here...
+        </p>
+      </div>
+
+      <!-- Content for "Commercial" Tab (hidden) -->
+      <div class="tab-content-panel">
+        <!-- Add content similar to above for Commercial -->
+        <p style="color: var(--secondary-color)">
+          Commercial Services Content Here...
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style webc:scoped>
+  /* Basic Reset & Container */
+  .customer-tabs-section * {
+    box-sizing: border-box;
+  }
+
+  /* Section Styling */
+  .customer-tabs-section {
+    padding-block-start: 10rem;
+    background-image: linear-gradient(
+      to right,
+      var(--color-flush-orange-500),
+      var(--color-yellow-orange-300)
+    );
+    color: var(--text-color);
+    position: relative;
+  }
+
+  /* Titles */
+  .tabs-title-container {
+    margin-bottom: 2.5rem;
+    text-align: center;
+    margin-top: -3rem;
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+    z-index: 1;
+    background-color: var(--light-color);
+  }
+
+  /* Tab Content */
+  .tabs-content-container {
+    transform: translateY(-14rem);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000000d;
+    padding: 2rem;
+    background-color: var(--light-color);
+  }
+  .tab-content-panel {
+    display: none;
+  }
+  .tab-content-panel.active {
+    display: block;
+  }
+
+  /* Two Column Layout */
+  .two-column-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  @media (min-width: 768px) {
+    .two-column-layout {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .left-column {
+    gap: 1rem;
+  }
+
+  /* Buttons & Links */
+  .button-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  .btn-primary {
+    background-color: var(--color-flush-orange-500);
+    color: var(--text-color);
+  }
+  .btn-primary:hover {
+    background-color: var(--color-flush-orange-400);
+  }
+  .learn-more-link {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .learn-more-link:hover {
+    text-decoration: underline;
+  }
+  .link-arrow {
+    margin-left: 0.25rem;
+    display: inline-block;
+  }
+
+  /* Testimonial */
+  .testimonial {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #eee;
+  }
+  .testimonial-logo {
+    height: 40px;
+    width: auto;
+    margin-bottom: 1rem;
+    opacity: 0.8;
+  }
+  .testimonial-quote {
+    font-size: 1.125rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+    border-left: 3px solid var(--color-yellow-orange-500);
+    padding-left: 1rem;
+  }
+  .testimonial-attribution {
+    margin-top: 1.5rem;
+  }
+</style>
