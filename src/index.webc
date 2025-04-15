@@ -5,11 +5,10 @@ layout: "base.webc"
 <hero-section></hero-section>
 <services-overview></services-overview>
 <why-us></why-us>
-<services-areas></services-areas>
+<service-areas></service-areas>
 <testimonials></testimonials>
 <about-us></about-us>
 <cta-section></cta-section>
-<footer-section></footer-section>
 
 <script
   async

@@ -1,0 +1,96 @@
+<section class="other-services-section">
+  <div class="container">
+    <div class="other-services-grid">
+      <div class="other-services-description">
+        <div class="other-services-text">
+          <h3 class="heading-3">Need Something Else?</h3>
+          <p class="paragraph">
+            We offer a wide range of plumbing and heating services to keep your
+            home comfortable and running smoothly. Explore our other offerings:
+          </p>
+        </div>
+      </div>
+
+      <div class="other-services-list">
+        <h2 class="heading-3">Explore Our Other Services</h2>
+        <ul>
+          <li webc:for="service of services">
+            <a :href="service.slug" @text="service.title">Service Title</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .other-services-icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  h2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+  }
+
+  .other-services-section {
+    padding-block: 4rem;
+    background: linear-gradient(
+      to right,
+      var(--color-gray-200),
+      var(--color-gray-300)
+    );
+    color: var(--text-color);
+  }
+
+  .other-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .other-services-text .heading-3 {
+    margin-bottom: 0.75rem;
+  }
+
+  .other-services-text .paragraph {
+    opacity: 0.9;
+    max-width: 50ch;
+  }
+
+  .other-services-list .heading-3 {
+    margin-bottom: 1.5rem;
+  }
+
+  .other-services-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .other-services-list li {
+    margin-bottom: 0.75rem; /* Spacing between list items */
+  }
+
+  .other-services-list a {
+    display: block; /* Make links full width of li */
+    max-width: 50%;
+    text-align: center; /* Center text inside button */
+    padding: 0.5rem 1rem; /* Button padding */
+    border: 1px solid var(--text-color); /* Button border */
+    border-radius: var(--border-radius-medium); /* Rounded corners */
+    color: var(--text-color); /* Button text color */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Smooth transition */
+  }
+
+  .other-services-list a:hover,
+  .other-services-list a:focus {
+    background-color: var(--text-color); /* Invert background on hover */
+    color: var(--color-gray-200); /* Change text color on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+  }
+</style>

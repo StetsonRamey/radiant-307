@@ -1,0 +1,17 @@
+# Style and formatting
+
+- use color variables from the global /src/css/styles.css file
+- use global classes when possible from the /src/css/styles.css file
+- write css using vanilla css and not tailwind
+- prefer css logical properties like `margin-inline` and `padding-inline` over `margin-left` and `margin-right` vs `margin-top` and `margin-bottom`
+
+# Project structure and architecture
+
+- use Eleventy 3.0 and WebC components for building the site
+- use the /src/\_data/services.json file for service data
+- use the /src/\_components directory for WebC components
+- use the /src/\_layouts directory for Eleventy layouts
+
+# Cascade
+
+- Do not give me code unless I explicitly ask for it.

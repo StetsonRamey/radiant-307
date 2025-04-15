@@ -1,15 +1,70 @@
 [
   {
+    "slug": "/services/boiler-installation-and-repair/",
     "title": "Boilers",
-    "description": "Boiler repair in Cheyenne, Wyoming",
-    "h1": "Boilers Test"
+    "title-tag": "Cheyenne Boiler Installation, Repair, and Maintenance | Radiant 307 Plumbing",
+    "metadescription": "Radiant 307 Plumbing provides expert boiler installation, repair, and maintenance in Cheyenne, Wyoming.  Learn more about our boiler services and how we can help you stay warm and cozy during the winter months.",
+    "h1": "Expert Boiler Installation, Repair, and Maintenance in Cheyenne, Wyoming",
+    "description": "Radiant 307 Plumbing provides expert boiler installation, repair, and maintenance in Cheyenne, Wyoming.  Whether you need a new boiler installed or an old one repaired or maintained, we are here to help.  We know that a functioning boiler is essential for keeping your home warm and comfortable during the long Wyoming winters.",
+    "signs": {
+      "heading": "Signs Your Boiler Needs Attention",
+      "list": [
+        "No heat or hot water",
+        "Leaking or dripping around the boiler",
+        "Strange banging, whistling, or gurgling noises",
+        "Pilot light keeps going out",
+        "Thermostat issues",
+        "Cold radiators",
+        "Increased energy bills"
+      ]
+    },
+    "process": {
+      "heading": "Our Cheyenne Boiler Maintenance, Repair & Installation Process",
+      "steps": [
+        {
+          "title": "Thorough Diagnosis & Consultation",
+          "description": "We start with a comprehensive inspection of your boiler system to accurately diagnose the issue or assess your installation needs. We discuss our findings with you and recommend the best course of action."
+        },
+        {
+          "title": "Expert Repair or Installation",
+          "description": "Our certified technicians use high-quality parts and follow industry best practices for all repairs and installations, ensuring safety and efficiency."
+        },
+        {
+          "title": "System Testing & Final Check",
+          "description": "After the work is complete, we rigorously test the system to ensure it's operating correctly and safely. We'll walk you through the work performed and answer any questions."
+        },
+        {
+          "title": "Clean-Up & Follow-Up",
+          "description": "We respect your home and always clean up our work area. We also follow up to ensure you're completely satisfied with our service."
+        }
+      ]
+    },
+    "why_choose_us": {
+      "heading": "Why Choose Us for Boiler Service in Cheyenne?",
+      "benefits": [
+        {
+          "title": "Expert Boiler Repair",
+          "description": "We specialize in all boiler types, ensuring accurate diagnosis and repair."
+        },
+        {
+          "title": "Upfront Pricing",
+          "description": "We provide clear, upfront pricing for all boiler services before any work begins."
+        },
+        {
+          "title": "Fast Response & Local Knowledge",
+          "description": "We prioritize quick service for boiler issues and understand Cheyenne's specific needs."
+        }
+      ]
+    }
   },
   {
+    "slug": "/services/plumbing-repair/",
     "title": "Plumbing",
     "description": "Plumbing repair in Cheyenne, Wyoming",
     "h1": "Plumbing Test"
   },
   {
+    "slug": "/services/another-service/",
     "title": "another service",
     "description": "some cool description",
     "h1": "another service Test"
