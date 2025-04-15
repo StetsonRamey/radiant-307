@@ -255,6 +255,6 @@
 
 <script
   async
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDk1nfTLYUsB4Hg6bJS_xpjtxvhHIS0Ipk&loading=async&callback=initMap"
+  :src="'https://maps.googleapis.com/maps/api/js?key=' + env.GOOGLE_MAPS_API_KEY + '&loading=async&callback=initMap'"
   webc:keep
 ></script>
