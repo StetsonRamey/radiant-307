@@ -77,7 +77,7 @@
 
   .other-services-list a {
     display: block; /* Make links full width of li */
-    max-width: 50%;
+    font-size: 0.8rem;
     text-align: center; /* Center text inside button */
     padding: 0.5rem 1rem; /* Button padding */
     border: 1px solid var(--text-color); /* Button border */

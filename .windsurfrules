@@ -15,3 +15,8 @@
 # Cascade
 
 - Do not give me code unless I explicitly ask for it.
+
+# Code Style
+
+- use ESM
+- do not use common js

@@ -4,8 +4,11 @@
     <h2 class="heading-2">Serving Cheyenne, WY and Surrounding Areas</h2>
     <p class="paragraph mb-4">
       Need help with
-      <span @text="service.title.toLowerCase()">plumbing services</span> in
-      Cheyenne, Wyoming? We probably serve your neighborhood. Check out our
+      <span
+        @text="typeof service === 'string' ? service : service.title.toLowerCase()"
+        >plumbing services</span
+      >
+      in Cheyenne, Wyoming? We probably serve your neighborhood. Check out our
       service areas below!
     </p>
 
@@ -38,7 +41,6 @@
     margin-block: 2rem; /* Space around map */
     border-radius: var(--border-radius-large);
     overflow: hidden; /* Ensure map corners respect border-radius */
-    box-shadow: var(--shadow-medium);
   }
 
   .btn {

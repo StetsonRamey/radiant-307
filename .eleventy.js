@@ -13,6 +13,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/js");
 
+  eleventyConfig.setTemplateFormats("webc");
+
   return {
     dir: {
       input: "src",

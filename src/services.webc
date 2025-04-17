@@ -1,0 +1,329 @@
+---js
+{
+  layout: "base.webc",
+}
+---
+
+<!-- Services Page Main Content -->
+<main class="services-main">
+  <!-- 1. Headline -->
+  <header class="services-header">
+    <div class="container">
+      <h1 class="heading-1">
+        Comprehensive Plumbing &amp; Heating Services in Cheyenne, WY
+      </h1>
+      <p>
+        Professional plumbing services for residential and commercial projects.
+      </p>
+      <div class="service-buttons">
+        <a href="tel:+13075551234" class="link">Call us Today!</a>
+        <a href="/contact/" class="btn btn-primary">Request a Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. Introductory Paragraph -->
+  <section class="services-intro">
+    <p class="paragraph">
+      Radiant 307 Plumbing offers a wide range of residential and commercial
+      plumbing and heating solutions throughout Cheyenne and the surrounding
+      areas. Our licensed and insured team delivers expert service, upfront
+      pricing, and fast response times—whether you need routine maintenance,
+      emergency repairs, or a brand new installation. Explore our core services
+      below to find the right solution for your home or business.
+    </p>
+  </section>
+
+  <!-- 3. Service Listings / Grid -->
+  <section class="services-listings">
+    <div class="services-grid container">
+      <h2 class="heading-2 text-center">Our Core Services</h2>
+      <ul class="services-grid-list">
+        <li webc:for="service of services" class="service-card">
+          <div class="service-card-content">
+            <!-- Optional: Icon placeholder -->
+            <div aria-hidden="true" @raw="service.core_services.icon"></div>
+            <h3
+              class="heading-4 no-wrap"
+              @text="service.core_services.heading"
+            ></h3>
+            <p class="paragraph">Services we provide:</p>
+            <div class="service-pills">
+              <span
+                webc:for="list of service.core_services.list"
+                class="service-pill"
+                @text="list"
+              ></span>
+            </div>
+            <p
+              class="service-card-desc"
+              @text="service.core_services.blurb"
+            ></p>
+            <a
+              class="btn btn-primary"
+              :href="service.slug"
+              @text="service.core_services.heading"
+            ></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4. Why Choose Radiant 307? -->
+  <section class="why-choose-us-section">
+    <div class="container">
+      <h2 class="heading-2">Why Choose Radiant 307?</h2>
+      <ul class="why-choose-list">
+        <li class="why-choose-item">
+          <span @raw="icons.trust" class="icon blue" aria-hidden="true"></span
+          >Vast Experience
+        </li>
+        <li class="why-choose-item">
+          <span
+            @raw="icons.experience"
+            class="icon purple"
+            aria-hidden="true"
+          ></span
+          >Licensed &amp; Insured
+        </li>
+        <li class="why-choose-item">
+          <span
+            @raw="icons.pricing"
+            class="icon green"
+            aria-hidden="true"
+          ></span
+          >Upfront, Honest Pricing
+        </li>
+        <li class="why-choose-item">
+          <span
+            @raw="icons.satisfaction"
+            class="icon orange"
+            aria-hidden="true"
+          ></span
+          >Satisfaction Guarantee
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 5. Service Area Reminder -->
+  <service-area-mention service="Plumbing"></service-area-mention>
+
+  <!-- 6. General Call to Action -->
+  <cta-section></cta-section>
+</main>
+
+<!-- Styles: Use global classes and color variables, minimal inline CSS here -->
+<style>
+  .service-area-mention-section {
+    background: white;
+  }
+  .services-header {
+    text-align: center;
+    margin-block-end: 2rem;
+    line-height: 1.2;
+    background-image: linear-gradient(
+      to right,
+      var(--color-blue-violet-700),
+      var(--color-royal-blue-500)
+    );
+    color: var(--gray-color);
+    padding-block: 4rem;
+  }
+
+  .services-header h1 {
+    color: var(--gray-color);
+    text-wrap: balance;
+  }
+
+  .service-buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service-buttons .link {
+    background-color: var(--color-blue-violet-50);
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    color: var(--color-blue-violet-500);
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+
+  .service-buttons .link:hover {
+    background-color: var(--color-blue-violet-100);
+    color: var(--color-blue-violet-500);
+  }
+
+  .services-intro {
+    max-width: 70ch;
+    margin-inline: auto;
+    margin-block-end: 2.5rem;
+    padding-block: 3rem;
+  }
+  .services-intro .paragraph {
+    font-size: 1.25rem;
+  }
+  .services-listings {
+    margin-block-end: 3rem;
+  }
+
+  .services-grid h2 {
+    margin-block-end: 3rem;
+  }
+
+  .services-grid-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: stretch; /* Ensures all cards fill row height */
+  }
+
+  .service-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid var(--color-blue-violet-400);
+    background: var(--card-background, #fff);
+    border-radius: var(--border-radius, 12px);
+    box-shadow: var(--shadow-small);
+    padding: 2rem 1.5rem;
+    transition: box-shadow 0.2s;
+  }
+  .service-card:hover {
+    box-shadow: var(--shadow-medium);
+  }
+
+  .service-card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+  }
+
+  .service-card-desc {
+    margin-block: 0.5rem 1.25rem;
+    color: var(--text-secondary-color, #444);
+    font-size: 0.8rem;
+  }
+
+  .btn.btn-primary {
+    min-inline-size: 180px;
+    align-self: start;
+    margin-block-start: auto;
+    min-block-size: 48px;
+    color: var(--button-text-color, #fff);
+    font-weight: 600;
+    border-radius: var(--border-radius, 6px);
+    border: none;
+    padding-inline: 2rem;
+    padding-block: 0.75rem;
+  }
+
+  .why-choose-us-section {
+    background: var(--accent-background, #f6f8fa);
+    border-radius: var(--border-radius, 12px);
+    padding: 2rem 1.5rem;
+    margin-block-end: 2rem;
+    max-width: 100%;
+    margin-inline: auto;
+    text-align: center;
+  }
+  .why-choose-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+  }
+  .why-choose-item {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .why-choose-item .icon svg {
+    vertical-align: middle;
+    display: inline-block;
+    inline-size: 1.5em;
+    block-size: 1.5em;
+  }
+  .icon.blue {
+    color: rgb(37 99 235 / 1);
+  }
+  .icon.purple {
+    color: rgb(139 22 190 / 1);
+  }
+  .icon.green {
+    color: rgb(11 132 111 / 1);
+  }
+  .icon.orange {
+    color: rgb(239 108 0 / 1);
+  }
+  .service-area-reminder {
+    text-align: center;
+    margin-block-end: 2rem;
+  }
+  .services-cta {
+    background: var(--primary-color);
+    color: var(--button-text-color, #fff);
+    border-radius: var(--border-radius, 12px);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    max-width: 700px;
+    margin-inline: auto;
+    margin-block-end: 0;
+  }
+  .services-cta .btn.btn-primary {
+    background: var(--button-text-color, #fff);
+    color: var(--primary-color);
+    margin-left: 1rem;
+  }
+  .link,
+  .link-phone {
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  .link-phone {
+    white-space: nowrap;
+  }
+  .no-wrap {
+    white-space: nowrap;
+  }
+  .service-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-block: 0.5rem 1rem;
+  }
+  .service-pill {
+    display: inline-block;
+    background: var(--color-blue-violet-50, #e6e6fa);
+    color: var(--color-blue-violet-700, #4b3f72);
+    font-size: 0.7rem;
+    font-weight: 500;
+    border-radius: 999px;
+    padding-inline: 1em;
+    padding-block: 0.25em;
+    border: 1px solid var(--color-blue-violet-200, #cbc3e3);
+    white-space: nowrap;
+    letter-spacing: 0.01em;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+  }
+</style>
+
+<script
+  async
+  :src="'https://maps.googleapis.com/maps/api/js?key=' + env.GOOGLE_MAPS_API_KEY + '&loading=async&callback=initMap'"
+  webc:keep
+></script>
