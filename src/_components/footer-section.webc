@@ -3,20 +3,15 @@
   <div class="container footer-grid">
     <!-- Column 1: Business Info -->
     <div class="footer-col business-info">
-      <img
-        src="https://placehold.co/150x50/ffffff/1B252B?text=Radiant307+Logo"
-        alt="Radiant 307 Plumbing Logo"
-        class="footer-logo"
-      />
+      <img src="https://placehold.co/150x50/ffffff/1B252B?text=Radiant307+Logo" alt="Radiant 307 Plumbing Logo"
+        class="footer-logo" />
       <p class="business-name">Radiant 307 Plumbing</p>
       <p>123 Main Street<br />Cheyenne, WY 82001</p>
       <p>
         <a href="tel:307-555-1212" class="footer-link">(307) 555-1212</a>
       </p>
       <p>
-        <a href="mailto:contact@radiant307plumbing.com" class="footer-link"
-          >contact@radiant307plumbing.com</a
-        >
+        <a href="mailto:contact@radiant307plumbing.com" class="footer-link">contact@radiant307plumbing.com</a>
       </p>
       <!-- Optional: Add social media icons here -->
     </div>
@@ -27,8 +22,6 @@
       <ul>
         <li><a href="#" class="footer-link">About Us</a></li>
         <li><a href="#" class="footer-link">Contact</a></li>
-        <li><a href="#" class="footer-link">Careers</a></li>
-        <li><a href="#" class="footer-link">Blog</a></li>
       </ul>
     </div>
 
@@ -36,25 +29,32 @@
     <div class="footer-col links-col">
       <h4 class="footer-heading">Services</h4>
       <ul>
-        <li><a href="#" class="footer-link">Emergency Plumbing</a></li>
-        <li><a href="#" class="footer-link">Installation</a></li>
-        <li><a href="#" class="footer-link">Maintenance</a></li>
-        <li><a href="#" class="footer-link">Drain Cleaning</a></li>
-        <li><a href="#" class="footer-link">Water Heaters</a></li>
-        <li><a href="#" class="footer-link">Commercial</a></li>
-      </ul>
+        <li webc:for="service of services">
+          <a :href="service.slug" class="footer-link" @text="service.title"></a>
+        </li>
     </div>
 
-    <!-- Column 4: Service Areas Links -->
-    <div class="footer-col links-col">
+    <!-- Column 4: Service Areas Links - Split into two columns on tablet+ -->
+    <div class="footer-col service-areas-col">
       <h4 class="footer-heading">Service Areas</h4>
-      <ul>
-        <li><a href="#" class="footer-link">Downtown Cheyenne</a></li>
-        <li><a href="#" class="footer-link">The Point</a></li>
-        <li><a href="#" class="footer-link">South Cheyenne</a></li>
-        <li><a href="#" class="footer-link">Laramie County</a></li>
-        <!-- Add more specific areas or a general 'Surrounding Areas' -->
-      </ul>
+      <div class="service-areas-grid">
+        <div class="service-areas-section">
+          <h5 class="service-areas-subheading">Cheyenne Neighborhoods</h5>
+          <ul>
+            <li webc:for="(area, name) in areas['Cheyenne Neighborhoods']">
+              <a :href="name.slug" class="footer-link" @text="area"></a>
+            </li>
+          </ul>
+        </div>
+        <div class="service-areas-section">
+          <h5 class="service-areas-subheading">Nearby Cities</h5>
+          <ul>
+            <li webc:for="(area, name) in areas['Nearby Cities']">
+              <a :href="name.slug" class="footer-link" @text="area"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -70,9 +70,12 @@
 
 <style webc:scoped>
   .footer-section {
-    background-color: rgb(27, 37, 43); /* Dark background like testimonials */
-    color: rgb(209, 213, 219); /* Light gray text (Tailwind gray-300) */
-    padding: 4rem 0 0; /* Padding top, no padding bottom initially */
+    background-color: rgb(27, 37, 43);
+    /* Dark background like testimonials */
+    color: rgb(209, 213, 219);
+    /* Light gray text (Tailwind gray-300) */
+    padding: 4rem 0 0;
+    /* Padding top, no padding bottom initially */
   }
 
   .container {
@@ -83,12 +86,14 @@
 
   .footer-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Mobile: single column */
+    grid-template-columns: 1fr;
+    /* Mobile: single column */
     gap: 2.5rem;
     padding-bottom: 3rem;
   }
 
   @media (min-width: 768px) {
+
     /* Tablet: two columns */
     .footer-grid {
       grid-template-columns: repeat(2, 1fr);
@@ -96,10 +101,13 @@
   }
 
   @media (min-width: 1024px) {
+
     /* Desktop: four columns */
     .footer-grid {
-      grid-template-columns: 1.5fr 1fr 1fr 1fr; /* Give business info slightly more space */
-      gap: 2rem; /* Adjust gap */
+      grid-template-columns: 1fr .5fr 1fr 1fr;
+      /* Give business info slightly more space */
+      gap: 2.5rem;
+      /* Adjust gap */
     }
   }
 
@@ -110,22 +118,26 @@
   }
 
   .footer-logo {
-    max-width: 180px; /* Adjust logo size */
+    max-width: 180px;
+    /* Adjust logo size */
     margin-bottom: 1.5rem;
-    filter: brightness(0) invert(0.9); /* Make placeholder logo light */
+    filter: brightness(0) invert(0.9);
+    /* Make placeholder logo light */
   }
 
   .business-name {
     font-weight: 600;
     font-size: 1.1rem;
-    color: #ffffff; /* White for name */
+    color: #ffffff;
+    /* White for name */
     margin-bottom: 1rem;
   }
 
   .footer-heading {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #ffffff; /* White heading */
+    color: #ffffff;
+    /* White heading */
     margin-bottom: 1.25rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -142,15 +154,49 @@
   }
 
   .footer-link {
-    color: rgb(209, 213, 219); /* Tailwind gray-300 */
+    color: rgb(209, 213, 219);
+    /* Tailwind gray-300 */
     text-decoration: none;
     font-size: 0.9rem;
     transition: color 0.3s ease;
   }
 
   .footer-link:hover {
-    color: #ffffff; /* White on hover */
+    color: #ffffff;
+    /* White on hover */
     text-decoration: underline;
+  }
+
+  /* Service Areas Column Styling */
+  .service-areas-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.25rem;
+  }
+
+  .service-areas-subheading {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: rgb(209, 213, 219);
+    margin-bottom: 0.75rem;
+  }
+
+  .service-areas-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .service-areas-section li {
+    margin-bottom: 0.75rem;
+  }
+
+  @media (min-width: 768px) {
+
+    /* Split service areas into two columns on tablet and up */
+    .service-areas-grid {
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
   /* Copyright Bar */
@@ -169,7 +215,7 @@
 
   .footer-copyright p {
     font-size: 0.85rem;
-    color: rgb(156, 163, 175); /* Tailwind gray-400 */
+    color: rgb(156, 163, 175);
     margin: 0;
   }
 </style>

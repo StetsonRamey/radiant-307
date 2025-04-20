@@ -1,0 +1,60 @@
+{
+    "Cheyenne Neighborhoods": {
+        "Saddle Ridge": {
+            "slug": "/locations/saddle-ridge/"
+        },
+        "Thomas Heights": {
+            "slug": "/locations/thomas-heights/"
+        },
+        "Dakota Crossing": {
+            "slug": "/locations/dakota-crossing/"
+        },
+        "The Pointe": {
+            "slug": "/locations/the-pointe/"
+        },
+        "Sun Valley": {
+            "slug": "/locations/sun-valley/"
+        },
+        "North Star": {
+            "slug": "/locations/north-star/"
+        },
+        "Orchard Valley": {
+            "slug": "/locations/orchard-valley/"
+        },
+        "Mustang Ridge": {
+            "slug": "/locations/mustang-ridge/"
+        },
+        "Buffalo Ridge": {
+            "slug": "/locations/buffalo-ridge/"
+        },
+        "Monterey Heights": {
+            "slug": "/locations/monterey-heights/"
+        },
+        "Ranchettes": {
+            "slug": "/locations/ranchettes/"
+        },
+        "Rocking Star": {
+            "slug": "/locations/rocking-star/"
+        },
+        "Western Hills": {
+            "slug": "/locations/western-hills/"
+        },
+        "Winchester Hills": {
+            "slug": "/locations/winchester-hills/"
+        },
+        "Sweetgrass": {
+            "slug": "/locations/sweetgrass/"
+        }
+    },
+    "Nearby Cities": {
+        "Burns": {
+            "slug": "/locations/burns/"
+        },
+        "Hillsdale": {
+            "slug": "/locations/hillsdale/"
+        },
+        "Pine Bluffs": {
+            "slug": "/locations/pine-bluffs/"
+        }
+    }
+}
