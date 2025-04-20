@@ -12,6 +12,6 @@
   </head>
   <body>
     <main @raw="content"></main>
-    <footer-section></footer-section>
+    <footer-section :services="services" :areas="areas"></footer-section>
   </body>
 </html>

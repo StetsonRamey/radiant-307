@@ -24,3 +24,6 @@ _site
 # Optional Files
 .DS_Store
 Thumbs.db
+
+# Curso
+.cursor/

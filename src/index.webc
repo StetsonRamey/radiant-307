@@ -3,15 +3,33 @@ layout: "base.webc"
 ---
 
 <hero-section></hero-section>
-<services-overview></services-overview>
+<section class="services-overview">
+  <services-overview :@services="services"></services-overview>
+</section>
 <why-us></why-us>
 <service-areas></service-areas>
 <testimonials></testimonials>
 <about-us></about-us>
-<cta-section></cta-section>
+<cta-section :icons="icons"></cta-section>
 
-<script
-  async
+<script async
   :src="'https://maps.googleapis.com/maps/api/js?key=' + env.GOOGLE_MAPS_API_KEY + '&loading=async&callback=initMap'"
-  webc:keep
-></script>
+  webc:keep></script>
+
+<style>
+  .services-overview {
+    padding: 5rem 1rem 15rem 1rem;
+    background-color: var(--light-color);
+    /* Light background */
+  }
+
+  .services-overview .container {
+    text-align: center;
+  }
+
+  .services-overview .heading-2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #111827;
+  }
+</style>

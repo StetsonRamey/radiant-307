@@ -1,19 +1,19 @@
 ---js
 {
-  layout: "base.webc",
-  pagination: {
-    data: "services",
-    size: 1,
-    alias: "service"
-  },
-  permalink: data => {
-    return data.service.slug
-  },
-  eleventyComputed: {
-    title: data => data.service["title-tag"] || data.service.title,
-    h1: data => data.service.h1,
-    description: data => data.service["description"]
-  }
+layout: "base.webc",
+pagination: {
+data: "services",
+size: 1,
+alias: "service"
+},
+permalink: data => {
+return data.service.slug
+},
+eleventyComputed: {
+title: data => data.service["title-tag"] || data.service.title,
+h1: data => data.service.h1,
+description: data => data.service["description"]
+}
 };
 ---
 
@@ -34,18 +34,12 @@
         </ul>
       </div>
       <!-- Right Column: Why Choose Us -->
-      <div
-        webc:if="service.why_choose_us?.benefits?.length"
-        class="why-choose-us-column"
-      >
+      <div webc:if="service.why_choose_us?.benefits?.length" class="why-choose-us-column">
         <h2 class="heading-2" @text="service.why_choose_us.heading">
           Why Choose Us?
         </h2>
         <div class="benefits-container">
-          <article
-            webc:for="benefit of service.why_choose_us.benefits"
-            class="benefit-card"
-          >
+          <article webc:for="benefit of service.why_choose_us.benefits" class="benefit-card">
             <!-- Icon placeholder can go here later -->
             <h3 class="heading-4" @text="benefit.title">Benefit Title</h3>
             <p class="paragraph" @text="benefit.description">
@@ -65,14 +59,8 @@
     <div class="process-steps-grid">
       <article webc:for="(step, index) of service.process.steps" class="process-step">
         <span class="process-step-number" @text="index + 1"></span>
-        <img
-          class="process-step-image"
-          :src="'https://placehold.co/600x400/E2E8F0/4A5568?text=Image+' + (index + 1)"
-          alt=""
-          width="600"
-          height="400"
-          loading="lazy"
-        />
+        <img class="process-step-image" :src="'https://placehold.co/600x400/E2E8F0/4A5568?text=Image+' + (index + 1)"
+          alt="" width="600" height="400" loading="lazy" />
         <div class="process-step-content">
           <h3 class="heading-3" @text="step.title">Step Title</h3>
           <p class="paragraph" @text="step.description">
@@ -85,11 +73,9 @@
 </section>
 
 <testimonials></testimonials>
-<other-services
-  :services="services.filter(s => s.slug !== service.slug)"
-></other-services>
+<other-services :services="services.filter(s => s.slug !== service.slug)"></other-services>
 <service-area-mention :service="service"></service-area-mention>
-<cta-section></cta-section>
+<cta-section :icons="icons"></cta-section>
 <!-- Rest of your service page content will go here -->
 <!--
 <h1 @text="service.h1">Default</h1>
@@ -99,112 +85,155 @@
 <style>
   /* === SERVICE PAGE SECTIONS === */
   .signs-section {
-    padding-block: 3rem; /* Vertical padding */
+    padding-block: 3rem;
+    /* Vertical padding */
   }
 
   .signs-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 2rem; /* Adjust gap as needed */
-    align-items: start; /* Align items to the top */
+    grid-template-columns: 1fr 1fr;
+    /* Two equal columns */
+    gap: 2rem;
+    /* Adjust gap as needed */
+    align-items: start;
+    /* Align items to the top */
   }
 
   .signs-card {
     background-color: white;
     padding: 2rem;
-    border-radius: var(--border-radius-medium); /* Use existing border radius */
-    box-shadow: var(--shadow-small); /* Use existing shadow */
-    border: 2px solid var(--color-flush-orange-400); /* Border thickness, transparent base */
+    border-radius: var(--border-radius-medium);
+    /* Use existing border radius */
+    box-shadow: var(--shadow-small);
+    /* Use existing shadow */
+    border: 2px solid var(--color-flush-orange-400);
+    /* Border thickness, transparent base */
     background-clip: padding-box;
 
     /* Add flex properties to center content */
     display: flex;
-    flex-direction: column; /* Stack h2 and ul */
-    justify-content: center; /* Vertically center */
-    height: 100%; /* Make card fill the grid cell height */
+    flex-direction: column;
+    /* Stack h2 and ul */
+    justify-content: center;
+    /* Vertically center */
+    height: 100%;
+    /* Make card fill the grid cell height */
   }
 
   .signs-card .heading-2 {
-    margin-bottom: 1.5rem; /* Space below heading inside card */
+    margin-bottom: 1.5rem;
+    /* Space below heading inside card */
     /* Reset potential global centering if needed */
     text-align: left;
   }
 
   .signs-card ul {
-    list-style: disc; /* Ensure bullets are visible */
+    list-style: disc;
+    /* Ensure bullets are visible */
     margin-top: 0;
-    padding-inline-start: 1.5rem; /* Indentation inside card */
+    padding-inline-start: 1.5rem;
+    /* Indentation inside card */
   }
 
   .signs-card li {
-    margin-bottom: 0.5rem; /* Space between list items */
-    color: var(--dark-text); /* Ensure text color is dark */
+    margin-bottom: 0.5rem;
+    /* Space between list items */
+    color: var(--dark-text);
+    /* Ensure text color is dark */
   }
 
   .why-choose-us-column .heading-2 {
-    margin-bottom: 1.5rem; /* Space below the main heading */
-    text-align: left; /* Ensure left alignment if needed */
+    margin-bottom: 1.5rem;
+    /* Space below the main heading */
+    text-align: left;
+    /* Ensure left alignment if needed */
   }
 
   .benefits-container {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack cards vertically */
-    gap: 1rem; /* Space between benefit cards */
+    display: flex;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* Stack cards vertically */
+    gap: 1rem;
+    /* Space between benefit cards */
   }
 
   .benefit-card {
-    background-color: var(--color-gray-100); /* Light gray background */
-    padding: 1.5rem; /* Padding inside card */
-    border-radius: var(--border-radius-medium); /* Rounded corners */
+    background-color: var(--color-gray-100);
+    /* Light gray background */
+    padding: 1.5rem;
+    /* Padding inside card */
+    border-radius: var(--border-radius-medium);
+    /* Rounded corners */
     /* Optional: add a subtle border */
     /* border: 1px solid var(--color-gray-200); */
   }
 
   .benefit-card .heading-4 {
     /* Or heading-3 if you used that */
-    margin-bottom: 0.5rem; /* Space below benefit title */
-    color: var(--dark-text); /* Ensure title is dark */
-    font-size: 1.1rem; /* Adjust size as needed */
+    margin-bottom: 0.5rem;
+    /* Space below benefit title */
+    color: var(--dark-text);
+    /* Ensure title is dark */
+    font-size: 1.1rem;
+    /* Adjust size as needed */
   }
 
   .benefit-card .paragraph {
-    color: var(--color-gray-700); /* Standard paragraph color */
-    font-size: 0.95rem; /* Slightly smaller text */
+    color: var(--color-gray-700);
+    /* Standard paragraph color */
+    font-size: 0.95rem;
+    /* Slightly smaller text */
     line-height: 1.5;
-    margin: 0; /* Remove default margin if needed */
+    margin: 0;
+    /* Remove default margin if needed */
   }
 
   .process-section {
     padding-block: 3rem;
-    background-color: var(--color-gray-100); /* Light gray background */
+    background-color: var(--color-gray-100);
+    /* Light gray background */
   }
 
   .process-section .heading-2 {
-    margin-bottom: 2rem; /* Space below the main heading */
-    text-align: center; /* Center the heading */
+    margin-bottom: 2rem;
+    /* Space below the main heading */
+    text-align: center;
+    /* Center the heading */
     text-wrap: balance;
   }
 
   .process-steps-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 2rem; /* Gap between grid items */
+    grid-template-columns: 1fr 1fr;
+    /* Two equal columns */
+    gap: 2rem;
+    /* Gap between grid items */
   }
 
   .process-step {
-    background-color: var(--color-gray-200); /* White background for the card */
-    border-radius: var(--border-radius-large); /* Use large radius */
-    position: relative; /* Needed for absolute positioning of the badge */
-    padding: 1.5rem; /* Padding inside the card */
-    display: flex; /* Use flexbox for content layout */
-    flex-direction: column; /* Stack image and content vertically */
-    overflow: hidden; /* Ensure image corners respect border-radius */
+    background-color: var(--color-gray-200);
+    /* White background for the card */
+    border-radius: var(--border-radius-large);
+    /* Use large radius */
+    position: relative;
+    /* Needed for absolute positioning of the badge */
+    padding: 1.5rem;
+    /* Padding inside the card */
+    display: flex;
+    /* Use flexbox for content layout */
+    flex-direction: column;
+    /* Stack image and content vertically */
+    overflow: hidden;
+    /* Ensure image corners respect border-radius */
   }
 
   .process-step-number {
     position: absolute;
-    top: 1rem; /* Position relative to the top padding */
-    left: 1rem; /* Position relative to the left padding */
+    top: 1rem;
+    /* Position relative to the top padding */
+    left: 1rem;
+    /* Position relative to the left padding */
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 50%;
@@ -215,46 +244,58 @@
     justify-content: center;
     font-weight: 700;
     font-size: 1rem;
-    z-index: 1; /* Ensure it's above other content if overlapping */
+    z-index: 1;
+    /* Ensure it's above other content if overlapping */
   }
 
   .process-step-image {
-    width: 100%; /* Make image fill the card width */
-    height: auto; /* Maintain aspect ratio */
-    aspect-ratio: 16 / 9; /* Give image a standard aspect ratio */
-    object-fit: cover; /* Cover the area, cropping if needed */
-    border-radius: var(--border-radius-medium); /* Slightly rounded corners for image */
-    margin-bottom: 1rem; /* Space between image and text content */
-    margin-top: 2rem; /* Add space below the number badge */
+    width: 100%;
+    /* Make image fill the card width */
+    height: auto;
+    /* Maintain aspect ratio */
+    aspect-ratio: 16 / 9;
+    /* Give image a standard aspect ratio */
+    object-fit: cover;
+    /* Cover the area, cropping if needed */
+    border-radius: var(--border-radius-medium);
+    /* Slightly rounded corners for image */
+    margin-bottom: 1rem;
+    /* Space between image and text content */
+    margin-top: 2rem;
+    /* Add space below the number badge */
   }
 
   .process-step .heading-3 {
-    margin-bottom: 0.75rem; /* Space below step title */
-    color: var(--dark-text); /* Ensure step titles are dark */
-    font-size: 1.25rem; /* Slightly larger step title */
+    margin-bottom: 0.75rem;
+    /* Space below step title */
+    color: var(--dark-text);
+    /* Ensure step titles are dark */
+    font-size: 1.25rem;
+    /* Slightly larger step title */
   }
 
   .process-step .paragraph {
-    color: var(--color-gray-700); /* Ensure step descriptions are gray */
+    color: var(--color-gray-700);
+    /* Ensure step descriptions are gray */
   }
 
   /* Responsive stacking for process steps */
   @media (max-width: 768px) {
     .process-steps-grid {
-      grid-template-columns: 1fr; /* Stack to single column */
+      grid-template-columns: 1fr;
+      /* Stack to single column */
     }
   }
 
   /* Responsive stacking for signs grid */
   @media (max-width: 768px) {
     .signs-grid {
-      grid-template-columns: 1fr; /* Stack to single column */
+      grid-template-columns: 1fr;
+      /* Stack to single column */
     }
   }
 </style>
 
-<script
-  async
+<script async
   :src="'https://maps.googleapis.com/maps/api/js?key=' + env.GOOGLE_MAPS_API_KEY + '&loading=async&callback=initMap'"
-  webc:keep
-></script>
+  webc:keep></script>

@@ -1,6 +1,6 @@
 ---js
 {
-  layout: "base.webc",
+layout: "base.webc",
 }
 ---
 
@@ -41,29 +41,14 @@
       <ul class="services-grid-list">
         <li webc:for="service of services" class="service-card">
           <div class="service-card-content">
-            <!-- Optional: Icon placeholder -->
             <div aria-hidden="true" @raw="service.core_services.icon"></div>
-            <h3
-              class="heading-4 no-wrap"
-              @text="service.core_services.heading"
-            ></h3>
+            <h3 class="heading-4 no-wrap" @text="service.core_services.heading"></h3>
             <p class="paragraph">Services we provide:</p>
             <div class="service-pills">
-              <span
-                webc:for="list of service.core_services.list"
-                class="service-pill"
-                @text="list"
-              ></span>
+              <span webc:for="list of service.core_services.list" class="service-pill" @text="list"></span>
             </div>
-            <p
-              class="service-card-desc"
-              @text="service.core_services.blurb"
-            ></p>
-            <a
-              class="btn btn-primary"
-              :href="service.slug"
-              @text="service.core_services.heading"
-            ></a>
+            <p class="service-card-desc" @text="service.core_services.blurb"></p>
+            <a class="btn btn-primary" :href="service.slug" @text="service.core_services.heading"></a>
           </div>
         </li>
       </ul>
@@ -76,32 +61,16 @@
       <h2 class="heading-2">Why Choose Radiant 307?</h2>
       <ul class="why-choose-list">
         <li class="why-choose-item">
-          <span @raw="icons.trust" class="icon blue" aria-hidden="true"></span
-          >Vast Experience
+          <span @raw="icons.trust" class="icon blue" aria-hidden="true"></span>Vast Experience
         </li>
         <li class="why-choose-item">
-          <span
-            @raw="icons.experience"
-            class="icon purple"
-            aria-hidden="true"
-          ></span
-          >Licensed &amp; Insured
+          <span @raw="icons.experience" class="icon purple" aria-hidden="true"></span>Licensed &amp; Insured
         </li>
         <li class="why-choose-item">
-          <span
-            @raw="icons.pricing"
-            class="icon green"
-            aria-hidden="true"
-          ></span
-          >Upfront, Honest Pricing
+          <span @raw="icons.pricing" class="icon green" aria-hidden="true"></span>Upfront, Honest Pricing
         </li>
         <li class="why-choose-item">
-          <span
-            @raw="icons.satisfaction"
-            class="icon orange"
-            aria-hidden="true"
-          ></span
-          >Satisfaction Guarantee
+          <span @raw="icons.satisfaction" class="icon orange" aria-hidden="true"></span>Satisfaction Guarantee
         </li>
       </ul>
     </div>
@@ -111,7 +80,7 @@
   <service-area-mention service="Plumbing"></service-area-mention>
 
   <!-- 6. General Call to Action -->
-  <cta-section></cta-section>
+  <cta-section :icons="icons"></cta-section>
 </main>
 
 <!-- Styles: Use global classes and color variables, minimal inline CSS here -->
@@ -119,15 +88,14 @@
   .service-area-mention-section {
     background: white;
   }
+
   .services-header {
     text-align: center;
     margin-block-end: 2rem;
     line-height: 1.2;
-    background-image: linear-gradient(
-      to right,
-      var(--color-blue-violet-700),
-      var(--color-royal-blue-500)
-    );
+    background-image: linear-gradient(to right,
+        var(--color-blue-violet-700),
+        var(--color-royal-blue-500));
     color: var(--gray-color);
     padding-block: 4rem;
   }
@@ -165,9 +133,11 @@
     margin-block-end: 2.5rem;
     padding-block: 3rem;
   }
+
   .services-intro .paragraph {
     font-size: 1.25rem;
   }
+
   .services-listings {
     margin-block-end: 3rem;
   }
@@ -183,7 +153,8 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    align-items: stretch; /* Ensures all cards fill row height */
+    align-items: stretch;
+    /* Ensures all cards fill row height */
   }
 
   .service-card {
@@ -197,8 +168,9 @@
     padding: 2rem 1.5rem;
     transition: box-shadow 0.2s;
   }
+
   .service-card:hover {
-    box-shadow: var(--shadow-medium);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
   }
 
   .service-card-content {
@@ -235,6 +207,7 @@
     margin-inline: auto;
     text-align: center;
   }
+
   .why-choose-list {
     display: flex;
     flex-wrap: wrap;
@@ -244,6 +217,7 @@
     padding: 0;
     margin: 1rem 0 0 0;
   }
+
   .why-choose-item {
     font-size: 1.1rem;
     color: var(--text-color);
@@ -251,28 +225,35 @@
     align-items: center;
     gap: 0.5rem;
   }
+
   .why-choose-item .icon svg {
     vertical-align: middle;
     display: inline-block;
     inline-size: 1.5em;
     block-size: 1.5em;
   }
+
   .icon.blue {
     color: rgb(37 99 235 / 1);
   }
+
   .icon.purple {
     color: rgb(139 22 190 / 1);
   }
+
   .icon.green {
     color: rgb(11 132 111 / 1);
   }
+
   .icon.orange {
     color: rgb(239 108 0 / 1);
   }
+
   .service-area-reminder {
     text-align: center;
     margin-block-end: 2rem;
   }
+
   .services-cta {
     background: var(--primary-color);
     color: var(--button-text-color, #fff);
@@ -283,29 +264,35 @@
     margin-inline: auto;
     margin-block-end: 0;
   }
+
   .services-cta .btn.btn-primary {
     background: var(--button-text-color, #fff);
     color: var(--primary-color);
     margin-left: 1rem;
   }
+
   .link,
   .link-phone {
     color: var(--primary-color);
     text-decoration: underline;
     font-weight: 500;
   }
+
   .link-phone {
     white-space: nowrap;
   }
+
   .no-wrap {
     white-space: nowrap;
   }
+
   .service-pills {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
     margin-block: 0.5rem 1rem;
   }
+
   .service-pill {
     display: inline-block;
     background: var(--color-blue-violet-50, #e6e6fa);
@@ -322,8 +309,6 @@
   }
 </style>
 
-<script
-  async
+<script async
   :src="'https://maps.googleapis.com/maps/api/js?key=' + env.GOOGLE_MAPS_API_KEY + '&loading=async&callback=initMap'"
-  webc:keep
-></script>
+  webc:keep></script>
