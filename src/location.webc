@@ -1,0 +1,268 @@
+---js
+{
+layout: "base.webc",
+pagination: {
+data: "areas_helper",
+size: 1,
+alias: "location"
+},
+permalink: data => {
+// Get the slug from the location data
+const slug = data.location.slug;
+return slug
+},
+eleventyComputed: {
+title: data => `${data.location.title} | Radiant 307`,
+locationTitle: data => data.location.title,
+lat: data => data.location.lat,
+long: data => data.location.long,
+}
+};
+---
+
+<main class="location-main">
+    <!-- 1. Headline -->
+    <header class="location-header">
+        <div class="container">
+            <h1 class="heading-1" @text="`Radiant 307: Serving ${locationTitle}`">
+            </h1>
+            <p>
+                Radiant 307 provides professional plumbing services in <span @text="locationTitle"></span> and
+                surrounding areas. We love working with our local community and are always expanding our service area.
+            </p>
+            <div class="service-buttons">
+                <a href="tel:+13075551234" class="link">Call us Today!</a>
+                <a href="/contact/" class="btn btn-primary">Request a Quote</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 2. Services Offered Section -->
+    <section class="services-offered">
+        <div class="container">
+            <h2 class="heading-2" @text="`Plumbing Services We Offer in ${locationTitle}`"></h2>
+            <p class="services-intro">Radiant 307 is proud to provide comprehensive plumbing services to residents and
+                businesses in <span @text="locationTitle"></span>. Our experienced team is ready to handle any plumbing
+                challenge you may face.</p>
+
+            <div class="services-grid">
+                <div class="service-card" webc:for="service of services">
+                    <div class="service-icon" @html="service.core_services.icon"></div>
+                    <h3 class="service-title"><a @href="service.slug" @text="`${service.title} &rarr;`"></a></h3>
+                    <p @text="service.description.substring(0, 150) + '...'"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <h2 class="heading-2" @text="`Why ${locationTitle} Homeowners Trust Radiant 307`"></h2>
+
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <h3 class="trust-title">Local Expertise</h3>
+                    <p>As a locally owned and operated plumbing company, we understand the unique plumbing challenges
+                        faced by <span @text="locationTitle"></span> homeowners. From hard water issues common in our
+                        region to the specific pipe types found in older homes, our team has the knowledge to address
+                        your plumbing needs effectively.</p>
+                </div>
+
+                <div class="trust-card">
+                    <h3 class="trust-title">Small Local Team</h3>
+                    <p>As a lifelong Cheyenne resident, I know our community inside and out. When you work with Radiant
+                        307, you're working with a neighbor who truly cares about providing quality service to <span
+                            @text="locationTitle"></span>. Our small, dedicated team means you'll always get
+                        personalized attention and consistent service from someone who understands the unique needs of
+                        our local homes and businesses.</p>
+                </div>
+
+                <div class="trust-card">
+                    <h3 class="trust-title">Licensed & Insured</h3>
+                    <p>Radiant 307 is fully insured and more than capable of providing plumbing services in <span
+                            @text="locationTitle"></span>. We've seen all the common that arise in residential plumbing
+                        and have handled every situation for our commercial work. If you've got a need or problem, we've
+                        got you covered.
+                    </p>
+                </div>
+
+                <div class="trust-card">
+                    <h3 class="trust-title">Satisfaction Guarantee</h3>
+                    <p>We stand behind the quality of our work with a 100% satisfaction guarantee. If you're not
+                        completely satisfied with our service, we'll work with you until the issue is resolved. Your
+                        peace of mind is our top priority.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map-section">
+        <div class="container">
+            <h2 class="heading-2" @text="`Serving ${locationTitle}`"></h2>
+            <location-map :@lat="lat" :@long="long"></location-map>
+        </div>
+    </section>
+</main>
+
+<cta-section :icons="icons"></cta-section>
+
+<style>
+    .container {
+        max-width: 90ch;
+    }
+
+    .location-header {
+        line-height: 1.2;
+        background-image: linear-gradient(to right,
+                var(--color-blue-violet-700),
+                var(--color-royal-blue-500));
+        color: var(--gray-color);
+        padding-block: 4rem;
+    }
+
+    .location-header h1 {
+        color: var(--gray-color);
+        text-wrap: balance;
+    }
+
+    .service-buttons {
+        display: flex;
+        gap: 2rem;
+        margin-top: 2rem;
+        align-items: center;
+    }
+
+    .service-buttons .link {
+        background-color: var(--color-blue-violet-50);
+        padding: 1rem 1.5rem;
+        border-radius: 4px;
+        color: var(--color-blue-violet-500);
+        text-decoration: none;
+        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+
+    .service-buttons .link:hover {
+        background-color: var(--color-blue-violet-100);
+        color: var(--color-blue-violet-500);
+    }
+
+    .location-intro {
+        max-width: 70ch;
+        margin-inline: auto;
+        margin-block-end: 2.5rem;
+        padding-block: 3rem;
+    }
+
+    .location-intro .paragraph {
+        font-size: 1.25rem;
+    }
+
+    /* Services Offered Section Styles */
+    .services-offered {
+        padding-block: 4rem;
+        background-color: var(--color-gray-50);
+    }
+
+    .services-intro {
+        margin-inline: auto;
+        margin-block-end: 3rem;
+        font-size: 1.125rem;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .service-card {
+        background-color: white;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+    .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-icon {
+        margin-bottom: 1rem;
+        color: var(--color-blue-violet-700);
+    }
+
+    .service-title {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+    }
+
+    .service-title a {
+        color: var(--color-blue-violet-700);
+        text-decoration: none;
+        transition: color 0.2s ease-in-out;
+    }
+
+    .service-title a:hover {
+        color: var(--color-royal-blue-500);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .service-card p {
+        margin: 0;
+        color: var(--color-gray-700);
+        line-height: 1.5;
+    }
+
+    /* Why Choose Us Section Styles */
+    .why-choose-us {
+        background-image: linear-gradient(to right,
+                var(--color-flush-orange-500),
+                var(--color-flush-orange-400));
+        padding-block: 4rem;
+    }
+
+    .trust-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .trust-card {
+        background-color: var(--color-gray-50);
+        border-radius: 8px;
+        padding: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trust-title {
+        color: var(--color-blue-violet-700);
+        margin-top: 0;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .trust-card p {
+        margin: 0;
+        color: var(--color-gray-700);
+        line-height: 1.6;
+        font-size: 1.125rem;
+    }
+
+    .map-section {
+        padding-block: 4rem;
+        background-color: var(--color-gray-300);
+        text-align: right;
+    }
+</style>
+
+<script async
+    :src="'https://maps.googleapis.com/maps/api/js?key=' + env.GOOGLE_MAPS_API_KEY + '&loading=async&callback=initMap'"
+    webc:keep></script>

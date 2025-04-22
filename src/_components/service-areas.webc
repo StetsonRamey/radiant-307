@@ -1,6 +1,6 @@
 <!-- src/_components/services-areas.webc -->
 <section class="how-we-help-section">
-  <div class="container">
+  <div class="container flow">
     <div class="section-title">
       <h2>Serving Cheyenne, WY and Surrounding Areas</h2>
     </div>
@@ -8,66 +8,52 @@
     <!-- Google Map Placeholder -->
     <div id="maps"></div>
 
-    <div class="help-grid">
-      <!-- Card 1: Downtown Cheyenne -->
-      <div class="help-card">
-        <div class="card-icon-container">
-          <img
-            src="https://placehold.co/44x44/A5B4FC/4338CA?text=🏙️"
-            alt="Downtown Icon"
-          />
+    <div class="service-areas-list">
+      <div class="wrapper">
+        <div class="header-with-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-house">
+            <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
+            <path
+              d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
+            </path>
+          </svg>
+          <h6>Cheyenne Neighborhoods</h6>
         </div>
-        <h6>Downtown Cheyenne</h6>
-        <p>Providing full plumbing services to the heart of the city.</p>
-        <!-- Optional Link -->
-        <!-- <a href="/areas/downtown" class="card-link">Learn More &rarr;</a> -->
+        <ul>
+          <li webc:for="(hood, name) in areas['Cheyenne Neighborhoods']">
+            <a :href="name.slug" class="card-link" @text="hood"></a>
+          </li>
+        </ul>
       </div>
-
-      <!-- Card 2: The Point -->
-      <div class="help-card">
-        <div class="card-icon-container">
-          <img
-            src="https://placehold.co/44x44/FBCFE8/9D174D?text=📍"
-            alt="The Point Icon"
-          />
+    </div>
+    <div class="service-areas-list">
+      <div class="wrapper">
+        <div class="header-with-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-map-pinned">
+            <path d="M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0">
+            </path>
+            <circle cx="12" cy="8" r="2"></circle>
+            <path
+              d="M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712">
+            </path>
+          </svg>
+          <h6>Nearby Cities</h6>
         </div>
-        <h6>The Point Area</h6>
-        <p>
-          Expert plumbing repairs and installations in The Point neighborhood.
-        </p>
-        <!-- Optional Link -->
-        <!-- <a href="/areas/the-point" class="card-link">Learn More &rarr;</a> -->
-      </div>
-
-      <!-- Card 3: South Cheyenne -->
-      <div class="help-card">
-        <div class="card-icon-container">
-          <img
-            src="https://placehold.co/44x44/BFDBFE/1E40AF?text=🧭"
-            alt="South Cheyenne Icon"
-          />
-        </div>
-        <h6>South Cheyenne</h6>
-        <p>
-          Covering all plumbing needs for residents and businesses in South
-          Cheyenne.
-        </p>
-        <!-- Optional Link -->
-        <!-- <a href="/areas/south-cheyenne" class="card-link">Learn More &rarr;</a> -->
+        <ul>
+          <li webc:for="(hood, name) in areas['Nearby Cities']">
+            <a :href="name.slug" class="card-link" @text="hood"></a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
   <!-- SVG Curve -->
-  <svg
-    viewBox="0 0 1024 180"
-    class="section-curve"
-    preserveAspectRatio="none"
-    aria-hidden="true"
-  >
-    <path
-      d="M0,180 L1024,180 L1024,0 C768,200 256,180 0,0 L0,180 Z"
-      fill="rgb(27, 37, 43)"
-    ></path>
+  <svg viewBox="0 0 1024 180" class="section-curve" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,180 L1024,180 L1024,0 C768,200 256,180 0,0 L0,180 Z" fill="rgb(27, 37, 43)"></path>
     <!-- Match testimonial background -->
   </svg>
 </section>
@@ -78,19 +64,25 @@
     width: 100%;
     margin-block-end: 3rem;
   }
+
   .how-we-help-section {
     position: relative;
     /* Gradient like Cloudflare */
     background-image: linear-gradient(to right, var(--color-flush-orange-500), var(--color-yellow-orange-300));
-    color: var(--dark-text); /* Dark text for light background */
-    padding-bottom: 180px; /* Extra space for the curve */
-    z-index: 10; /* Ensure it's above default content, but below potential fixed headers */
+    color: var(--dark-text);
+    /* Dark text for light background */
+    padding-bottom: 180px;
+    /* Extra space for the curve */
+    z-index: 10;
+    /* Ensure it's above default content, but below potential fixed headers */
   }
 
   .how-we-help-section .container {
     padding: 0 1rem;
-    position: relative; /* Needed for z-index stacking context */
-    z-index: 2; /* Container content above the curve */
+    position: relative;
+    /* Needed for z-index stacking context */
+    z-index: 2;
+    /* Container content above the curve */
   }
 
   .section-title {
@@ -99,7 +91,8 @@
   }
 
   .section-title h2 {
-    font-size: 2.25rem; /* ~h2 */
+    font-size: 2.25rem;
+    /* ~h2 */
     font-weight: 600;
     color: var(--dark-text);
   }
@@ -107,16 +100,20 @@
   /* Google Map Styling */
   .map-container {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
     max-width: 100%;
     background: var(--light-color);
-    margin-bottom: 3rem; /* Space between map and cards */
-    border-radius: 8px; /* Optional rounded corners */
+    margin-bottom: 3rem;
+    /* Space between map and cards */
+    border-radius: 8px;
+    /* Optional rounded corners */
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
       0 2px 4px -1px rgba(0, 0, 0, 0.06);
   }
+
   .map-iframe {
     position: absolute;
     top: 0;
@@ -124,6 +121,7 @@
     width: 100%;
     height: 100%;
   }
+
   .map-placeholder-text {
     position: absolute;
     top: 50%;
@@ -134,111 +132,105 @@
     color: var(--dark-text);
     font-size: 0.9rem;
   }
+
   /* Hide placeholder text once the iframe loads */
-  .map-iframe:not([src=""]) + .map-placeholder-text {
+  .map-iframe:not([src=""])+.map-placeholder-text {
     display: none;
   }
 
-  .help-grid {
-    display: grid;
-    grid-template-columns: 1fr; /* Mobile default: 1 column */
-    gap: 1.5rem;
-  }
-
-  .help-card {
-    background-color: white;
-    border: 1px solid var(--light-color); /* border-gray-200 */
-    border-radius: 0.5rem; /* rounded-lg */
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-      0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow */
-    padding: 1.5rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    transition: box-shadow 0.3s ease;
-  }
-
-  .help-card:hover {
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-      0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
-  }
-
-  .card-icon-container {
-    margin-bottom: 1rem;
-  }
-  .card-icon-container img {
-    width: 44px;
-    height: 44px;
-    margin: 0 auto; /* Center icon */
-    border-radius: 8px; /* Slightly rounded icon background */
-  }
-
-  .help-card h6 {
-    font-size: 1.125rem; /* ~h6 */
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-  }
-
-  .help-card p {
-    color: var(--color-gray-600); /* gray-600 */
-    line-height: 1.6;
-    flex-grow: 1; /* Make p take available space to push link down */
-    margin-bottom: 1rem;
-  }
-
   .card-link {
-    color: var(--color-flush-orange-500); /* Tangerine */
+    color: var(--color-flush-orange-200);
+    /* Tangerine */
     font-weight: 600;
     text-decoration: none;
-    margin-top: auto; /* Push link to bottom */
+    margin-top: auto;
+    /* Push link to bottom */
   }
+
   .card-link:hover {
     text-decoration: underline;
   }
 
-  /* Responsive Grid */
-  @media (min-width: 768px) {
-    /* md breakpoint */
-    .help-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    /* Center the single card if there's an odd number on tablet */
-    .help-card:last-child:nth-child(odd) {
-      grid-column: span 2;
-      justify-self: center;
-      max-width: calc(50% - 0.75rem); /* Adjust width to feel centered */
-    }
-  }
-
-  @media (min-width: 1024px) {
-    /* lg breakpoint */
-    .help-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    /* Remove tablet centering override */
-    .help-card:last-child:nth-child(odd) {
-      grid-column: auto;
-      justify-self: auto;
-      max-width: none;
-    }
-    .how-we-help-section {
-      padding-bottom: 240px; /* Match Cloudflare's larger padding on desktop */
-    }
-  }
 
   /* SVG Curve Styling */
   .section-curve {
     position: absolute;
-    bottom: -1px; /* Sit just below the content */
+    bottom: -1px;
+    /* Sit just below the content */
     left: 0;
     right: 0;
     width: 100%;
-    height: 150px; /* Match viewBox height */
-    z-index: 1; /* Below container content, above next section's potential background */
+    height: 150px;
+    /* Match viewBox height */
+    z-index: 1;
+    /* Below container content, above next section's potential background */
   }
+
   .section-curve path {
     /* Fill color should match the background of the *next* section */
-    fill: var(--color-gray-900); /* Default to dark like testimonials */
+    fill: var(--color-gray-900);
+    /* Default to dark like testimonials */
+  }
+
+  .service-areas-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .service-areas-list {
+    background-color: var(--color-gray-900);
+    padding: 2rem;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .header-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .wrapper h6 {
+    color: var(--color-blue-violet-100);
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .wrapper svg {
+    color: var(--color-blue-violet-100);
+  }
+
+  .wrapper ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .wrapper .card-link {
+    display: block;
+    color: var(--light-color);
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    border-radius: 4px;
+    background-color: var(--color-gray-800);
+    transition: all 0.2s ease;
+  }
+
+  .wrapper .card-link:hover {
+    background-color: var(--color-gray-700);
+    transform: translateY(-1px);
+    color: var(--color-yellow-orange-400);
   }
 </style>
 

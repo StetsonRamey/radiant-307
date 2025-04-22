@@ -7,7 +7,7 @@ layout: "base.webc"
   <services-overview :@services="services"></services-overview>
 </section>
 <why-us></why-us>
-<service-areas></service-areas>
+<service-areas :areas="areas"></service-areas>
 <testimonials></testimonials>
 <about-us></about-us>
 <cta-section :icons="icons"></cta-section>

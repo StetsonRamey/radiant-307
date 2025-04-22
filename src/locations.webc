@@ -1,7 +1,5 @@
----js
-{
-layout: "base.webc",
-}
+---
+layout: base.webc
 ---
 
 <!-- location Page Main Content -->
@@ -10,7 +8,7 @@ layout: "base.webc",
     <header class="locations-header">
         <div class="container">
             <h1 class="heading-1">
-                Radiant 307 Services Areas &nbsp; Cheyenne, WY and Surrounding Areas
+                Radiant 307 Service Areas &nbsp; Cheyenne, WY and Surrounding Areas
             </h1>
             <p>
                 Professional plumbing locations for residential and commercial projects.
@@ -24,7 +22,7 @@ layout: "base.webc",
 </main>
 
 <section class="locations-intro">
-    <p class="paragraph">
+    <p class="paragraph container">
         Radiant 307 Plumbing proudly serves Cheyenne and the surrounding Wyoming
         communities with reliable plumbing and heating services. Our service area
         spans across Laramie County and into parts of northern Colorado, ensuring

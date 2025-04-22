@@ -50,22 +50,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Content for "Residential" Tab (hidden) -->
-      <div class="tab-content-panel">
-        <!-- Add content similar to above for Residential -->
-        <p style="color: var(--secondary-color)">
-          Residential Services Content Here...
-        </p>
-      </div>
-
-      <!-- Content for "Commercial" Tab (hidden) -->
-      <div class="tab-content-panel">
-        <!-- Add content similar to above for Commercial -->
-        <p style="color: var(--secondary-color)">
-          Commercial Services Content Here...
-        </p>
-      </div>
     </div>
   </div>
 </section>
@@ -79,6 +63,7 @@
   /* Section Styling */
   .customer-tabs-section {
     padding-block-start: 10rem;
+    margin-block-end: -10rem;
     background-image: linear-gradient(
       to right,
       var(--color-flush-orange-500),

@@ -1,60 +1,186 @@
 {
     "Cheyenne Neighborhoods": {
         "Saddle Ridge": {
-            "slug": "/locations/saddle-ridge/"
+            "slug": "/locations/saddle-ridge/",
+            "title": "Saddle Ridge",
+            "location": [
+                {
+                    "lat": 41.15425,
+                    "long": -104.72141
+                }
+            ]
         },
         "Thomas Heights": {
-            "slug": "/locations/thomas-heights/"
+            "slug": "/locations/thomas-heights/",
+            "title": "Thomas Heights",
+            "location": [
+                {
+                    "lat": 41.16874,
+                    "long": -104.76155
+                }
+            ]
         },
         "Dakota Crossing": {
-            "slug": "/locations/dakota-crossing/"
+            "slug": "/locations/dakota-crossing/",
+            "title": "Dakota Crossing",
+            "location": [
+                {
+                    "lat": 41.15071,
+                    "long": -104.7397
+                }
+            ]
         },
         "The Pointe": {
-            "slug": "/locations/the-pointe/"
+            "slug": "/locations/the-pointe/",
+            "title": "The Pointe",
+            "location": [
+                {
+                    "lat": 41.18565,
+                    "long": -104.80968
+                }
+            ]
         },
         "Sun Valley": {
-            "slug": "/locations/sun-valley/"
+            "slug": "/locations/sun-valley/",
+            "title": "Sun Valley",
+            "location": [
+                {
+                    "lat": 41.14001,
+                    "long": -104.74684
+                }
+            ]
         },
         "North Star": {
-            "slug": "/locations/north-star/"
+            "slug": "/locations/north-star/",
+            "title": "North Star",
+            "location": [
+                {
+                    "lat": 41.23436,
+                    "long": -104.81255
+                }
+            ]
         },
         "Orchard Valley": {
-            "slug": "/locations/orchard-valley/"
+            "slug": "/locations/orchard-valley/",
+            "title": "Orchard Valley",
+            "location": [
+                {
+                    "lat": 41.09862,
+                    "long": -104.81036
+                }
+            ]
         },
         "Mustang Ridge": {
-            "slug": "/locations/mustang-ridge/"
+            "slug": "/locations/mustang-ridge/",
+            "title": "Mustang Ridge",
+            "location": [
+                {
+                    "lat": 41.18077,
+                    "long": -104.78449
+                }
+            ]
         },
         "Buffalo Ridge": {
-            "slug": "/locations/buffalo-ridge/"
+            "slug": "/locations/buffalo-ridge/",
+            "title": "Buffalo Ridge",
+            "location": [
+                {
+                    "lat": 41.16662,
+                    "long": -104.77681
+                }
+            ]
         },
         "Monterey Heights": {
-            "slug": "/locations/monterey-heights/"
+            "slug": "/locations/monterey-heights/",
+            "title": "Monterey Heights",
+            "location": [
+                {
+                    "lat": 41.17851,
+                    "long": -104.82107
+                }
+            ]
         },
         "Ranchettes": {
-            "slug": "/locations/ranchettes/"
+            "slug": "/locations/ranchettes/",
+            "title": "Ranchettes",
+            "location": [
+                {
+                    "lat": 41.23773,
+                    "long": -104.75572
+                }
+            ]
         },
         "Rocking Star": {
-            "slug": "/locations/rocking-star/"
+            "slug": "/locations/rocking-star/",
+            "title": "Rocking Star",
+            "location": [
+                {
+                    "lat": 41.24108,
+                    "long": -105.00913
+                }
+            ]
         },
         "Western Hills": {
-            "slug": "/locations/western-hills/"
+            "slug": "/locations/western-hills/",
+            "title": "Western Hills",
+            "location": [
+                {
+                    "lat": 41.18425,
+                    "long": -104.8429
+                }
+            ]
         },
         "Winchester Hills": {
-            "slug": "/locations/winchester-hills/"
+            "slug": "/locations/winchester-hills/",
+            "title": "Winchester Hills",
+            "location": [
+                {
+                    "lat": 41.05922,
+                    "long": -104.81427
+                }
+            ]
         },
         "Sweetgrass": {
-            "slug": "/locations/sweetgrass/"
+            "slug": "/locations/sweetgrass/",
+            "title": "Sweetgrass",
+            "location": [
+                {
+                    "lat": 41.09892,
+                    "long": -104.7815
+                }
+            ]
         }
     },
     "Nearby Cities": {
         "Burns": {
-            "slug": "/locations/burns/"
+            "slug": "/locations/burns/",
+            "title": "Burns",
+            "location": [
+                {
+                    "lat": 41.1918,
+                    "long": -104.35846
+                }
+            ]
         },
         "Hillsdale": {
-            "slug": "/locations/hillsdale/"
+            "slug": "/locations/hillsdale/",
+            "title": "Hillsdale",
+            "location": [
+                {
+                    "lat": 41.21157,
+                    "long": -104.4784
+                }
+            ]
         },
         "Pine Bluffs": {
-            "slug": "/locations/pine-bluffs/"
+            "slug": "/locations/pine-bluffs/",
+            "title": "Pine Bluffs",
+            "location": [
+                {
+                    "lat": 41.17991,
+                    "long": -104.06544
+                }
+            ]
         }
     }
 }

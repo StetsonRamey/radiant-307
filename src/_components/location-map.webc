@@ -1,0 +1,78 @@
+<div class="map-container">
+    <div id="location-map" class="map" data-lat={lat} data-long={long}></div>
+</div>
+
+<script webc:type="js">
+    // Store the initialization data
+    mapInitData = {
+        lat: this.lat,
+        lng: this.long,
+        radius: .5
+    };
+
+    // trickery here to write the data to the window object
+    `
+<script>
+    window.mapInitData = ${JSON.stringify(mapInitData)};
+<\/script>
+`
+</script>
+
+<script webc:is="script" webc:keep>
+    console.log('mapInitData', window.mapInitData);
+    const mapElement = document.getElementById("location-map");
+    // Define initMap in the global scope
+    window.initMap = async function () {
+        const data = window.mapInitData;
+        const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary("marker");
+        const centerCoords = { lat: Number(mapInitData.lat), lng: Number(mapInitData.lng) };
+        console.log('centerCoords', centerCoords);
+        const radiusInMeters = data.radius * 1609.34; // Convert miles to meters
+
+        // Create the Map
+        const map = new google.maps.Map(document.getElementById("location-map"), {
+            zoom: 14.5,
+            center: centerCoords,
+            mapId: '334a8417d32c04e8'
+        });
+
+        // Draw the Radius Circle
+        const serviceAreaCircle = new google.maps.Circle({
+            strokeColor: "#f6821f",
+            strokeOpacity: 0.8,
+            strokeWeight: 1,
+            fillColor: "#fbad41",
+            fillOpacity: 0.25,
+            map: map,
+            center: centerCoords,
+            radius: radiusInMeters,
+        });
+
+        // Add a marker for the location
+        const pin = new PinElement({
+            background: '#f6821f',
+            borderColor: '#f6821f',
+            glyphColor: '#eee',
+        });
+        const marker = new AdvancedMarkerElement({
+            position: centerCoords,
+            map: map,
+            content: pin.element,
+            zIndex: 1
+        });
+    };
+</script>
+
+<style>
+    .map-container {
+        width: 100%;
+        margin-top: 2rem;
+        border-radius: var(--border-radius-small);
+        overflow: hidden;
+    }
+
+    .map {
+        width: 100%;
+        height: 400px;
+    }
+</style>
