@@ -228,6 +228,18 @@ img {
 }
 
 /* === FORMS === */
+:is(input, textarea, summary, select) {
+  --outline-size: max(2px, 0.1em);
+  --outline-style: dashed;
+  --outline-color: var(--color-blue-violet-500);
+  --outline-offset: 4px;
+}
+
+:is(input, textarea, summary, select):focus {
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset);
+}
+
 .form-group {
   margin-bottom: 1rem;
   /* Space between form groups */
@@ -235,38 +247,9 @@ img {
 
 .form-group label {
   display: block;
-  margin-bottom: 0.5rem;
   /* Space between label and input */
   font-weight: 500;
   color: var(--dark-text);
-}
-
-.form-input,
-.form-textarea {
-  display: block;
-  width: 100%;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: var(--dark-text);
-  background-color: var(--light-color);
-  background-clip: padding-box;
-  border: 1px solid var(--color-gray-300);
-  /* Use a gray border */
-  border-radius: 4px;
-  /* Match button radius */
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.form-input:focus,
-.form-textarea:focus {
-  color: var(--dark-text);
-  background-color: var(--light-color);
-  border-color: var(--primary-color);
-  /* Highlight with primary color */
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(var(--primary-color), 0.25);
-  /* Example focus shadow */
 }
 
 .form-textarea {

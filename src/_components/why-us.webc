@@ -13,38 +13,22 @@
         <div class="two-column-layout">
           <!-- Left Column -->
           <div class="column left-column">
-            <h3 class="heading-3">24/7 Emergency Response</h3>
-            <p class="paragraph">
-              Fast, reliable help when you need it most. Burst pipes, major
-              leaks, no heat - we're ready day or night.
-            </p>
+            <h3 class="heading-3">Quick Response</h3>
+            <p class="paragraph">If we don't answer when you call, leave me a message and I'll get right back to you.</p>
             <div class="button-container">
-              <a href="tel:3071234567" class="btn btn-primary"
-                >Call Now (Emergency)</a
+              <a :href="'tel:' + site.phone" class="btn btn-primary"
+                >Call Now</a
               >
-              <a href="/services/emergency" class="learn-more-link">
-                Learn More
-                <span class="link-arrow">→</span>
-              </a>
+              <a href="/services/" class="learn-more-link">Check out our services</a>
             </div>
           </div>
           <!-- Right Column (Testimonial) -->
           <div class="column right-column">
             <div class="testimonial">
-              <img
-                src="https://placehold.co/100x40?text=Client+Logo"
-                alt="Client Logo"
-                class="testimonial-logo"
-              />
-              <p class="testimonial-quote paragraph">
-                "Radiant 307 saved us during a late-night pipe burst! Fast
-                response and professional service. Highly recommend!"
-              </p>
+              <p class="testimonial-quote paragraph">Remington is really great.  He was polite, professional, and got the job done quickly.  I would highly recommend him.</p>
               <div class="testimonial-attribution">
-                <p class="attribution-name text-primary">John D.</p>
-                <p class="attribution-title paragraph text-gray-600">
-                  Cheyenne Homeowner
-                </p>
+                <p class="attribution-name text-primary">Stetson R.</p>
+                <p class="attribution-title paragraph text-gray-600">Remington's Brother</p>
               </div>
             </div>
           </div>

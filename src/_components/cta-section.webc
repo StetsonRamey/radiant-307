@@ -7,26 +7,17 @@
         Don't wait for a small leak to become a big disaster. Contact Radiant 307 Plumbing today for fast, reliable
         service. Call us directly or fill out the form to schedule an appointment.
       </p>
-      <a href="tel:307-XXX-XXXX" class="cta-phone">Call Now: (307) XXX-XXXX</a>
+      <a :href="'tel:' + site.phone" class="cta-phone">Call Now: <span @text="site.phone"></span></a>
       <div class="cta-info">
         <span @raw="icons.email"></span>
-        <div>
-          <h3>Email</h3>
-          <p>info@radiant307plumbing.com</p>
-        </div>
-      </div>
-      <div class="cta-info">
-        <span @raw="icons.localtion"></span>
-        <div>
-          <h3>Address</h3>
-          <p>123 Main St, Anytown, USA</p>
-        </div>
+        <h3>Email</h3>
+        <a :href="'mailto:' + site.email" @text="site.email"></a>
       </div>
       <div class="cta-info">
         <span @raw="icons.hours"></span>
         <div>
           <h3>Hours</h3>
-          <p>Mon - Fri: 8:00 AM - 5:00 PM</p>
+          <p @text="site.hours"></p>
         </div>
       </div>
       <!-- Replace XXX-XXXX with actual number -->

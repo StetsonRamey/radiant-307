@@ -2,16 +2,19 @@
 <footer class="footer-section">
   <div class="container footer-grid">
     <!-- Column 1: Business Info -->
-    <div class="footer-col business-info">
+    <div class="footer-col business-info flow" style="--flow-space: .5em;">
       <img src="https://placehold.co/150x50/ffffff/1B252B?text=Radiant307+Logo" alt="Radiant 307 Plumbing Logo"
         class="footer-logo" />
-      <p class="business-name">Radiant 307 Plumbing</p>
-      <p>123 Main Street<br />Cheyenne, WY 82001</p>
+      <p class="business-name" @text="site.name"></p>
+      <div class="address-wrap">
+        <p @text="site.address"></p>
+        <p @text="site.city + ', ' + site.state + ' ' + site.zip"></p>
+      </div>
       <p>
-        <a href="tel:307-555-1212" class="footer-link">(307) 555-1212</a>
+        <a :href="tel:site.phone" class="footer-link" @text="site.phone"></a>
       </p>
       <p>
-        <a href="mailto:contact@radiant307plumbing.com" class="footer-link">contact@radiant307plumbing.com</a>
+        <a :href="mailto:site.email" class="footer-link" @text="site.email"></a>
       </p>
       <!-- Optional: Add social media icons here -->
     </div>
@@ -92,6 +95,7 @@
     padding-bottom: 3rem;
   }
 
+
   @media (min-width: 768px) {
 
     /* Tablet: two columns */
@@ -111,11 +115,6 @@
     }
   }
 
-  .business-info p {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    margin-bottom: 0.75rem;
-  }
 
   .footer-logo {
     max-width: 180px;
@@ -218,4 +217,5 @@
     color: rgb(156, 163, 175);
     margin: 0;
   }
+
 </style>

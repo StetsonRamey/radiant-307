@@ -11,7 +11,7 @@
         <path d="M14.05 2a9 9 0 0 1 8 7.94"></path>
         <path d="M14.05 6A5 5 0 0 1 18 10"></path>
       </svg>
-      <a href="tel:3071234567">(307) 123-4567</a>
+      <a :href="'tel:' + site.phone" @text="site.phone"></a>
     </div>
     <div class="contact-item">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -20,7 +20,7 @@
         <circle cx="12" cy="12" r="10"></circle>
         <polyline points="12 6 12 12 16 14"></polyline>
       </svg>
-      <a>24/7 Emergency Service</a>
+      <a @text="site.hours"></a>
     </div>
   </div>
 </div>
@@ -38,7 +38,7 @@
       </div>
     </div>
     <div class="hero-image">
-      <img src="https://placehold.co/600x400" alt="Plumbing services" width="800" height="600" />
+      <img src="/assets/images/hero.jpeg" alt="Plumbing services" width="800" height="600" />
     </div>
   </div>
 </section>

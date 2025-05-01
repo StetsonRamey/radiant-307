@@ -104,7 +104,7 @@ long: data => data.location.long,
     </section>
 </main>
 
-<cta-section :icons="icons"></cta-section>
+<cta-section :icons="icons" :site="site"></cta-section>
 
 <style>
     .container {

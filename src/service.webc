@@ -75,7 +75,7 @@ description: data => data.service["description"]
 <testimonials></testimonials>
 <other-services :services="services.filter(s => s.slug !== service.slug)"></other-services>
 <service-area-mention :service="service"></service-area-mention>
-<cta-section :icons="icons"></cta-section>
+<cta-section :icons="icons" :site="site"></cta-section>
 <!-- Rest of your service page content will go here -->
 <!--
 <h1 @text="service.h1">Default</h1>

@@ -80,7 +80,7 @@ layout: "base.webc",
   <service-area-mention service="Plumbing"></service-area-mention>
 
   <!-- 6. General Call to Action -->
-  <cta-section :icons="icons"></cta-section>
+  <cta-section :icons="icons" :site="site"></cta-section>
 </main>
 
 <!-- Styles: Use global classes and color variables, minimal inline CSS here -->

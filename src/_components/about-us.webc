@@ -3,18 +3,12 @@
   <div class="container about-grid">
     <div class="about-text">
       <h2>About Radiant 307 Plumbing</h2>
-      <p>
-        Founded on principles of honesty, reliability, and quality craftsmanship, Radiant 307 Plumbing has been serving the Cheyenne community for over [Number] years. We are a family-owned business dedicated to providing exceptional plumbing solutions for both residential and commercial clients.
-      </p>
-      <p>
-        Our team of licensed and experienced plumbers is committed to resolving your plumbing issues efficiently and effectively, from minor repairs to major installations. We pride ourselves on transparent pricing, timely service, and leaving your space clean.
-      </p>
-      <!-- Optional: Add a button/link -->
-      <!-- <a href="/about" class="btn-primary">Learn More About Us</a> -->
+      <p>👋 That's me Remington, the owner of Radiant 307 Plumbing. I've been in the plumbing business for over 10 years and I'm dedicated to providing exceptional plumbing solutions for both residential and commercial clients.</p>
+      <p>If you give us a call, you're going to talk to me.  It will be me who comes out to take a look at your plumbing project or plumbing problem, and it will be me who does the work.  There isn't anything I can't install or repair, and I'm excited to work with you on your project.</p>
     </div>
     <div class="about-image-container">
       <img
-        src="https://placehold.co/600x800/cccccc/969696?text=Our+Team"
+        :src="image"
         alt="Radiant 307 Plumbing Team or Van"
         class="about-image"
       />

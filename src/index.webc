@@ -2,15 +2,15 @@
 layout: "base.webc"
 ---
 
-<hero-section></hero-section>
+<hero-section :site="site"></hero-section>
 <section class="services-overview">
   <services-overview :@services="services"></services-overview>
 </section>
-<why-us></why-us>
+<why-us :site="site"></why-us>
 <service-areas :areas="areas"></service-areas>
 <testimonials></testimonials>
-<about-us></about-us>
-<cta-section :icons="icons"></cta-section>
+<about-us image="assets/images/about.jpeg"></about-us>
+<cta-section :icons="icons" :site="site"></cta-section>
 
 <script async
   :src="'https://maps.googleapis.com/maps/api/js?key=' + env.GOOGLE_MAPS_API_KEY + '&loading=async&callback=initMap'"

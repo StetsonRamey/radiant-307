@@ -98,7 +98,7 @@ layout: base.webc
     </div>
 </section>
 
-<cta-section :icons="icons"></cta-section>
+<cta-section :icons="icons" :site="site"></cta-section>
 
 <style>
     .locations-header {
