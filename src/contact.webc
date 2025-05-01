@@ -286,7 +286,7 @@ layout: base.webc
         background-color: var(--color-primary-700);
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 992px) {
         .contact-grid {
             grid-template-columns: 1fr;
             gap: 2rem;

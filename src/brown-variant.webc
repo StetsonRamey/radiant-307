@@ -1,0 +1,82 @@
+---
+layout: "base.webc"
+---
+
+<div class="brown-variant-page">
+  <hero-section :site="site"></hero-section>
+  <section class="services-overview">
+    <services-overview :@services="services"></services-overview>
+  </section>
+  <why-us :site="site"></why-us>
+  <service-areas :areas="areas"></service-areas>
+  <testimonials></testimonials>
+  <about-us image="/assets/images/about.jpeg"></about-us>
+  <cta-section :icons="icons" :site="site"></cta-section>
+</div>
+
+<script async
+  :src="'https://maps.googleapis.com/maps/api/js?key=' + env.GOOGLE_MAPS_API_KEY + '&loading=async&callback=initMap'"
+  webc:keep></script>
+
+<style>
+  .services-overview {
+    padding: 5rem 1rem 15rem 1rem;
+    background-color: var(--light-color);
+    /* Light background */
+  }
+
+  .services-overview .container {
+    text-align: center;
+  }
+
+  .services-overview .heading-2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #111827;
+  }
+</style>
+
+<style>
+  /* Page-specific overrides will go here */
+  .brown-variant-page .hero-section {
+    background-image: linear-gradient(to right, #28140a, #3a2010);
+  }
+
+  .brown-variant-page .top-banner {
+    background-color: #28140a;
+  }
+  .brown-variant-page .hero-section .btn.btn-primary {
+    background-color: #ffc425;
+    color: #28140a;
+  }
+
+  .brown-variant-page .hero-section .btn.btn-secondary {
+    background-color: #F6F1CD;
+    color: #28140a;
+  }
+
+
+  .brown-variant-page .customer-tabs-section,
+  .brown-variant-page .how-we-help-section {
+    background-image: none;
+    background-color: #F6F1CD;
+  }
+
+  .brown-variant-page .customer-tabs-section .btn.btn-primary {
+    background-color: #28140a;
+    color: #ffc425;
+  }
+
+  .brown-variant-page .customer-tabs-section .btn.btn-primary:hover {
+    background-color: #3a2010;
+  }
+
+  .brown-variant-page .cta-section {
+    background-image: none;
+    background-color: #28140a;
+  }
+  .brown-variant-page .cta-section .btn-submit {
+    background-color: #ffc425;
+    color: #28140a;
+  }
+</style>

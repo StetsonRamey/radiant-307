@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title @text="title">
-      Radiant 307 Plumbing | Plumbing Services in Cheyenne, Wyoming
-    </title>
-    <link rel="stylesheet" href="/css/styles.css" webc:keep />
-    <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep />
-    <script :src="getBundleFileUrl('js')" webc:keep></script>
-  </head>
-  <body>
-    <main @raw="content"></main>
-    <footer-section :services="services" :areas="areas" :site="site"></footer-section>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title @text="title">
+    Radiant 307 Plumbing | Plumbing Services in Cheyenne, Wyoming
+  </title>
+  <link rel="stylesheet" href="/css/styles.css" webc:keep />
+  <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep />
+  <script :src="getBundleFileUrl('js')" webc:keep></script>
+</head>
+
+<body>
+  <main @raw="content"></main>
+  <footer-section :services="services" :areas="areas" :site="site"></footer-section>
+</body>
+
 </html>

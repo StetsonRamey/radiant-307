@@ -34,7 +34,7 @@
       </p>
       <div class="hero-buttons">
         <a href="tel:3071234567" class="btn btn-primary">Call Now</a>
-        <a href="/estimate" class="btn btn-secondary">Free Estimate</a>
+        <a href="/contact" class="btn btn-secondary">Free Estimate</a>
       </div>
     </div>
     <div class="hero-image">

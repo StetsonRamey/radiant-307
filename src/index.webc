@@ -9,7 +9,7 @@ layout: "base.webc"
 <why-us :site="site"></why-us>
 <service-areas :areas="areas"></service-areas>
 <testimonials></testimonials>
-<about-us image="assets/images/about.jpeg"></about-us>
+<about-us image="/assets/images/about.jpeg"></about-us>
 <cta-section :icons="icons" :site="site"></cta-section>
 
 <script async
