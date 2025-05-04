@@ -13,19 +13,14 @@
       </div>
     </div>
     <div class="hero-image">
-      <img src="/assets/images/hero.jpeg" alt="Plumbing services" width="800" height="600" />
+      <img src="/assets/images/hero.jpeg" alt="An older model boiler system with storage tanks for domestic hot water and in floor radiant heating" width="800" height="600" />
     </div>
   </div>
 </section>
 
 <style webc:scoped>
   .hero-section {
-    /* Updated gradient using CSS variables */
-    /* background-image: linear-gradient(to right, var(--saddle-brown), var(--desert-sand-dark)); */
-    /* New, less extreme gradient */
-    background-image: linear-gradient(to right,
-        var(--color-primary-950),
-        var(--color-primary-800));
+    background-image: var(--hero-gradient);
     color: var(--color-glare-500);
     width: 100%;
     padding: 2rem 1rem;

@@ -24,22 +24,26 @@
         {
           "title": "Thorough Diagnosis & Consultation",
           "description": "We start with a comprehensive inspection of your boiler system to accurately diagnose the issue or assess your installation needs. We discuss our findings with you and recommend the best course of action.",
-          "img": "/assets/images/boiler1.jpeg"
+          "img": "/assets/images/boiler1.jpeg",
+          "alt": "A 1980s model cast iron boiler in a home's basement upgraded with pumps and air elimination system for hot water baseboard heating"
         },
         {
           "title": "Expert Repair or Installation",
           "description": "Our certified technicians use high-quality parts and follow industry best practices for all repairs and installations, ensuring safety and efficiency.",
-          "img": "/assets/images/boiler2.jpeg"
+          "img": "/assets/images/boiler2.jpeg",
+          "alt": "Repair on a 10 year old boiler with storage tanks in a residential home used for radiant flooring and domestic hot water"
         },
         {
           "title": "System Testing & Final Check",
           "description": "After the work is complete, we rigorously test the system to ensure it's operating correctly and safely. We'll walk you through the work performed and answer any questions.",
-          "img": "/assets/images/boiler3.jpeg"
+          "img": "/assets/images/boiler3.jpeg",
+          "alt": "Boiler system for high end residential home to provide heat to radiant flooring and domestic hot water for approximately 5000 square feet"
         },
         {
           "title": "Clean-Up & Follow-Up",
           "description": "We respect your home and always clean up our work area. We also follow up to ensure you're completely satisfied with our service.",
-          "img": "/assets/images/boiler4.jpeg"
+          "img": "/assets/images/boiler4.jpeg",
+          "alt": "Retrofit combination boiler for residential hot water and radiant flooring"
         }
       ]
     },
@@ -63,6 +67,7 @@
     "core_services": {
       "heading": "Boilers",
       "image": "/assets/images/dual-boiler.jpeg",
+      "alt": "13,000 square foot new construction dual boiler system for radiant flooring and a hydronic fan coil heater for an indoor green house",
       "list": [
         "Service",
         "Repair",
@@ -96,19 +101,27 @@
       "steps": [
         {
           "title": "Assessment & Consultation",
-          "description": "We evaluate your current water heater and discuss your hot water needs to recommend the best solution."
+          "description": "We evaluate your current water heater and discuss your hot water needs to recommend the best solution.",
+          "img": "/assets/images/water-heater1.jpeg",
+          "alt": "An installed tankless water heater in the basement of a new construction home"
         },
         {
           "title": "Professional Installation or Repair",
-          "description": "Our team installs new units or repairs existing ones using quality parts and proven techniques."
+          "description": "Our team installs new units or repairs existing ones using quality parts and proven techniques.",
+          "img": "/assets/images/water-heater2.webp",
+          "alt": "Repair of a tanked water heater in a home's basement"
         },
         {
           "title": "System Testing & Safety Check",
-          "description": "We thoroughly test your water heater for safety, efficiency, and proper operation."
+          "description": "We thoroughly test your water heater for safety, efficiency, and proper operation.",
+          "img": "/assets/images/water-heater3.webp",
+          "alt": "A new install of a tanked water heater on a stand in a home's basement"
         },
         {
           "title": "Cleanup & Customer Education",
-          "description": "We clean up our workspace and explain your new or repaired system, including maintenance tips."
+          "description": "We clean up our workspace and explain your new or repaired system, including maintenance tips.",
+          "img": "/assets/images/tankless.jpeg",
+          "alt": "A brand new tankless water heater installed in a home's basement with pre-filtration"
         }
       ]
     },
@@ -132,6 +145,7 @@
     "core_services": {
       "heading": "Water Heaters",
       "image": "/assets/images/tankless.jpeg",
+      "alt": "New construction Navien brand tankless water heater installation",
       "list": [
         "Tankless",
         "Tanked",
@@ -167,19 +181,27 @@
       "steps": [
         {
           "title": "Comprehensive System Evaluation",
-          "description": "We thoroughly inspect your radiant heating system to diagnose issues or assess installation requirements."
+          "description": "We thoroughly inspect your radiant heating system to diagnose issues or assess installation requirements.",
+          "img": "/assets/images/radiant3.jpg",
+          "alt": "A new construction radiant heating system being installed in a home's subfloot"
         },
         {
           "title": "Expert Repair or Installation",
-          "description": "Our skilled technicians perform precise repairs or install new systems using high-quality materials and best practices."
+          "description": "Our skilled technicians perform precise repairs or install new systems using high-quality materials and best practices.",
+          "img": "/assets/images/radiant4.jpg",
+          "alt": "A manifold for a new construction in floor radiant heating system"
         },
         {
           "title": "System Testing & Optimization",
-          "description": "We test your system for performance and efficiency, making adjustments to ensure even, reliable heating."
+          "description": "We test your system for performance and efficiency, making adjustments to ensure even, reliable heating.",
+          "img": "/assets/images/radiant5.jpeg",
+          "alt": "An under sub floor staple up radiant heating system retrofitted in a home's subfloor"
         },
         {
           "title": "Clean-Up & Customer Walkthrough",
-          "description": "We clean up our workspace and walk you through the completed service, answering any questions you may have."
+          "description": "We clean up our workspace and walk you through the completed service, answering any questions you may have.",
+          "img": "/assets/images/radiant7.jpeg",
+          "alt": "A custom manifold for a new construction radiant heating system"
         }
       ]
     },
@@ -203,6 +225,7 @@
     "core_services": {
       "heading": "Radiant Heating",
       "image": "/assets/images/radiant.jpeg",
+      "alt": "New construction concrete slab radiant heating tubing -- approximately 6,000 square feet",
       "list": [
         "Service",
         "Repair",
@@ -235,19 +258,27 @@
       "steps": [
         {
           "title": "Water Quality Assessment",
-          "description": "We test your home's water to identify contaminants and recommend the best filtration solution."
+          "description": "We test your home's water to identify contaminants and recommend the best filtration solution.",
+          "img": "/assets/images/water-test.jpeg",
+          "alt": "A water quality test in a residential home"
         },
         {
           "title": "System Selection & Estimate",
-          "description": "We help you choose the right filter system and provide a clear, upfront estimate."
+          "description": "We help you choose the right filter system and provide a clear, upfront estimate.",
+          "img": "/assets/images/water-filter1.jpg",
+          "alt": "An installed whole home water filteration system"
         },
         {
           "title": "Professional Installation",
-          "description": "Our technicians install your new filter system efficiently and with minimal disruption."
+          "description": "Our technicians install your new filter system efficiently and with minimal disruption.",
+          "img": "/assets/images/water-filter2.webp",
+          "alt": "A multi stage whole home water filtration system installed in a home's basement"
         },
         {
           "title": "Testing & Maintenance Guidance",
-          "description": "We test the system, review maintenance needs, and answer any questions you may have."
+          "description": "We test the system, review maintenance needs, and answer any questions you may have.",
+          "img": "/assets/images/water-filter4.jpg",
+          "alt": "A two stage filtration system installed inline in a home's water supply line"
         }
       ]
     },
@@ -271,6 +302,7 @@
     "core_services": {
       "heading": "Water Filters",
       "image": "/assets/images/filtration.jpeg",
+      "alt": "A combi boiler for domestic hot water and radiant flooring in a home's basement",
       "list": [
         "Service",
         "Repair",
@@ -303,19 +335,27 @@
       "steps": [
         {
           "title": "Water Analysis & Consultation",
-          "description": "We test your water and recommend the best conditioner for your needs."
+          "description": "We test your water and recommend the best conditioner for your needs.",
+          "img": "/assets/images/conditioner1.jpg",
+          "alt": "Side-by-side comparison showing the difference between water conditioning and water softening systems, with diagrams of their filtration processes"
         },
         {
           "title": "Professional Installation or Repair",
-          "description": "Our technicians install new systems or repair existing ones for optimal performance."
+          "description": "Our technicians install new systems or repair existing ones for optimal performance.",
+          "img": "/assets/images/conditioner2.webp",
+          "alt": "An inline pre filter and water conditioner installed in a home's water supply line before the water heater"
         },
         {
           "title": "System Testing & Adjustment",
-          "description": "We test and fine-tune your conditioner to ensure maximum effectiveness."
+          "description": "We test and fine-tune your conditioner to ensure maximum effectiveness.",
+          "img": "/assets/images/conditioner3.webp",
+          "alt": "A water conditioner installed in a home's water supply line before the tanked water heater"
         },
         {
           "title": "Customer Education & Maintenance Tips",
-          "description": "We explain how your system works and provide tips for ongoing care."
+          "description": "We explain how your system works and provide tips for ongoing care.",
+          "img": "/assets/images/conditioner4.jpg",
+          "alt": "A diagram showing how a water conditioner works to remove scale and improve water quality"
         }
       ]
     },
@@ -339,6 +379,7 @@
     "core_services": {
       "heading": "Water Conditioners",
       "image": "/assets/images/clean-conditioner.jpeg",
+      "alt": "After shot showing a freshly cleaned and serviced water conditioner",
       "list": [
         "Service",
         "Repair",

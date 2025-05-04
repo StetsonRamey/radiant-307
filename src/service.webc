@@ -59,7 +59,7 @@ description: data => data.service["description"]
     <div class="process-steps-grid">
       <article webc:for="(step, index) of service.process.steps" class="process-step">
         <span class="process-step-number" @text="index + 1"></span>
-        <img class="process-step-image" :src="step.img" alt="" />
+        <img class="process-step-image" :src="step.img" :alt="step.alt" />
         <div class="process-step-content">
           <h3 class="heading-3" @text="step.title">Step Title</h3>
           <p class="paragraph" @text="step.description">

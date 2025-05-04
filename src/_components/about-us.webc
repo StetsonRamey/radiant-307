@@ -9,7 +9,7 @@
     <div class="about-image-container">
       <img
         :src="image"
-        alt="Radiant 307 Plumbing Team or Van"
+        alt="The owner of Radiant 307 Plumbing, Remington, standing in front of a custom boiler and tankless hot water system on a residential project"
         class="about-image"
       />
     </div>

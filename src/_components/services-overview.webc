@@ -9,7 +9,7 @@
 
   <div class="services-grid">
     <div class="service-card flow" webc:for="service of services">
-      <img :src="service.core_services.image" alt="Service 1 Placeholder" />
+      <img :src="service.core_services.image" :alt="service.core_services.alt" />
       <h3 class="heading-2" @text="service.title"></h3>
       <p class="paragraph truncate" @text="service.description"></p>
       <a :href="service.slug" class="btn" data-ghost-button @text="service.core_services.heading">Learn More</a>
