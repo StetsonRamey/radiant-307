@@ -6,10 +6,16 @@ layout: "base.webc"
 <section class="services-overview">
   <services-overview :@services="services"></services-overview>
 </section>
-<why-us :site="site"></why-us>
-<service-areas :areas="areas"></service-areas>
+<section class="about-us">
+  <about-us image="/assets/images/about.jpeg"></about-us>
+</section>
+<section class="why-us">
+  <why-us :site="site"></why-us>
+</section>
+<section class="service-areas">
+  <service-areas :areas="areas"></service-areas>
+</section>
 <testimonials></testimonials>
-<about-us image="/assets/images/about.jpeg"></about-us>
 <cta-section :icons="icons" :site="site"></cta-section>
 
 <script async
@@ -18,9 +24,13 @@ layout: "base.webc"
 
 <style>
   .services-overview {
-    padding: 5rem 1rem 15rem 1rem;
+    padding: 5rem 1rem 5rem 1rem;
     background-color: var(--light-color);
     /* Light background */
+  }
+
+  .about-us {
+    padding-block-end: 15rem;
   }
 
   .services-overview .container {

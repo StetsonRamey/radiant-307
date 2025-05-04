@@ -59,8 +59,7 @@ description: data => data.service["description"]
     <div class="process-steps-grid">
       <article webc:for="(step, index) of service.process.steps" class="process-step">
         <span class="process-step-number" @text="index + 1"></span>
-        <img class="process-step-image" :src="'https://placehold.co/600x400/E2E8F0/4A5568?text=Image+' + (index + 1)"
-          alt="" width="600" height="400" loading="lazy" />
+        <img class="process-step-image" :src="step.img" alt="" />
         <div class="process-step-content">
           <h3 class="heading-3" @text="step.title">Step Title</h3>
           <p class="paragraph" @text="step.description">
@@ -76,14 +75,10 @@ description: data => data.service["description"]
 <other-services :services="services.filter(s => s.slug !== service.slug)"></other-services>
 <service-area-mention :service="service"></service-area-mention>
 <cta-section :icons="icons" :site="site"></cta-section>
-<!-- Rest of your service page content will go here -->
-<!--
-<h1 @text="service.h1">Default</h1>
-<p @text="service.main-desc">Default</p>
--->
 
 <style>
   /* === SERVICE PAGE SECTIONS === */
+
   .signs-section {
     padding-block: 3rem;
     /* Vertical padding */
@@ -103,10 +98,7 @@ description: data => data.service["description"]
     background-color: white;
     padding: 2rem;
     border-radius: var(--border-radius-medium);
-    /* Use existing border radius */
-    box-shadow: var(--shadow-small);
-    /* Use existing shadow */
-    border: 2px solid var(--color-flush-orange-400);
+    border: 2px solid var(--color-secondary-500);
     /* Border thickness, transparent base */
     background-clip: padding-box;
 
@@ -159,7 +151,8 @@ description: data => data.service["description"]
   }
 
   .benefit-card {
-    background-color: var(--color-gray-100);
+    background-color: var(--color-yellow-950);
+    color: var(--color-primary-950);
     /* Light gray background */
     padding: 1.5rem;
     /* Padding inside card */
@@ -234,11 +227,11 @@ description: data => data.service["description"]
     /* Position relative to the top padding */
     left: 1rem;
     /* Position relative to the left padding */
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    aspect-ratio: 1/1;
     border-radius: 50%;
-    background-color: var(--color-royal-blue-600);
-    color: var(--light-color);
+    background-color: var(--color-primary-900);
+    color: var(--color-yellow-950);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -249,20 +242,14 @@ description: data => data.service["description"]
   }
 
   .process-step-image {
+    display: block;
     width: 100%;
-    /* Make image fill the card width */
-    height: auto;
-    /* Maintain aspect ratio */
-    aspect-ratio: 16 / 9;
-    /* Give image a standard aspect ratio */
-    object-fit: cover;
-    /* Cover the area, cropping if needed */
+    height: 350px;
+    object-fit: scale-down;
+    object-position: center;
     border-radius: var(--border-radius-medium);
-    /* Slightly rounded corners for image */
     margin-bottom: 1rem;
-    /* Space between image and text content */
     margin-top: 2rem;
-    /* Add space below the number badge */
   }
 
   .process-step .heading-3 {

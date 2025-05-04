@@ -13,6 +13,7 @@
 </head>
 
 <body>
+  <top-banner :site="site" :url="page.url"></top-banner>
   <main @raw="content"></main>
   <footer-section :services="services" :areas="areas" :site="site"></footer-section>
 </body>

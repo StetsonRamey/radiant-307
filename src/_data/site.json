@@ -6,5 +6,19 @@
     "city": "Cheyenne",
     "state": "WY",
     "zip": "82001",
-    "hours": "Monday - Friday: 8:00 AM - 5:00 PM"
+    "hours": "Monday - Friday: 8:00 AM - 5:00 PM",
+    "navLinks": [
+        {
+            "text": "Home",
+            "href": "/"
+        },
+        {
+            "text": "Locations",
+            "href": "/locations/"
+        },
+        {
+            "text": "Services",
+            "href": "/services/"
+        }
+    ]
 }

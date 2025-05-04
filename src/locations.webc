@@ -14,8 +14,8 @@ layout: base.webc
                 Professional plumbing locations for residential and commercial projects.
             </p>
             <div class="service-buttons">
-                <a href="tel:+13075551234" class="link">Call us Today!</a>
-                <a href="/contact/" class="btn btn-primary">Request a Quote</a>
+                <a href="tel:+13075551234" class="btn" data-btn-variant="primary">Call us Today!</a>
+                <a href="/contact/" class="btn" data-btn-variant="secondary">Request a Quote</a>
             </div>
         </div>
     </header>
@@ -35,8 +35,8 @@ layout: base.webc
 
 <section class="service-area-mention-section">
     <div class="container text-center">
-        <h2 class="heading-2">Serving Cheyenne, WY and Surrounding Areas</h2>
-        <p class="paragraph mb-4">Wherever you might be in Cheyenne or the surrounding citys, we've probably got you
+        <h2 class="heading-2">Serving Cheyenne, WY</h2>
+        <p class="mb-4">Wherever you might be in Cheyenne, we've probably got you
             covered!</p>
 
         <!-- Google Map Placeholder -->
@@ -46,17 +46,12 @@ layout: base.webc
 
 <section class="service-areas">
     <div class="container">
-        <h2 class="heading-2 text-center">Serving All Cheyenne Neighborhoods and Nearby Cities</h2>
+        <h2 class="heading-2 text-center">Serving All Cheyenne Neighborhoods</h2>
         <div class="area-grid">
             <h3 class="heading-3 text-center">Cheyenne Neighborhoods</h3>
             <div class="service-areas-list">
-                <a webc:for="(hood, name) in areas['Cheyenne Neighborhoods']" :href="name.slug"
-                    class="service-area-link" @text="hood">Cheyenne</a>
-            </div>
-            <h3 class="heading-3 text-center">Nearby Cities</h3>
-            <div class="service-areas-list">
-                <a webc:for="(hood, name) in areas['Nearby Cities']" :href="name.slug" class="service-area-link"
-                    @text="hood">Cheyenne</a>
+                <a webc:for="(hood, name) in areas['Cheyenne Neighborhoods']" :href="name.slug" class="btn"
+                    data-btn-variant="primary" data-button-radius="hard" @text="hood">Cheyenne</a>
             </div>
         </div>
     </div>
@@ -88,7 +83,6 @@ layout: base.webc
 </section>
 
 <section class="check">
-
     <div class="container inner flow">
         <h2 class="text-center">Don't see your area?</h2>
         <p class="paragraph">
@@ -105,9 +99,7 @@ layout: base.webc
         text-align: center;
         margin-block-end: 2rem;
         line-height: 1.2;
-        background-image: linear-gradient(to right,
-                var(--color-blue-violet-700),
-                var(--color-royal-blue-500));
+        background-image: var(--hero-gradient);
         color: var(--gray-color);
         padding-block: 4rem;
     }
@@ -125,19 +117,6 @@ layout: base.webc
         align-items: center;
     }
 
-    .service-buttons .link {
-        background-color: var(--color-blue-violet-50);
-        padding: 1rem 1.5rem;
-        border-radius: 4px;
-        color: var(--color-blue-violet-500);
-        text-decoration: none;
-        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    }
-
-    .service-buttons .link:hover {
-        background-color: var(--color-blue-violet-100);
-        color: var(--color-blue-violet-500);
-    }
 
     .locations-intro {
         max-width: 70ch;
@@ -152,7 +131,7 @@ layout: base.webc
 
     .service-area-mention-section {
         padding-block: 4rem;
-        background-color: var(--color-gray-100);
+        background-color: var(--color-slate-300);
         /* Light background */
         color: var(--dark-text);
     }
@@ -182,7 +161,7 @@ layout: base.webc
 
     .service-areas {
         padding-block: 4rem;
-        background-color: var(--color-gray-50);
+        background-color: var(--color-primary-400);
     }
 
     .service-areas-list {
@@ -196,17 +175,10 @@ layout: base.webc
         margin-inline: 0;
     }
 
-    .service-area-link {
-        display: flex;
-        padding-inline: 1rem;
-        padding-block: 0.5rem;
-        background-color: var(--light-color);
-        border: 1px solid var(--color-gray-200);
-        text-decoration: none;
-        color: var(--color-blue-violet-700);
-        font-weight: 500;
-        transition: all 0.2s ease-in-out;
-        cursor: pointer;
+    .service-areas .btn[data-btn-variant="primary"]:hover {
+        background: transparent;
+        color: var(--color-yellow-950);
+        filter: none;
     }
 
     .area-grid {
@@ -219,7 +191,6 @@ layout: base.webc
 
     .area-grid h3 {
         font-size: 1rem;
-        color: var(--text-color);
         justify-self: start;
     }
 
@@ -232,19 +203,6 @@ layout: base.webc
         .area-grid h3 {
             justify-self: end;
         }
-    }
-
-    .service-area-link:hover {
-        background-color: var(--color-blue-violet-50);
-        border-color: var(--color-flush-orange-400);
-        color: var(--color-flush-orange-600);
-        transform: translateY(-2px);
-        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    }
-
-    services-listings {
-
-        margin-block-end: 3rem;
     }
 
     .services-grid h2 {
@@ -263,6 +221,7 @@ layout: base.webc
     }
 
     .services-listings {
+        margin-block-end: 3rem;
         padding-block: 4rem;
     }
 
@@ -291,7 +250,7 @@ layout: base.webc
     .service-card {
         margin-inline: auto;
         height: 100%;
-        border: 1px solid var(--color-blue-violet-400);
+        border: 1px solid var(--color-primary-950);
         background: var(--card-background, #fff);
         border-radius: var(--border-radius, 12px);
         padding: 2rem 1.5rem;
@@ -322,22 +281,22 @@ layout: base.webc
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: .25rem;
+        gap: .35rem;
         container-type: inline-size;
     }
 
     .service-pill {
-        background-color: var(--color-blue-violet-50);
+        background-color: var(--color-yellow-950);
         padding: 0.25rem 0.5rem;
         border-radius: 4px;
-        color: var(--color-blue-violet-500);
+        color: var(--color-primary-950);
         font-weight: 500;
         font-size: clamp(0.75rem, 0.5rem + 1cqi, 1rem);
     }
 
     .check {
         padding-block: 4rem;
-        background-color: var(--color-gray-900);
+        background-color: var(--color-secondary-400);
         margin-block-end: 4rem;
     }
 
@@ -369,21 +328,21 @@ layout: base.webc
         // 1. Define Center and Radius
         const cityMap = {
             cheyenne: {
-                coords: { lat: 41.15828, lng: -104.79838 },
+                coords: { lat: 41.13401, lng: -104.820188 },
                 radius: 4 * 1609.34
             },
-            burns: {
-                coords: { lat: 41.1908847, lng: -104.3592768 },
-                radius: 2 * 1609.34
-            },
-            "Pine Bluffs": {
-                coords: { lat: 41.179529, lng: -104.067664 },
-                radius: 2 * 1609.34
-            },
-            "Hillsdale": {
-                coords: { lat: 41.21172976832517, lng: -104.47835986577392 },
-                radius: 2 * 1609.34
-            }
+            // burns: {
+            //     coords: { lat: 41.1908847, lng: -104.3592768 },
+            //     radius: 2 * 1609.34
+            // },
+            // "Pine Bluffs": {
+            //     coords: { lat: 41.179529, lng: -104.067664 },
+            //     radius: 2 * 1609.34
+            // },
+            // "Hillsdale": {
+            //     coords: { lat: 41.21172976832517, lng: -104.47835986577392 },
+            //     radius: 2 * 1609.34
+            // }
         }
 
         // 2. Define Custom Map Styles (Optional)
@@ -627,8 +586,8 @@ layout: base.webc
         ];
         // 3. Create the Map
         const map = new google.maps.Map(document.getElementById("maps"), {
-            zoom: 10, // Adjust zoom level to fit the radius nicely
-            center: { lat: 41.15828, lng: -104.47718 },
+            zoom: 11, // Adjust zoom level to fit the radius nicely
+            center: { lat: 41.15828, lng: -104.79838 },
             styles: mapStyles, // Apply the custom styles
             mapTypeControl: false, // Optional: hide map type selector
             streetViewControl: false, // Optional: hide street view pegman

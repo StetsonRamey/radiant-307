@@ -33,7 +33,7 @@
         />
         <div class="testimonial-author">
           <p class="author-name">Sarah M.</p>
-          <p class="author-title">Local Business Owner</p>
+          <p class="author-title">Cheyenne Homeowner</p>
         </div>
       </div>
       <p class="testimonial-quote">
@@ -53,7 +53,7 @@
         />
         <div class="testimonial-author">
           <p class="author-name">Brian W.</p>
-          <p class="author-title">Laramie Resident</p>
+          <p class="author-title">Cheyenne Homeowner</p>
         </div>
       </div>
       <p class="testimonial-quote">
@@ -74,16 +74,14 @@
   .section-title h2 {
     font-size: 2.25rem; /* ~h2 */
     font-weight: 600;
-    color: rgb(241, 243, 244);
   }
   .testimonials-section {
-    background-color: var(--color-gray-900); /* Replit dark background */
-    color: rgb(241, 243, 244); /* Replit light text */
+    background-color: var(--color-yellow-950);
     padding: 4rem 1rem; /* Vertical padding */
   }
 
   .testimonials-section .container {
-    background-color: var(--color-gray-700); /* Subtle card background */
+    background-color: var(--color-primary-900); /* Subtle card background */
     border-radius: 16px; /* Rounded corners for card */
     max-width: 800px; /* Limit width for readability on smaller screens */
     margin: 0 auto;
@@ -121,6 +119,10 @@
     object-fit: cover;
   }
 
+  .testimonial-author {
+    color: var(--color-yellow-900);
+  }
+
   .testimonial-author .author-name {
     font-weight: 600;
     font-size: 1rem;
@@ -130,7 +132,7 @@
 
   .testimonial-author .author-title {
     font-size: 0.875rem;
-    color: rgba(241, 243, 244, 0.7); /* Dimmed title */
+    color: var(--color-secondary-400);
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin: 0;
@@ -139,12 +141,12 @@
 
   .testimonial-quote {
     font-size: 1.125rem; /* Slightly larger quote text */
-    color: var(--color-flush-orange-50);
+    color: var(--color-glare-200);
     line-height: 1.6;
     font-style: italic;
     margin: 0;
     max-width: 65ch; /* Limit line length */
-    border-inline-start: 3px solid var(--color-yellow-orange-500);
+    border-inline-start: 3px solid var(--color-yellow-900);
     padding-inline-start: 1rem;
   }
 

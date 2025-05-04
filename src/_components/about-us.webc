@@ -1,5 +1,5 @@
 <!-- src/_components/about-us.webc -->
-<section class="about-us-section">
+<div webc:root="override" class="about-us-section">
   <div class="container about-grid">
     <div class="about-text">
       <h2>About Radiant 307 Plumbing</h2>
@@ -14,7 +14,7 @@
       />
     </div>
   </div>
-</section>
+</div>
 
 <style webc:scoped>
   .about-us-section {

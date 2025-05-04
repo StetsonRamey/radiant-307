@@ -16,7 +16,7 @@
             <h3 class="heading-3">Quick Response</h3>
             <p class="paragraph">If we don't answer when you call, leave me a message and I'll get right back to you.</p>
             <div class="button-container">
-              <a :href="'tel:' + site.phone" class="btn btn-primary"
+              <a :href="'tel:' + site.phone" class="btn" data-btn-variant="primary" data-ghost-button
                 >Call Now</a
               >
               <a href="/services/" class="learn-more-link">Check out our services</a>
@@ -50,8 +50,8 @@
     margin-block-end: -10rem;
     background-image: linear-gradient(
       to right,
-      var(--color-flush-orange-500),
-      var(--color-yellow-orange-300)
+    var(--color-primary-200),
+      var(--color-primary-100)
     );
     color: var(--text-color);
     position: relative;
@@ -73,7 +73,7 @@
   .tabs-content-container {
     transform: translateY(-14rem);
     border-radius: 0.5rem;
-    box-shadow: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000000d;
+    box-shadow: 0 4px 6px -1px var(--color-slate-600), 0 2px 4px -2px var(--color-slate-400);
     padding: 2rem;
     background-color: var(--light-color);
   }
@@ -104,34 +104,11 @@
     gap: 1rem;
   }
 
-  /* Buttons & Links */
-  .button-container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 1rem;
-  }
-  .btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.375rem;
-    text-decoration: none;
-    font-weight: 600;
-    text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  .btn-primary {
-    background-color: var(--color-flush-orange-500);
-    color: var(--text-color);
-  }
-  .btn-primary:hover {
-    background-color: var(--color-flush-orange-400);
-  }
   .learn-more-link {
-    color: var(--secondary-color);
+    color: var(--color-slate-950);
     text-decoration: none;
     font-weight: 600;
+    margin-inline-start: 1rem;
   }
   .learn-more-link:hover {
     text-decoration: underline;
@@ -146,7 +123,7 @@
     background-color: rgba(255, 255, 255, 0.9);
     padding: 1.5rem;
     border-radius: 0.5rem;
-    border: 1px solid #eee;
+    border: 1px solid var(--color-primary-600);
   }
   .testimonial-logo {
     height: 40px;
@@ -158,10 +135,21 @@
     font-size: 1.125rem;
     font-style: italic;
     margin-bottom: 1rem;
-    border-left: 3px solid var(--color-yellow-orange-500);
+    border-left: 3px solid var(--color-secondary-500);
     padding-left: 1rem;
   }
   .testimonial-attribution {
     margin-top: 1.5rem;
   }
+
+  .btn[data-ghost-button] {
+    --button-bg: transparent;
+    --button-border-color: var(--color-yellow-950);
+    --button-color: var(--color-primary-950);
+    --button-hover-bg: var(--color-primary-950);
+  }
+  .btn:hover {
+    --button-color: var(--color-yellow-950);
+  }
 </style>
+

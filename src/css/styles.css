@@ -19,57 +19,75 @@
   --color-gray-900: oklch(21.01% 0.0318 264.66);
   --color-gray-950: oklch(12.96% 0.0274 261.69);
 
-  /* PRIMARY */
-  --color-flush-orange-50: #fff8ed;
-  --color-flush-orange-100: #feefd6;
-  --color-flush-orange-200: #fddbab;
-  --color-flush-orange-300: #fbc176;
-  --color-flush-orange-400: #f89b3f;
-  --color-flush-orange-500: #f6821f;
-  --color-flush-orange-600: #e7640f;
-  --color-flush-orange-700: #bf4b0f;
-  --color-flush-orange-800: #983c14;
-  --color-flush-orange-900: #7a3314;
-  --color-flush-orange-950: #421708;
+  /* BROWN */
+  --color-primary-50: #a1a1a1;
+  --color-primary-100: #9c9a96;
+  --color-primary-200: #978c7d;
+  --color-primary-300: #927e63;
+  --color-primary-400: #876d4f;
+  --color-primary-500: #7a5c3e;
+  --color-primary-600: #6e4d30;
+  --color-primary-700: #5c3c24;
+  --color-primary-800: #482c19;
+  --color-primary-900: #331c10;
+  --color-primary-950: #28140a;
 
-  /* Primary glare */
-  --color-yellow-orange-50: #fff7eb;
-  --color-yellow-orange-100: #fee9c7;
-  --color-yellow-orange-200: #fdd18a;
-  --color-yellow-orange-300: #fbad41;
-  --color-yellow-orange-400: #fa9825;
-  --color-yellow-orange-500: #f4730c;
-  --color-yellow-orange-600: #d85007;
-  --color-yellow-orange-700: #b3340a;
-  --color-yellow-orange-800: #91280f;
-  --color-yellow-orange-900: #78220f;
-  --color-yellow-orange-950: #450e03;
+  /* GLARE */
+  --color-glare-50: #fcfcfc;
+  --color-glare-100: #fcfcfc;
+  --color-glare-200: #fafafa;
+  --color-glare-300: #f7f7f7;
+  --color-glare-400: #f5f5f5;
+  --color-glare-500: #f2f2f2;
+  --color-glare-600: #f0f0f0;
+  --color-glare-700: #ededed;
+  --color-glare-800: #e9eceb;
+  --color-glare-900: #e5ece9;
+  --color-glare-950: #e2eee9;
 
-  /* Secondary */
-  --color-blue-violet-50: #efeeff;
-  --color-blue-violet-100: #e2e0ff;
-  --color-blue-violet-200: #cac7fe;
-  --color-blue-violet-300: #aaa5fc;
-  --color-blue-violet-400: #8881f8;
-  --color-blue-violet-500: #6b63f1;
-  --color-blue-violet-600: #4f46e5;
-  --color-blue-violet-700: #4038ca;
-  --color-blue-violet-800: #3730a3;
-  --color-blue-violet-900: #332e81;
-  --color-blue-violet-950: #1e1b4b;
+  /* SLATE */
+  --color-slate-50: #f0f0f0;
+  --color-slate-100: #e8e8e8;
+  --color-slate-200: #d9d9d9;
+  --color-slate-300: #c9c9c9;
+  --color-slate-400: #bababa;
+  --color-slate-500: #ababab;
+  --color-slate-600: #9c9c9c;
+  --color-slate-700: #8c8c8c;
+  --color-slate-800: #808080;
+  --color-slate-900: #707070;
+  --color-slate-950: #706b5f;
 
-  /* Secondary glare */
-  --color-royal-blue-50: #eeeeff;
-  --color-royal-blue-100: #e0e1ff;
-  --color-royal-blue-200: #c7c8fe;
-  --color-royal-blue-300: #a5a7fc;
-  --color-royal-blue-400: #8184f8;
-  --color-royal-blue-500: #6366f1;
-  --color-royal-blue-600: #4649e5;
-  --color-royal-blue-700: #383bca;
-  --color-royal-blue-800: #3032a3;
-  --color-royal-blue-900: #2e3081;
-  --color-royal-blue-950: #1b1c4b;
+  /* SECONDARY */
+  --color-secondary-50: #ecf8f7;
+  --color-secondary-100: #daf1ef;
+  --color-secondary-200: #b4e4df;
+  --color-secondary-300: #8fd6cf;
+  --color-secondary-400: #6ac8bf;
+  --color-secondary-500: #44b9ad;
+  --color-secondary-600: #37958c;
+  --color-secondary-700: #297069;
+  --color-secondary-800: #1b4b46;
+  --color-secondary-900: #0e2523;
+  --color-secondary-950: #071311;
+
+  /* YELLOW */
+  --color-yellow-50: oklch(98.12% 0.024 94.06);
+  --color-yellow-100: oklch(97.4% 0.035 96.29);
+  --color-yellow-200: oklch(96.09% 0.054 97.01);
+  --color-yellow-300: oklch(94.24% 0.077 97.15);
+  --color-yellow-400: oklch(93.02% 0.095 97.45);
+  --color-yellow-500: oklch(91.35% 0.115 96.85);
+  --color-yellow-600: oklch(90.2% 0.131 97.04);
+  --color-yellow-700: oklch(88.56% 0.146 96.73);
+  --color-yellow-800: oklch(87.5% 0.157 96.43);
+  --color-yellow-900: oklch(86.06% 0.165 95.19);
+  --color-yellow-950: oklch(85.53% 0.168 95.04);
+
+  /* Hero Gradient */
+  --hero-gradient: linear-gradient(to right,
+      var(--color-primary-950),
+      var(--color-primary-800));
 
   /* Border Radius */
   --border-radius-small: 0.25rem;
@@ -82,10 +100,10 @@
   /* For circles/pills */
 
   /* Shadows */
-  --shadow-small: 0 2px 4px 0 rgb(0 0 0 / 0.1);
-  --shadow-medium: 0 4px 8px 0 rgb(0 0 0 / 0.1);
-  --shadow-large: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+  --shadow-small: 0 1px 2px 0 var(--color-primary-200);
+  --shadow-medium: 0 4px 8px 0 var(--color-primary-200);
+  --shadow-large: 0 10px 15px -3px var(--color-primary-200), 0 4px 6px -4px var(--color-primary-200);
+  --shadow-inner: inset 0 2px 4px 0 var(--color-primary-200);
 }
 
 * {
@@ -190,41 +208,103 @@ img {
 
 /* === BUTTONS === */
 .btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  /* Adjust padding as needed */
-  border: none;
-  border-radius: 4px;
-  /* Example border-radius */
-  font-weight: 600;
-  text-align: center;
-  cursor: pointer;
+  /* Configuration */
+  --button-padding: 0.7em 1.2em;
+  --button-gap: 0.5em;
+  --button-bg: var(--color-yellow-950);
+  --button-color: #ffffff;
+  --button-hover-bg: var(--color-yellow-800);
+  --button-hover-color: #ffffff;
+  --button-border-width: 3px;
+  --button-border-style: solid;
+  --button-border-color: var(--color-yellow-950);
+  --button-radius: 0.5em;
+
+  /* Focus Styles */
+  --button-outline-width: 2px;
+  --button-outline-style: dashed;
+  --button-outline-color: var(--color-secondary-500);
+  --button-outline-offset: 3px;
+
+  /* Layout and spacing */
+  display: inline-flex;
+  align-items: center;
+  gap: var(--button-gap);
+  padding: var(--button-padding);
+
+  /* Colours */
+  background: var(--button-bg);
+  color: var(--button-color);
+
+  /* Stroke and radius */
+  border-width: var(--button-border-width);
+  border-style: var(--button-border-style);
+  border-color: var(--button-border-color);
+  border-radius: var(--button-radius);
+
+  /* Typography */
   text-decoration: none;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-weight: var(--button-font-weight, 700);
+  font-size: var(--button-font-size, 1em);
+  letter-spacing: 0.05ch;
+  font-family: sans-serif;
+  line-height: 1.1;
+
+  /* Interactive */
+  cursor: pointer;
 }
 
-.btn-primary {
-  background-color: var(--color-flush-orange-500);
-  /* Primary color */
-  color: var(--light-color);
+.btn svg {
+  height: var(--button-icon-size, 1.2cap);
+  width: auto;
+  flex: none;
 }
 
-.btn-primary:hover {
-  background-color: var(--color-flush-orange-600);
-  /* Darker shade for hover */
+.btn:hover {
+  background: var(--button-hover-bg);
+  --button-color: var(--color-primary-400);
 }
 
-.btn-secondary {
-  background-color: var(--color-blue-violet-600);
-  /* Secondary color */
-  color: var(--light-color);
+.btn:focus {
+  outline-width: var(--button-outline-width, var(--button-border-width));
+  outline-style: var(--button-outline-style, var(--button-border-style));
+  outline-color: var(--button-outline-color, var(--button-border-color));
+  outline-offset: var(--button-outline-offset,
+      calc(var(--button-border-width) * 2));
 }
 
-.btn-secondary:hover {
-  background-color: var(--color-blue-violet-700);
-  /* Darker shade for hover */
+.btn:active {
+  transform: scale(99%);
+}
+
+/* VARIANTS */
+.btn[data-btn-variant="primary"] {
+  --button-color: var(--color-primary-800);
+}
+
+.btn[data-btn-variant="primary"]:hover {
+  filter: brightness(0.9);
+}
+
+.btn[data-btn-variant="secondary"] {
+  --button-bg: var(--color-secondary-500);
+  --button-border-color: var(--color-secondary-500);
+  --button-hover-bg: var(--color-secondary-500);
+  --button-color: var(--color-primary-900);
+}
+
+.btn[data-btn-variant="secondary"]:hover {
+  filter: brightness(0.9);
+}
+
+.btn[data-ghost-button] {
+  --button-bg: transparent;
+  --button-border-color: var(--color-primary-800);
+  --button-color: var(--color-primary-800);
+}
+
+.btn[data-button-radius="hard"] {
+  --button-radius: 0;
 }
 
 /* === FORMS === */

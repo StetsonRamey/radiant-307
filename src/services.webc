@@ -16,8 +16,8 @@ layout: "base.webc",
         Professional plumbing services for residential and commercial projects.
       </p>
       <div class="service-buttons">
-        <a href="tel:+13075551234" class="link">Call us Today!</a>
-        <a href="/contact/" class="btn btn-primary">Request a Quote</a>
+        <a href="tel:+13075551234" class="btn" data-btn-variant="primary">Call us Today!</a>
+        <a href="/contact/" class="btn" data-btn-variant="secondary">Request a Quote</a>
       </div>
     </div>
   </header>
@@ -48,7 +48,7 @@ layout: "base.webc",
               <span webc:for="list of service.core_services.list" class="service-pill" @text="list"></span>
             </div>
             <p class="service-card-desc" @text="service.core_services.blurb"></p>
-            <a class="btn btn-primary" :href="service.slug" @text="service.core_services.heading"></a>
+            <a class="btn" data-ghost-button :href="service.slug" @text="service.core_services.heading"></a>
           </div>
         </li>
       </ul>
@@ -93,9 +93,7 @@ layout: "base.webc",
     text-align: center;
     margin-block-end: 2rem;
     line-height: 1.2;
-    background-image: linear-gradient(to right,
-        var(--color-blue-violet-700),
-        var(--color-royal-blue-500));
+    background-image: var(--hero-gradient);
     color: var(--gray-color);
     padding-block: 4rem;
   }
@@ -104,27 +102,12 @@ layout: "base.webc",
     color: var(--gray-color);
     text-wrap: balance;
   }
-
   .service-buttons {
     display: flex;
     gap: 2rem;
-    margin-top: 2rem;
     justify-content: center;
+    margin-top: 2rem;
     align-items: center;
-  }
-
-  .service-buttons .link {
-    background-color: var(--color-blue-violet-50);
-    padding: 1rem 1.5rem;
-    border-radius: 4px;
-    color: var(--color-blue-violet-500);
-    text-decoration: none;
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  }
-
-  .service-buttons .link:hover {
-    background-color: var(--color-blue-violet-100);
-    color: var(--color-blue-violet-500);
   }
 
   .services-intro {
@@ -133,7 +116,6 @@ layout: "base.webc",
     margin-block-end: 2.5rem;
     padding-block: 3rem;
   }
-
   .services-intro .paragraph {
     font-size: 1.25rem;
   }
@@ -161,10 +143,10 @@ layout: "base.webc",
     display: flex;
     flex-direction: column;
     height: 100%;
-    border: 1px solid var(--color-blue-violet-400);
+    border: 2px solid var(--color-primary-950);
     background: var(--card-background, #fff);
     border-radius: var(--border-radius, 12px);
-    box-shadow: var(--shadow-small);
+    /* box-shadow: var(--shadow-small); */
     padding: 2rem 1.5rem;
     transition: box-shadow 0.2s;
   }
@@ -185,21 +167,8 @@ layout: "base.webc",
     font-size: 0.8rem;
   }
 
-  .btn.btn-primary {
-    min-inline-size: 180px;
-    align-self: start;
-    margin-block-start: auto;
-    min-block-size: 48px;
-    color: var(--button-text-color, #fff);
-    font-weight: 600;
-    border-radius: var(--border-radius, 6px);
-    border: none;
-    padding-inline: 2rem;
-    padding-block: 0.75rem;
-  }
-
   .why-choose-us-section {
-    background: var(--accent-background, #f6f8fa);
+    background: var(--color-secondary-400);
     border-radius: var(--border-radius, 12px);
     padding: 2rem 1.5rem;
     margin-block-end: 2rem;
@@ -254,34 +223,6 @@ layout: "base.webc",
     margin-block-end: 2rem;
   }
 
-  .services-cta {
-    background: var(--primary-color);
-    color: var(--button-text-color, #fff);
-    border-radius: var(--border-radius, 12px);
-    padding: 2rem 1.5rem;
-    text-align: center;
-    max-width: 700px;
-    margin-inline: auto;
-    margin-block-end: 0;
-  }
-
-  .services-cta .btn.btn-primary {
-    background: var(--button-text-color, #fff);
-    color: var(--primary-color);
-    margin-left: 1rem;
-  }
-
-  .link,
-  .link-phone {
-    color: var(--primary-color);
-    text-decoration: underline;
-    font-weight: 500;
-  }
-
-  .link-phone {
-    white-space: nowrap;
-  }
-
   .no-wrap {
     white-space: nowrap;
   }
@@ -295,17 +236,16 @@ layout: "base.webc",
 
   .service-pill {
     display: inline-block;
-    background: var(--color-blue-violet-50, #e6e6fa);
-    color: var(--color-blue-violet-700, #4b3f72);
+    background: var(--color-yellow-900);
+    color: var(--color-primary-950);
     font-size: 0.7rem;
     font-weight: 500;
     border-radius: 999px;
     padding-inline: 1em;
     padding-block: 0.25em;
-    border: 1px solid var(--color-blue-violet-200, #cbc3e3);
+    border: 1px solid var(--color-primary-950);
     white-space: nowrap;
     letter-spacing: 0.01em;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
   }
 </style>
 

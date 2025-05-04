@@ -15,7 +15,7 @@
         <h2 class="heading-3">Explore Our Other Services</h2>
         <ul>
           <li webc:for="service of services">
-            <a :href="service.slug" @text="service.title">Service Title</a>
+            <a :href="service.slug" class="btn" data-ghost-button data-button-radius="hard" @text="service.title">Service Title</a>
           </li>
         </ul>
       </div>
@@ -23,7 +23,7 @@
   </div>
 </section>
 
-<style>
+<style webc:scoped>
   .other-services-icon {
     display: inline-block;
     vertical-align: middle;
@@ -37,18 +37,18 @@
 
   .other-services-section {
     padding-block: 4rem;
-    background: linear-gradient(
-      to right,
-      var(--color-gray-200),
-      var(--color-gray-300)
-    );
     color: var(--text-color);
+  }
+
+  .btn[data-ghost-button] {
+    --button-font-size: .8em;
+    width: 100%;
   }
 
   .other-services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 3rem;
+    gap: 2rem;
     align-items: center;
   }
 
@@ -75,22 +75,4 @@
     margin-bottom: 0.75rem; /* Spacing between list items */
   }
 
-  .other-services-list a {
-    display: block; /* Make links full width of li */
-    font-size: 0.8rem;
-    text-align: center; /* Center text inside button */
-    padding: 0.5rem 1rem; /* Button padding */
-    border: 1px solid var(--text-color); /* Button border */
-    border-radius: var(--border-radius-medium); /* Rounded corners */
-    color: var(--text-color); /* Button text color */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Smooth transition */
-  }
-
-  .other-services-list a:hover,
-  .other-services-list a:focus {
-    background-color: var(--text-color); /* Invert background on hover */
-    color: var(--color-gray-200); /* Change text color on hover */
-    text-decoration: none; /* Ensure no underline on hover */
-  }
 </style>

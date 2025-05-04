@@ -1,0 +1,106 @@
+<div class="top-banner">
+    <div class="nav">
+        <nav aria-label="Primary">
+            <ul>
+                <li webc:for="link of site.navLinks">
+                    <a :href="link.href" :class="url === link.href ? 'active' : ''" @raw="link.text"></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="hero-contact">
+        <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-phone-call">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+                <path d="M14.05 2a9 9 0 0 1 8 7.94"></path>
+                <path d="M14.05 6A5 5 0 0 1 18 10"></path>
+            </svg>
+            <a :href="'tel:' + site.phone" @text="site.phone"></a>
+        </div>
+        <div class="contact-item">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-clock">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+            </svg>
+            <a @text="site.hours"></a>
+        </div>
+    </div>
+</div>
+
+
+<style webc:scoped>
+    .top-banner {
+        background-color: var(--color-primary-950);
+        padding: 0.75rem 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .nav nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .nav nav li a {
+        color: var(--color-glare-500);
+        text-decoration: none;
+        padding-block: 0.25rem;
+        border-block-end: 2px solid transparent;
+        transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    .nav nav li a:hover {
+        color: #d1d5db;
+        border-block-end-color: #d1d5db;
+        text-decoration: none;
+    }
+
+    .nav nav li a.active {
+        font-weight: var(--font-weight-semibold);
+        border-block-end-color: var(--color-yellow-950);
+    }
+
+    .top-banner .hero-contact {
+        display: flex;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .top-banner .contact-item a,
+    .top-banner .contact-item svg {
+        color: var(--color-glare-500);
+    }
+
+    .top-banner .contact-item a:hover {
+        color: #d1d5db;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .contact-item svg {
+        flex-shrink: 0;
+    }
+
+    .contact-item a {
+        text-decoration: none;
+        color: inherit;
+    }
+</style>

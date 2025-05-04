@@ -23,19 +23,23 @@
       "steps": [
         {
           "title": "Thorough Diagnosis & Consultation",
-          "description": "We start with a comprehensive inspection of your boiler system to accurately diagnose the issue or assess your installation needs. We discuss our findings with you and recommend the best course of action."
+          "description": "We start with a comprehensive inspection of your boiler system to accurately diagnose the issue or assess your installation needs. We discuss our findings with you and recommend the best course of action.",
+          "img": "/assets/images/boiler1.jpeg"
         },
         {
           "title": "Expert Repair or Installation",
-          "description": "Our certified technicians use high-quality parts and follow industry best practices for all repairs and installations, ensuring safety and efficiency."
+          "description": "Our certified technicians use high-quality parts and follow industry best practices for all repairs and installations, ensuring safety and efficiency.",
+          "img": "/assets/images/boiler2.jpeg"
         },
         {
           "title": "System Testing & Final Check",
-          "description": "After the work is complete, we rigorously test the system to ensure it's operating correctly and safely. We'll walk you through the work performed and answer any questions."
+          "description": "After the work is complete, we rigorously test the system to ensure it's operating correctly and safely. We'll walk you through the work performed and answer any questions.",
+          "img": "/assets/images/boiler3.jpeg"
         },
         {
           "title": "Clean-Up & Follow-Up",
-          "description": "We respect your home and always clean up our work area. We also follow up to ensure you're completely satisfied with our service."
+          "description": "We respect your home and always clean up our work area. We also follow up to ensure you're completely satisfied with our service.",
+          "img": "/assets/images/boiler4.jpeg"
         }
       ]
     },

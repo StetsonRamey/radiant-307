@@ -28,28 +28,6 @@
         </ul>
       </div>
     </div>
-    <div class="service-areas-list">
-      <div class="wrapper">
-        <div class="header-with-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            class="lucide lucide-map-pinned">
-            <path d="M18 8c0 3.613-3.869 7.429-5.393 8.795a1 1 0 0 1-1.214 0C9.87 15.429 6 11.613 6 8a6 6 0 0 1 12 0">
-            </path>
-            <circle cx="12" cy="8" r="2"></circle>
-            <path
-              d="M8.714 14h-3.71a1 1 0 0 0-.948.683l-2.004 6A1 1 0 0 0 3 22h18a1 1 0 0 0 .948-1.316l-2-6a1 1 0 0 0-.949-.684h-3.712">
-            </path>
-          </svg>
-          <h6>Nearby Cities</h6>
-        </div>
-        <ul>
-          <li webc:for="(hood, name) in areas['Nearby Cities']">
-            <a :href="name.slug" class="card-link" @text="hood"></a>
-          </li>
-        </ul>
-      </div>
-    </div>
   </div>
   <!-- SVG Curve -->
   <svg viewBox="0 0 1024 180" class="section-curve" preserveAspectRatio="none" aria-hidden="true">
@@ -68,8 +46,8 @@
   .how-we-help-section {
     position: relative;
     /* Gradient like Cloudflare */
-    background-image: linear-gradient(to right, var(--color-flush-orange-500), var(--color-yellow-orange-300));
-    color: var(--dark-text);
+    background-image: linear-gradient(to right, var(--color-primary-200), var(--color-primary-100));
+    color: var(--color-primary-950);
     /* Dark text for light background */
     padding-bottom: 180px;
     /* Extra space for the curve */
@@ -94,7 +72,6 @@
     font-size: 2.25rem;
     /* ~h2 */
     font-weight: 600;
-    color: var(--dark-text);
   }
 
   /* Google Map Styling */
@@ -168,7 +145,7 @@
 
   .section-curve path {
     /* Fill color should match the background of the *next* section */
-    fill: var(--color-gray-900);
+    fill: var(--color-yellow-950);
     /* Default to dark like testimonials */
   }
 
@@ -180,7 +157,7 @@
   }
 
   .service-areas-list {
-    background-color: var(--color-gray-900);
+    background-color: var(--color-primary-800);
     padding: 2rem;
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
   }
@@ -198,14 +175,14 @@
   }
 
   .wrapper h6 {
-    color: var(--color-blue-violet-100);
+    color: var(--color-glare-200);
     font-size: 1.25rem;
     margin: 0;
     font-weight: 600;
   }
 
   .wrapper svg {
-    color: var(--color-blue-violet-100);
+    color: var(--color-glare-200);
   }
 
   .wrapper ul {
@@ -219,18 +196,19 @@
 
   .wrapper .card-link {
     display: block;
-    color: var(--light-color);
+    color: var(--color-primary-950);
     text-decoration: none;
     padding: 0.5rem 0.75rem;
     border-radius: 4px;
-    background-color: var(--color-gray-800);
+    background-color: var(--color-yellow-800);
+    border: 3px solid var(--color-yellow-800);
     transition: all 0.2s ease;
   }
 
   .wrapper .card-link:hover {
-    background-color: var(--color-gray-700);
+    background-color: var(--color-yellow-600);
+    border-color: var(--color-secondary-700);
     transform: translateY(-1px);
-    color: var(--color-yellow-orange-400);
   }
 </style>
 

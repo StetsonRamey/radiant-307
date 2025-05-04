@@ -20,7 +20,6 @@
           <p @text="site.hours"></p>
         </div>
       </div>
-      <!-- Replace XXX-XXXX with actual number -->
     </div>
     <div class="cta-form-container">
       <form action="#" method="POST" class="cta-form">
@@ -46,7 +45,7 @@
           <label for="cta-message">Brief Description (Optional):</label>
           <textarea id="cta-message" name="message" rows="3"></textarea>
         </div>
-        <button type="submit" class="btn-submit">Request Service</button>
+        <button type="submit" class="btn" data-btn-variant="primary">Request Service</button>
       </form>
     </div>
   </div>
@@ -54,12 +53,7 @@
 
 <style webc:scoped>
   .cta-section {
-    /* Example Blue Gradient - Adjust colors as needed */
-    background-image: linear-gradient(to right, #4f46e5, #6366f1);
-    color: #ffffff;
-    /* White text for contrast */
     padding: 5rem 0;
-    /* Generous padding */
   }
 
   .container {
@@ -109,16 +103,15 @@
     display: inline-block;
     font-size: 1.25rem;
     font-weight: 600;
-    color: #ffffff;
     text-decoration: none;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: 2px solid var(--color-primary-800);
     padding: 0.75rem 1.5rem;
     border-radius: 0.375rem;
     transition: background-color 0.3s ease, border-color 0.3s ease;
   }
 
   .cta-phone:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--color-yellow-700);
     border-color: rgba(255, 255, 255, 0.8);
   }
 
@@ -148,7 +141,7 @@
 
   /* Form Styling */
   .cta-form-container {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: var(--color-primary-800);
     /* Subtle background for form */
     padding: 2.5rem;
     border-radius: 8px;
@@ -228,24 +221,11 @@
     min-height: 80px;
   }
 
-  .btn-submit {
-    display: block;
+  .btn {
     width: 100%;
+    justify-content: center;
+    text-transform: uppercase;
     padding: 1rem 1.5rem;
-    background-color: #f6821f;
-    /* Orange accent color from other sections */
-    color: white;
-    border: none;
-    border-radius: 0.375rem;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s ease;
   }
 
-  .btn-submit:hover {
-    background-color: #dd7016;
-    /* Darker orange */
-  }
 </style>

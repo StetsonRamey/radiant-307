@@ -150,37 +150,5 @@
                 }
             ]
         }
-    },
-    "Nearby Cities": {
-        "Burns": {
-            "slug": "/locations/burns/",
-            "title": "Burns",
-            "location": [
-                {
-                    "lat": 41.1918,
-                    "long": -104.35846
-                }
-            ]
-        },
-        "Hillsdale": {
-            "slug": "/locations/hillsdale/",
-            "title": "Hillsdale",
-            "location": [
-                {
-                    "lat": 41.21157,
-                    "long": -104.4784
-                }
-            ]
-        },
-        "Pine Bluffs": {
-            "slug": "/locations/pine-bluffs/",
-            "title": "Pine Bluffs",
-            "location": [
-                {
-                    "lat": 41.17991,
-                    "long": -104.06544
-                }
-            ]
-        }
     }
 }

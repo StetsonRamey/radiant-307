@@ -1,5 +1,5 @@
 <div webc:root="override" class="container">
-  <div class="text-center">
+  <div>
     <h2 class="heading-2">Our Services</h2>
     <p class="paragraph">
       Providing high quality plumbing and HVAC services to Cheyenne and
@@ -12,7 +12,7 @@
       <img :src="service.core_services.image" alt="Service 1 Placeholder" />
       <h3 class="heading-2" @text="service.title"></h3>
       <p class="paragraph truncate" @text="service.description"></p>
-      <a :href="service.slug" class="btn btn-card-learn-more" @text="service.core_services.heading">Learn More</a>
+      <a :href="service.slug" class="btn" data-ghost-button @text="service.core_services.heading">Learn More</a>
     </div>
   </div>
 </div>
@@ -22,7 +22,6 @@
     display: grid;
     padding-block-start: 2rem;
     grid-template-columns: repeat(3, 1fr);
-    /* Default 3 columns */
     gap: 1.5rem;
     text-align: left;
   }
@@ -30,7 +29,7 @@
   .service-card {
     --flow-space: 0.2rem;
     background-color: var(--light-color);
-    border: 1px solid #e5e7eb;
+    border: 1px solid var(--color-primary-600);
     border-radius: 0.5rem;
     padding: 1.5rem;
     transition: box-shadow 0.3s ease;
@@ -54,29 +53,9 @@
   }
 
   /* Button Styles for Cards */
-  .btn-card-learn-more {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    /* Slightly smaller padding */
-    border-radius: 0.25rem;
-    font-weight: 600;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    background-color: #e5e7eb;
-    /* Light gray background */
-    color: #1f2937;
-    /* Darker text */
-    border: 1px solid #d1d5db;
+  .service-card .btn {
     margin-top: auto;
   }
-
-  .btn-card-learn-more:hover {
-    background-color: #d1d5db;
-    /* Darken on hover */
-  }
-
 
   .truncate {
     display: -webkit-box;
