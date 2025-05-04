@@ -7,28 +7,43 @@ layout: base.webc
     <header class="locations-header">
         <div class="">
             <h1 class="heading-1">
-                Radiant 307 Service Areas &nbsp; Cheyenne, WY and Surrounding Areas
+                Radiant 307 Service Areas &nbsp; Cheyenne, WY
             </h1>
             <p>
                 Professional plumbing for residential and commercial projects.
             </p>
             <div class="service-buttons">
-                <a href="tel:+13075551234" class="link">Call us Today!</a>
+                <a href="tel:+13075551234" class="btn" data-btn-variant="secondary">Call us Today!</a>
             </div>
         </div>
     </header>
     <div class="contact-grid">
-        <div class="contact-text flow">
-            <h1>Get a demo of all Mural has to offer.</h1>
-            <p>Our sales team is here to help your business identify how Mural can fit into your workflow, breakdown
-                silos and maximize impact with your customers.</p>
-            <h2>What to expect?</h2>
-            <ul>
-                <li>30 minute conversation with an expert</li>
-                <li>First-hand guidance for how Mural would work for you and your team</li>
-                <li>Custom look at existing templates built for your workflows</li>
-                <li>All your questions answered to ensure we are a good fit for your business needs</li>
-            </ul>
+        <div class="left-col">
+            <div class="contact-image">
+                <img src="/assets/images/contact-img.jpeg"
+                    alt="A photo of the owner Remington smiling in front of a boilder" />
+            </div>
+            <div class="contact-text flow">
+                <h1>Call me about your plumbing project.</h1>
+                <p>We provide top notch service at competitive prices. And we're 100% local.</p>
+                <h2>What to expect?</h2>
+                <ul>
+                    <li>Actually talk to the guy in the picture above ⬆️ (Remington)</li>
+                    <li>Tell me what you've got going on. I'll answer questions and provide my opinons / recommendations
+                    </li>
+                    <li>We can schedule an appointment for me to come look at the project and provide a quote</li>
+                    <li>Hire me to do the work, and you'll know what's going on every step of the way</li>
+                </ul>
+            </div>
+            <div class="testimonial">
+                <p>
+                    "I've used Remington for all my plumbing needs for years. He's always been professional and
+                    knowledgeable. I'll continue to use him for all my plumbing needs."
+                </p>
+                <p>
+                    - Mark R.
+                </p>
+            </div>
         </div>
         <div class="contact-form-container">
             <form>
@@ -110,7 +125,7 @@ layout: base.webc
                     <label for="message">Add a message</label>
                     <textarea class="form-textarea" id="message" name="message" rows="4"></textarea>
                 </div>
-                <button type="submit" class="button">Submit Request</button>
+                <button type="submit" class="btn" data-btn-variant="primary">Submit Request</button>
             </form>
         </div>
     </div>
@@ -120,9 +135,7 @@ layout: base.webc
     .locations-header {
         text-align: center;
         line-height: 1.2;
-        background-image: linear-gradient(to right,
-                var(--color-blue-violet-700),
-                var(--color-royal-blue-500));
+        background-image: var(--hero-gradient);
         color: var(--gray-color);
         padding-block: 4rem;
     }
@@ -140,20 +153,6 @@ layout: base.webc
         align-items: center;
     }
 
-    .service-buttons .link {
-        background-color: var(--color-blue-violet-50);
-        padding: 1rem 1.5rem;
-        border-radius: 4px;
-        color: var(--color-blue-violet-500);
-        text-decoration: none;
-        transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    }
-
-    .service-buttons .link:hover {
-        background-color: var(--color-blue-violet-100);
-        color: var(--color-blue-violet-500);
-    }
-
     .contact-page {
         margin-inline: auto;
     }
@@ -161,7 +160,6 @@ layout: base.webc
     .contact-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 4rem;
     }
 
     .contact-text {
@@ -187,7 +185,16 @@ layout: base.webc
 
     .contact-form-container {
         background-color: var(--color-gray-300);
-        padding: 4rem;
+        padding: 2rem;
+    }
+
+    .left-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding-inline: 1rem;
     }
 
     form {
@@ -267,29 +274,15 @@ layout: base.webc
         min-block-size: 80px;
     }
 
-    .button {
-        display: inline-block;
-        padding-block: 0.75rem;
-        padding-inline: 2rem;
-        background-color: var(--color-primary-600);
-        color: var(--color-white);
-        font-weight: var(--font-weight-medium);
-        text-align: center;
-        border: none;
-        border-radius: var(--radius-medium);
-        cursor: pointer;
-        transition: background-color 0.2s ease-in-out;
-        justify-self: start;
-    }
-
-    .button:hover {
-        background-color: var(--color-primary-700);
-    }
 
     @media (max-width: 992px) {
         .contact-grid {
             grid-template-columns: 1fr;
             gap: 2rem;
+        }
+
+        .contact-form-container {
+            padding: 1rem;
         }
 
         .form-row {
@@ -345,6 +338,11 @@ layout: base.webc
         outline-color: var(--color-flush-orange-700);
     }
 
+    .btn {
+        text-transform: uppercase;
+        justify-content: center;
+    }
+
     input[type="radio"]:checked {
         outline: 4px solid;
         outline-color: var(--color-flush-orange-400);
@@ -367,4 +365,78 @@ layout: base.webc
     }
 
     /* End Radio Button Styles */
+
+    .testimonial {
+        justify-self: center;
+        background-color: var(--color-yellow-950);
+        max-width: 50ch;
+        /* Example background */
+        color: var(--color-primary-950);
+        padding: 1.5rem;
+        border-radius: var(--border-radius-small);
+        margin-block-start: 2rem;
+        /* Space above the testimonial */
+        border-left: 5px solid var(--color-primary-500);
+        /* Accent border */
+        font-style: italic;
+    }
+
+    .testimonial p:first-of-type {
+        margin-bottom: 1rem;
+        /* Space between quote and attribution */
+        /* Optional: Add quotation marks */
+        /* position: relative; */
+        /* padding-left: 1.5em; */
+    }
+
+    /* Optional: Pseudo-element for quotation mark */
+    /* .testimonial p:first-of-type::before {
+        content: '\201C'; /* Left double quote */
+    /* position: absolute; */
+    /* left: 0; */
+    /* top: 0; */
+    /* font-size: 2em; */
+    /* line-height: 1; */
+    /* color: var(--color-flush-orange-500); */
+    /* } */
+
+    .testimonial p:last-of-type {
+        text-align: right;
+        /* Align attribution to the right */
+        font-style: normal;
+        /* Normal style for attribution */
+        font-weight: 500;
+        color: var(--color-primary-800);
+        /* Slightly different color */
+    }
+
+    .contact-image {
+        margin-block-start: 2rem;
+        /* Add some space above the image */
+        width: 100%;
+        /* Allow it to take full width initially */
+        max-width: 450px;
+        /* Constrain max width (adjust as needed) */
+        margin-inline: auto;
+        /* Center the block horizontally */
+    }
+
+    .contact-image img {
+        display: block;
+        /* Remove extra space below */
+        width: 100%;
+        /* Make image fill container width */
+        height: auto;
+        /* Maintain aspect ratio */
+        aspect-ratio: 3 / 2;
+        /* Set a common aspect ratio (adjust if needed) */
+        object-fit: cover;
+        /* Cover the area, crop if necessary */
+        object-position: center;
+        /* Center the image content */
+        border-radius: var(--border-radius-large);
+        /* Use large radius from global styles */
+        box-shadow: var(--shadow-medium);
+        /* Add a medium shadow */
+    }
 </style>

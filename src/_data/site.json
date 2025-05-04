@@ -19,6 +19,10 @@
         {
             "text": "Services",
             "href": "/services/"
+        },
+        {
+            "text": "Contact",
+            "href": "/contact/"
         }
     ]
 }
