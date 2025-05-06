@@ -1,7 +1,7 @@
----js
-{
-layout: "base.webc",
-}
+---
+layout: "base.webc"
+title: "Our Services | Radiant 307 Plumbing | Cheyenne, WY"
+description: "Comprehensive plumbing and radiant heating services in Cheyenne, WY. Expert residential and commercial plumbing and heating solutions, repairs, and installations."
 ---
 
 <!-- Services Page Main Content -->
@@ -90,7 +90,6 @@ layout: "base.webc",
   }
 
   .services-header {
-    text-align: center;
     margin-block-end: 2rem;
     line-height: 1.2;
     background-image: var(--hero-gradient);
@@ -104,17 +103,21 @@ layout: "base.webc",
   }
   .service-buttons {
     display: flex;
+    flex-direction: column;
     gap: 2rem;
-    justify-content: center;
     margin-top: 2rem;
-    align-items: center;
+    align-items: stretch;
+  }
+
+  .service-buttons a {
+    justify-content: center;
   }
 
   .services-intro {
     max-width: 70ch;
     margin-inline: auto;
     margin-block-end: 2.5rem;
-    padding-block: 3rem;
+    padding: 3rem 1rem;
   }
   .services-intro .paragraph {
     font-size: 1.25rem;
@@ -246,6 +249,12 @@ layout: "base.webc",
     border: 1px solid var(--color-primary-950);
     white-space: nowrap;
     letter-spacing: 0.01em;
+  }
+
+  @media (min-width: 48em) {
+    .service-buttons {
+      flex-direction: row;
+    }
   }
 </style>
 

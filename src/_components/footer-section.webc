@@ -3,8 +3,7 @@
   <div class="container footer-grid">
     <!-- Column 1: Business Info -->
     <div class="footer-col business-info flow" style="--flow-space: .5em;">
-      <img src="https://placehold.co/150x50/ffffff/1B252B?text=Radiant307+Logo" alt="Radiant 307 Plumbing Logo"
-        class="footer-logo" />
+      <div class="footer-logo" @html="site.logo"></div>
       <p class="business-name" @text="site.name"></p>
       <div class="address-wrap">
         <p @text="site.address"></p>
@@ -115,8 +114,6 @@
     max-width: 180px;
     /* Adjust logo size */
     margin-bottom: 1.5rem;
-    filter: brightness(0) invert(0.9);
-    /* Make placeholder logo light */
   }
 
   .business-name {

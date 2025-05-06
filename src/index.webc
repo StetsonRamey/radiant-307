@@ -2,7 +2,10 @@
 layout: "base.webc"
 ---
 
-<hero-section :site="site"></hero-section>
+<section class="hero-section">
+  <div class="logo" @html="site.logo"></div>
+  <hero-section :@site="site"></hero-section>
+</section>
 <section class="services-overview">
   <services-overview :@services="services"></services-overview>
 </section>
@@ -23,6 +26,19 @@ layout: "base.webc"
   webc:keep></script>
 
 <style>
+  .logo {
+    max-width: 100px;
+    margin-inline-start: auto;
+    aspect-ratio: 1/1;
+  }
+
+  .hero-section {
+    background-image: var(--hero-gradient);
+    color: var(--color-glare-500);
+    width: 100%;
+    padding: .5rem 1rem;
+  }
+
   .services-overview {
     padding: 5rem 1rem 5rem 1rem;
     background-color: var(--light-color);

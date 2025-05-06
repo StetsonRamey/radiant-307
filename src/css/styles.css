@@ -301,6 +301,7 @@ img {
   --button-bg: transparent;
   --button-border-color: var(--color-primary-800);
   --button-color: var(--color-primary-800);
+  --button-hover-color: var(--button-border-color);
 }
 
 .btn[data-button-radius="hard"] {

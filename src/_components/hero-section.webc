@@ -1,6 +1,4 @@
-<!-- hero-section.webc -->
-
-<section class="hero-section" webc:scoped>
+<div webc:root="override" class="hero-section">
   <div class="container hero-content">
     <div class="hero-text">
       <h1 class="heading-1 text-light">Radiant 307 Plumbing</h1>
@@ -13,19 +11,14 @@
       </div>
     </div>
     <div class="hero-image">
-      <img src="/assets/images/hero.jpeg" alt="An older model boiler system with storage tanks for domestic hot water and in floor radiant heating" width="800" height="600" />
+      <img src="/assets/images/hero.jpeg"
+        alt="An older model boiler system with storage tanks for domestic hot water and in floor radiant heating"
+        width="800" height="600" loading="eager" />
     </div>
   </div>
-</section>
+</div>
 
 <style webc:scoped>
-  .hero-section {
-    background-image: var(--hero-gradient);
-    color: var(--color-glare-500);
-    width: 100%;
-    padding: 2rem 1rem;
-  }
-
   .container.hero-content {
     max-width: 1200px;
     padding-block: 6rem;
@@ -116,6 +109,7 @@
 
     .hero-buttons {
       justify-content: center;
+      flex-direction: column;
     }
   }
 

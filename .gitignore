@@ -27,3 +27,6 @@ Thumbs.db
 
 # Curso
 .cursor/
+
+# Cache
+.cache

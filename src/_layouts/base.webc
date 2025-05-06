@@ -5,8 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title @text="title">
-    Radiant 307 Plumbing | Plumbing Services in Cheyenne, Wyoming
+    Radiant 307 Plumbing | Plumbing and Radiant Heating Services in Cheyenne, Wyoming
   </title>
+  <meta name="description"
+    :content="description || 'Professional plumbing and radiant heating services in Cheyenne, WY.'" />
   <link rel="stylesheet" href="/css/styles.css" webc:keep />
   <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep />
   <script :src="getBundleFileUrl('js')" webc:keep></script>

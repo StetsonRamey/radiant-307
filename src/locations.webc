@@ -1,9 +1,12 @@
 ---
 layout: base.webc
+title: Service Areas | Radiant 307 Plumbing - Serving All Cheyenne Neighborhoods
+description: Radiant 307 Plumbing proudly serves Cheyenne and the surrounding Wyoming communities with reliable plumbing and heating services. Our service area spans across Laramie County and into parts of northern Colorado, ensuring that more families and businesses have access to our expert solutions.
 ---
 
 <!-- location Page Main Content -->
-<main class="locations-main">
+<div class="locations-main">
+    <div class="logo" @html="site.logo"></div>
     <!-- 1. Headline -->
     <header class="locations-header">
         <div class="container">
@@ -19,7 +22,7 @@ layout: base.webc
             </div>
         </div>
     </header>
-</main>
+</div>
 
 <section class="locations-intro">
     <p class="paragraph container">
@@ -84,7 +87,7 @@ layout: base.webc
 
 <section class="check">
     <div class="container inner flow">
-        <h2 class="text-center">Don't see your area?</h2>
+        <h2>Don't see your area?</h2>
         <p class="paragraph">
             We're always expanding our service area. If you don't see your area listed, please
             <a href="/contact/" class="link">contact us</a> and we'll be happy to help you.
@@ -95,13 +98,21 @@ layout: base.webc
 <cta-section :icons="icons" :site="site"></cta-section>
 
 <style>
-    .locations-header {
-        text-align: center;
-        margin-block-end: 2rem;
-        line-height: 1.2;
+    .logo {
+        max-width: 100px;
+        padding-block-start: 1rem;
+        margin-inline-start: auto;
+    }
+
+    .locations-main {
         background-image: var(--hero-gradient);
         color: var(--gray-color);
+    }
+
+    .locations-header {
+        line-height: 1.2;
         padding-block: 4rem;
+
     }
 
     .locations-header h1 {
@@ -111,10 +122,17 @@ layout: base.webc
 
     .service-buttons {
         display: flex;
+        flex-direction: column;
         gap: 2rem;
         margin-top: 2rem;
-        justify-content: center;
         align-items: center;
+        width: 100%;
+        /* Ensure the container takes full width */
+    }
+
+    .service-buttons a {
+        width: 100%;
+        justify-content: center;
     }
 
 
@@ -202,6 +220,11 @@ layout: base.webc
 
         .area-grid h3 {
             justify-self: end;
+        }
+
+        .service-buttons {
+            flex-direction: row;
+            max-width: 40ch;
         }
     }
 
@@ -302,6 +325,7 @@ layout: base.webc
 
     .container.inner h2 {
         font-size: 3rem;
+        line-height: 1.1;
     }
 
     .check .container.inner p,

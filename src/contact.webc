@@ -7,7 +7,7 @@ layout: base.webc
     <header class="locations-header">
         <div class="">
             <h1 class="heading-1">
-                Radiant 307 Service Areas &nbsp; Cheyenne, WY
+                Contact Radiant 307&nbsp; Cheyenne, WY
             </h1>
             <p>
                 Professional plumbing for residential and commercial projects.
@@ -133,11 +133,10 @@ layout: base.webc
 
 <style>
     .locations-header {
-        text-align: center;
         line-height: 1.2;
         background-image: var(--hero-gradient);
         color: var(--gray-color);
-        padding-block: 4rem;
+        padding: 4rem 1rem;
     }
 
     .locations-header h1 {
@@ -149,8 +148,10 @@ layout: base.webc
         display: flex;
         gap: 2rem;
         margin-top: 2rem;
-        justify-content: center;
-        align-items: center;
+    }
+
+    .service-buttons a {
+        flex: 1;
     }
 
     .contact-page {
@@ -272,6 +273,12 @@ layout: base.webc
     textarea {
         resize: vertical;
         min-block-size: 80px;
+    }
+
+    @media (min-width: 48em) {
+        .service-buttons a {
+            flex: 0 1 auto;
+        }
     }
 
 

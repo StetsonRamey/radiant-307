@@ -16,10 +16,10 @@
             <h3 class="heading-3">Quick Response</h3>
             <p class="paragraph">If we don't answer when you call, leave me a message and I'll get right back to you.</p>
             <div class="button-container">
-              <a :href="'tel:' + site.phone" class="btn" data-btn-variant="primary" data-ghost-button
+              <a :href="'tel:' + site.phone" class="btn" data-btn-variant="primary" 
                 >Call Now</a
               >
-              <a href="/services/" class="learn-more-link">Check out our services</a>
+              <a href="/services/" class="btn" data-btn-variant="secondary" data-ghost-button>Check out our services</a>
             </div>
           </div>
           <!-- Right Column (Testimonial) -->
@@ -104,15 +104,12 @@
     gap: 1rem;
   }
 
-  .learn-more-link {
-    color: var(--color-slate-950);
-    text-decoration: none;
-    font-weight: 600;
-    margin-inline-start: 1rem;
+  .left-column .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
-  .learn-more-link:hover {
-    text-decoration: underline;
-  }
+
   .link-arrow {
     margin-left: 0.25rem;
     display: inline-block;
@@ -144,12 +141,10 @@
 
   .btn[data-ghost-button] {
     --button-bg: transparent;
-    --button-border-color: var(--color-yellow-950);
-    --button-color: var(--color-primary-950);
-    --button-hover-bg: var(--color-primary-950);
+    --button-border-color: var(--color-secondary-500);
+    --button-hover-bg: transparent;
+    --button-hover-color: var(--color-secondary-600);
   }
-  .btn:hover {
-    --button-color: var(--color-yellow-950);
-  }
+
 </style>
 

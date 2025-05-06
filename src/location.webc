@@ -13,6 +13,7 @@ return slug
 },
 eleventyComputed: {
 title: data => `${data.location.title} | Radiant 307`,
+description: data => `${data.location.title} | Radiant 307 Plumbing | Plumbing and Radiant Heating Services in Cheyenne, WY.`,
 locationTitle: data => data.location.title,
 lat: data => data.location.lat,
 long: data => data.location.long,
@@ -128,9 +129,14 @@ long: data => data.location.long,
 
     .service-buttons {
         display: flex;
+        flex-direction: column;
         gap: 2rem;
         margin-top: 2rem;
-        align-items: center;
+        align-items: stretch;
+    }
+
+    .service-buttons .btn {
+        justify-content: center;
     }
 
     .service-buttons .link {
@@ -262,6 +268,13 @@ long: data => data.location.long,
         padding-block: 4rem;
         background-color: var(--color-gray-300);
         text-align: right;
+    }
+
+    @media (min-width: 48em) {
+        .service-buttons {
+            flex-direction: row;
+        }
+
     }
 </style>
 
