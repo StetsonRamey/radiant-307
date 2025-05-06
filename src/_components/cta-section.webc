@@ -22,10 +22,14 @@
       </div>
     </div>
     <div class="cta-form-container">
-      <form action="#" method="POST" class="cta-form">
+      <form action="/contact/" method="GET" class="cta-form">
         <div class="form-group">
-          <label for="cta-name">Name:</label>
-          <input type="text" id="cta-name" name="name" required>
+          <label for="cta-first-name">First Name:</label>
+          <input type="text" id="cta-first-name" name="first-name" required>
+        </div>
+        <div class="form-group">
+          <label for="cta-last-name">Last Name:</label>
+          <input type="text" id="cta-last-name" name="last-name" required>
         </div>
         <div class="form-group">
           <label for="cta-phone">Phone Number:</label>
@@ -34,11 +38,9 @@
         <div class="form-group">
           <label for="cta-project">Project Type:</label>
           <select id="cta-project" name="project" required>
-            <option value="" disabled selected>Select your project...</option>
-            <option value="Boiler">Boiler</option>
-            <option value="HVAC">HVAC</option>
-            <option value="General Plumbing">General Plumbing</option>
-            <option value="Other">Other (Describe briefly)</option>
+            <option value="" disabled selected>Select your project type...</option>
+            <option webc:for="projectType of site.contactFormProjectTypes" value="@projectType" @text="projectType">
+            </option>
           </select>
         </div>
         <div class="form-group">
@@ -227,5 +229,4 @@
     text-transform: uppercase;
     padding: 1rem 1.5rem;
   }
-
 </style>

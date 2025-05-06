@@ -1,5 +1,6 @@
 ---
-title: Contact Us
+title: Contact Us | Radiant 307 Plumbing | Cheyenne, WY
+description: Contact Radiant 307 Plumbing for professional plumbing and radiant heating services in Cheyenne, WY. Get a quote, schedule an appointment or just say hello.
 layout: base.webc
 ---
 <main class="contact-page">
@@ -112,12 +113,7 @@ layout: base.webc
                     <div class="project-types">
                         <label for="project-type">Project Type</label>
                         <select id="project-type" name="project-type">
-                            <option value="boiler">Boiler</option>
-                            <option value="radiant-heating">Radiant Heating</option>
-                            <option value="water-heater">Water Heater</option>
-                            <option value="water-filter">Water Filtration & Softening</option>
-                            <option value="appliance-water-conditioner">Appliance Water Conditioner</option>
-                            <option value="other">Other</option>
+                            <option webc:for="projectType of site.contactFormProjectTypes"   value="@projectType" @text="projectType"></option>
                         </select>
                     </div>
                 </fieldset>

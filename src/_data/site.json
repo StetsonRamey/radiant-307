@@ -7,6 +7,7 @@
     "state": "WY",
     "zip": "82001",
     "hours": "Monday - Friday: 8:00 AM - 5:00 PM",
+    "contactFormProjectTypes": ["Boiler", "Radiant Heating", "Water Heater", "Water Filtration and Softening", "Appliance Water Conditioner", "Other"],
     "navLinks": [
         {
             "text": "Home",
