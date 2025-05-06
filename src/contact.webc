@@ -1,6 +1,7 @@
 ---
 title: Contact Us | Radiant 307 Plumbing | Cheyenne, WY
-description: Contact Radiant 307 Plumbing for professional plumbing and radiant heating services in Cheyenne, WY. Get a quote, schedule an appointment or just say hello.
+description: Contact Radiant 307 Plumbing for professional plumbing and radiant heating services in Cheyenne, WY. Get a
+quote, schedule an appointment or just say hello.
 layout: base.webc
 ---
 <main class="contact-page">
@@ -113,7 +114,10 @@ layout: base.webc
                     <div class="project-types">
                         <label for="project-type">Project Type</label>
                         <select id="project-type" name="project-type">
-                            <option webc:for="projectType of site.contactFormProjectTypes"   value="@projectType" @text="projectType"></option>
+                            <option value="" disabled selected>Select your project type...</option>
+                            <option webc:for="projectType of site.contactFormProjectTypes" :value="projectType"
+                                @text="projectType">
+                            </option>
                         </select>
                     </div>
                 </fieldset>
@@ -121,6 +125,8 @@ layout: base.webc
                     <label for="message">Add a message</label>
                     <textarea class="form-textarea" id="message" name="message" rows="4"></textarea>
                 </div>
+                <p id="prefill-notice"
+                    style="display: none; margin-bottom: 1rem; color: var(--color-primary-700); font-weight: 500;"></p>
                 <button type="submit" class="btn" data-btn-variant="primary">Submit Request</button>
             </form>
         </div>
@@ -443,3 +449,71 @@ layout: base.webc
         /* Add a medium shadow */
     }
 </style>
+
+<script>
+    console.log('we\'re loaded and ready for form submissions')
+    document.addEventListener('DOMContentLoaded', function () {
+        const params = new URLSearchParams(window.location.search);
+        let wasPrefilled = false; // Flag to track if any field was prefilled
+
+        // Get values from URL parameters
+        const ctaFirstName = params.get('first-name');
+        const ctaLastName = params.get('last-name');
+        const ctaPhone = params.get('phone');
+        const ctaProject = params.get('project');
+        const ctaMessage = params.get('message');
+
+        // Pre-fill contact form fields
+        if (ctaFirstName) {
+            const firstNameField = document.getElementById('first-name');
+            if (firstNameField) {
+                firstNameField.value = ctaFirstName;
+                wasPrefilled = true;
+            }
+        }
+
+        if (ctaLastName) {
+            const lastNameField = document.getElementById('last-name');
+            if (lastNameField) {
+                lastNameField.value = ctaLastName;
+                wasPrefilled = true;
+            }
+        }
+
+        if (ctaPhone) {
+            const phoneField = document.getElementById('phone');
+            if (phoneField) {
+                phoneField.value = ctaPhone;
+                wasPrefilled = true;
+            }
+        }
+
+        if (ctaProject) {
+            const projectTypeField = document.getElementById('project-type');
+            if (projectTypeField) {
+                projectTypeField.value = ctaProject;
+                wasPrefilled = true;
+            }
+        }
+
+        if (ctaMessage) {
+            const messageField = document.getElementById('message'); // Assumes contact form message field also has id 'message'
+            if (messageField) {
+                messageField.value = ctaMessage;
+                wasPrefilled = true;
+            }
+        }
+
+        // If any field was pre-filled, show the notice and clean the URL
+        if (wasPrefilled) {
+            const noticeElement = document.getElementById('prefill-notice');
+            if (noticeElement) {
+                noticeElement.textContent = 'Please answer a few more questions to submit your inquiry.';
+                noticeElement.style.display = 'block'; // Or remove a hidden class
+            }
+
+            // Clean the URL by removing query parameters
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+    });
+</script>

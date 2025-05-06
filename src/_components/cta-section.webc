@@ -39,7 +39,7 @@
           <label for="cta-project">Project Type:</label>
           <select id="cta-project" name="project" required>
             <option value="" disabled selected>Select your project type...</option>
-            <option webc:for="projectType of site.contactFormProjectTypes" value="@projectType" @text="projectType">
+            <option webc:for="projectType of site.contactFormProjectTypes" :value="projectType" @text="projectType">
             </option>
           </select>
         </div>
