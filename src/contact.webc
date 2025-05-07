@@ -1,13 +1,13 @@
 ---js
 const title = "Contact Us | Radiant 307 Plumbing | Cheyenne, WY";
-const description = "Contact Radiant 307 Plumbing for professional plumbing and radiant heating services in Cheyenne, \
+const description = "Contact Radiant 307 Plumbing for professional plumbing and radiant heating services in Cheyenne,\
 WY. Get a quote, schedule an appointment or just say hello.";
 const layout = "base.webc";
 ---
 <main class="contact-page">
     <!-- 1. Headline -->
     <header class="locations-header">
-        <div class="">
+        <div class="container">
             <h1 class="heading-1">
                 Contact Radiant 307&nbsp; Cheyenne, WY
             </h1>

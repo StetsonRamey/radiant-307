@@ -4,13 +4,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title @text="title">
     Radiant 307 Plumbing | Plumbing and Radiant Heating Services in Cheyenne, Wyoming
   </title>
   <meta name="description"
     :content="description || 'Professional plumbing and radiant heating services in Cheyenne, WY.'" />
+
+  <meta name="generator" content="Eleventy" />
+
+  <link rel="canonical" href="" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:site_name" content="Radiant 307 Plumbing" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Radiant 307 Plumbing | Plumbing and Radiant Heating Services in Cheyenne, Wyoming" />
+  <meta property="og:description"
+    content="Professional plumbing and radiant heating services in Cheyenne, WY." />
+  <meta property="og:image" content="/assets/images/og-img.png" />
+  <meta property="og:image:alt" content="The Radiant 307 company logo" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="400" />
+  
+
   <link rel="stylesheet" href="/css/styles.css" webc:keep />
   <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep />
+
+
   <script :src="getBundleFileUrl('js')" webc:keep></script>
 </head>
 
