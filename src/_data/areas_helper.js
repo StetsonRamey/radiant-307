@@ -1,6 +1,15 @@
 // src/_data/areas_helper.js
-// Use dynamic import for the JSON file
-import areas from './areas.json' with { type: 'json' };
+import * as fs from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { dirname, join } from 'node:path';
+
+// Replaced direct JSON import with fs.readFileSync and JSON.parse
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+const areasPath = join(__dirname, 'areas.json');
+const areasData = fs.readFileSync(areasPath, 'utf8');
+const areas = JSON.parse(areasData);
+
 /**
  * Flattens the nested areas data structure into an array of location objects
  * Each object contains the category, name, and slug
