@@ -33,3 +33,6 @@ Thumbs.db
 
 # Dev Vars
 .dev.vars
+
+# Wrangler cache/temp
+.wrangler/
