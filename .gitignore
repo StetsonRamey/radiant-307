@@ -30,3 +30,6 @@ Thumbs.db
 
 # Cache
 .cache
+
+# Dev Vars
+.dev.vars
