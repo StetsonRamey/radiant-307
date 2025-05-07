@@ -1,0 +1,25 @@
+name = "radiant-307"
+compatibility_date = "2024-05-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Bindings allow your Functions to interact with Cloudflare resources.
+# Docs: https://developers.cloudflare.com/pages/functions/bindings/
+
+[vars]
+# Add non-secret environment variables here if needed
+# EXAMPLE_VARIABLE = "example_value"
+
+# Note: RESEND_API_KEY should be set as a SECRET in the Cloudflare Pages dashboard settings,
+# not here in [vars].
+
+# [[send_email]] binding removed as we are using Resend API
+
+# If you have other bindings like KV, D1, or R2, configure them here.
+# For example, for KV:
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "<your_kv_namespace_id>"
+
+# Note: For Cloudflare Pages, many configurations like `main` (entry point for workers) or `site` (for static assets)
+# are often handled by the Pages platform itself or through the `wrangler pages dev` command parameters.
+# This wrangler.toml can primarily focus on bindings and compatibility settings for functions.

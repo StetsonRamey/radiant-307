@@ -21,7 +21,7 @@
 <style webc:scoped>
   .container.hero-content {
     max-width: 1200px;
-    padding-block: 6rem;
+    padding-block-end: 6rem;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -90,7 +90,6 @@
 
     .hero-text {
       order: 2;
-      text-align: center;
     }
 
     .hero-image {

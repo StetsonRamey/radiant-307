@@ -18,12 +18,19 @@
   "dependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-img": "^6.0.2",
-    "@11ty/eleventy-plugin-webc": "^0.11.1"
+    "@11ty/eleventy-plugin-webc": "^0.11.1",
+    "mimetext": "^3.0.27",
+    "resend": "^4.5.1"
   },
   "devDependencies": {
-    "dotenv": "^16.5.0"
+    "@cloudflare/workers-types": "^4.20250507.0",
+    "dotenv": "^16.5.0",
+    "wrangler": "^4.14.3"
   },
   "volta": {
-    "node": "18.20.4"
+    "node": "22.15.0"
+  },
+  "engines": {
+    "node": ">=22.15.0"
   }
 }

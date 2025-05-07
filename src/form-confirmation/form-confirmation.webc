@@ -1,0 +1,29 @@
+---
+layout: base.webc
+title: Thank You for Your Submission! | Radiant 307 Plumbing
+description: We have received your message and will be in touch shortly.
+permalink: /contact/thank-you/
+---
+<main class="container flow" style="padding-block: var(--space-2xl); text-align: center;">
+    <h1 class="heading-1">Thank You!</h1>
+    <p class="text-lg">Your message has been successfully submitted.</p>
+    <p>We appreciate you contacting us. One of our team members will be in touch with you shortly.</p>
+    <p><a href="/" class="btn" data-btn-variant="primary" style="margin-block-start: var(--space-lg);">Return to
+            Homepage</a></p>
+</main>
+
+<style>
+    /* Minimal styles for the thank you page, relying mostly on global styles */
+    .container {
+        max-inline-size: var(--max-width-text);
+        margin-inline: auto;
+    }
+
+    .flow>*+* {
+        margin-block-start: var(--space-s);
+    }
+
+    .text-lg {
+        font-size: var(--font-size-lg);
+    }
+</style>

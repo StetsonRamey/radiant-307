@@ -4,9 +4,8 @@ const description = "Contact Radiant 307 Plumbing for professional plumbing and 
 WY. Get a quote, schedule an appointment or just say hello.";
 const layout = "base.webc";
 ---
-<main class="contact-page">
     <!-- 1. Headline -->
-    <header class="locations-header">
+    <header class="contact-page locations-header">
         <div class="container">
             <h1 class="heading-1">
                 Contact Radiant 307&nbsp; Cheyenne, WY
@@ -48,7 +47,7 @@ const layout = "base.webc";
             </div>
         </div>
         <div class="contact-form-container">
-            <form>
+            <form method="POST" action="/api/submit-form">
                 <fieldset class="form-group">
                     <legend>Contact Information</legend>
                     <div class="form-row">
@@ -125,13 +124,16 @@ const layout = "base.webc";
                     <label for="message">Add a message</label>
                     <textarea class="form-textarea" id="message" name="message" rows="4"></textarea>
                 </div>
+                <div class="form-group" style="display:none;" aria-hidden="true">
+                    <label for="honeypot">Please leave this field empty</label>
+                    <input type="text" id="honeypot" name="honeypot" autocomplete="off" tabindex="-1">
+                </div>
                 <p id="prefill-notice"
                     style="display: none; margin-bottom: 1rem; color: var(--color-primary-700); font-weight: 500;"></p>
                 <button type="submit" class="btn" data-btn-variant="primary">Submit Request</button>
             </form>
         </div>
     </div>
-</main>
 
 <style>
     .locations-header {
