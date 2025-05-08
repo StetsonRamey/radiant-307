@@ -12,17 +12,29 @@
     <!-- Mini Contact Form -->
     <div class="service-form">
       <h3 class="heading-3 form-title">Request Service</h3>
-      <form action="#" method="POST" class="cta-form">
+      <form action="/finish-contact-form/" method="GET" class="cta-form">
         <div class="form-group">
-          <label for="service-hero-name">Name:</label>
-          <input type="text" id="service-hero-name" name="name" required class="form-input" />
+          <label for="service-hero-name">First Name: <span class="reqd">(required)</span></label>
+          <input type="text" id="service-hero-name" name="first-name" required class="form-input" />
         </div>
         <div class="form-group">
-          <label for="service-hero-phone">Phone Number:</label>
+          <label for="service-hero-name">Last Name: <span class="reqd">(required)</span></label>
+          <input type="text" id="service-hero-name" name="last-name" required class="form-input" />
+        </div>
+        <div class="form-group">
+          <label for="service-hero-phone">Phone Number: <span class="reqd">(required)</span></label>
           <input type="tel" id="service-hero-phone" name="phone" required class="form-input" />
         </div>
         <div class="form-group">
-          <label for="service-hero-message">How can we help? (Optional):</label>
+          <label for="cta-project">Project Type: <span class="reqd">(optional)</span></label>
+          <select id="cta-project" name="project" class="form-input">
+            <option value="" disabled selected>Select your project type...</option>
+            <option webc:for="projectType of site.contactFormProjectTypes" :value="projectType" @text="projectType">
+            </option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="service-hero-message">How can we help? (Optional): <span class="reqd">(optional)</span></label>
           <textarea id="service-hero-message" name="message" rows="3" class="form-textarea"></textarea>
         </div>
         <button type="submit" class="btn" data-btn-variant="primary">
@@ -34,6 +46,11 @@
 </section>
 
 <style webc:scoped>
+  .reqd {
+    color: var(--color-yellow-900);
+    font-size: .75rem;
+  }
+
   .service-hero-section {
     background-image: var(--hero-gradient);
     padding: 40px 0;
@@ -141,10 +158,22 @@
 
   /* Match CTA Focus */
   .form-input:focus,
-  .form-textarea:focus {
+  .form-textarea:focus,
+  select#cta-project:focus {
     outline: none;
     border-color: rgba(255, 255, 255, 0.7);
     background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  /* Specific styles for the select dropdown arrow */
+  select.form-input {
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%23cccccc' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+    background-position: right 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-inline-end: 2.5rem;
   }
 
   .form-textarea {

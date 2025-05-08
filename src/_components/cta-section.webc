@@ -22,21 +22,21 @@
       </div>
     </div>
     <div class="cta-form-container">
-      <form action="/contact/" method="GET" class="cta-form">
+      <form action="/finish-contact-form/" method="GET" class="cta-form">
         <div class="form-group">
-          <label for="cta-first-name">First Name:</label>
+          <label for="cta-first-name">First Name: <span class="reqd">(required)</span></label>
           <input type="text" id="cta-first-name" name="first-name" required>
         </div>
         <div class="form-group">
-          <label for="cta-last-name">Last Name:</label>
+          <label for="cta-last-name">Last Name: <span class="reqd">(required)</span></label>
           <input type="text" id="cta-last-name" name="last-name" required>
         </div>
         <div class="form-group">
-          <label for="cta-phone">Phone Number:</label>
+          <label for="cta-phone">Phone Number: <span class="reqd">(required)</span></label>
           <input type="tel" id="cta-phone" name="phone" required>
         </div>
         <div class="form-group">
-          <label for="cta-project">Project Type:</label>
+          <label for="cta-project">Project Type: <span class="reqd">(optional)</span></label>
           <select id="cta-project" name="project" required>
             <option value="" disabled selected>Select your project type...</option>
             <option webc:for="projectType of site.contactFormProjectTypes" :value="projectType" @text="projectType">
@@ -44,7 +44,7 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="cta-message">Brief Description (Optional):</label>
+          <label for="cta-message">Brief Description (Optional): <span class="reqd">(optional)</span></label>
           <textarea id="cta-message" name="message" rows="3"></textarea>
         </div>
         <button type="submit" class="btn" data-btn-variant="primary">Request Service</button>
@@ -54,6 +54,11 @@
 </section>
 
 <style webc:scoped>
+  .reqd {
+    color: var(--color-yellow-900);
+    font-size: .75rem;
+  }
+
   .cta-section {
     padding: 5rem 0;
   }

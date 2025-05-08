@@ -4,7 +4,7 @@ layout: "base.webc"
 
 <section class="hero-section">
   <div class="logo" @html="site.logo"></div>
-  <hero-section :@site="site"></hero-section>
+  <hero-section :site="site"></hero-section>
 </section>
 <section class="services-overview">
   <services-overview :@services="services"></services-overview>

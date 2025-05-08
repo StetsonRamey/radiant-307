@@ -17,7 +17,7 @@ description: data => data.service["description"]
 };
 ---
 
-<service-hero :h1="h1" :description="description"></service-hero>
+<service-hero :h1="h1" :description="description" :site="site"></service-hero>
 
 <!-- Signs You Need Service Section -->
 <section webc:if="service.signs?.list?.length" class="signs-section">

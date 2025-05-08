@@ -1,0 +1,456 @@
+---js
+const title = "A Few More Steps | Contact Us | Radiant 307 Plumbing | Cheyenne, WY";
+const description = "Contact Radiant 307 Plumbing for professional plumbing and radiant heating services in Cheyenne,\
+WY. Get a quote, schedule an appointment or just say hello.";
+const layout = "base.webc";
+---
+<!-- 1. Headline -->
+<header class="contact-page locations-header">
+    <div class="container">
+        <h1 class="heading-1">
+            Contact Radiant 307&nbsp; Cheyenne, WY
+        </h1>
+        <p>
+            Professional plumbing for residential and commercial projects.
+        </p>
+        <div class="service-buttons">
+            <a href="tel:+13075551234" class="btn" data-btn-variant="secondary">Call us Today!</a>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <h1 style="max-inline-size: 80ch; margin-inline: auto; padding: 2rem 4rem; font-style: italic;">Please fill out a
+        few more questions and we'll have your information in a flash!</h1>
+</div>
+<div class="contact-grid">
+    <div class="contact-form-container">
+        <form method="POST" action="/api/submit-form">
+            <fieldset class="form-group">
+                <legend>Contact Information</legend>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First name <span class="reqd">*</span></label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last name <span class="reqd">*</span></label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email <span class="reqd">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone <span class="reqd">*</span></label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+            </fieldset>
+            <hr>
+            <fieldset class="form-group">
+                <legend>Location Information</legend>
+                <div class="form-group">
+                    <label for="street-address">Street Address <span class="reqd">*</span></label>
+                    <input type="text" id="street-address" name="street-address" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City <span class="reqd">*</span></label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="state">State <span class="reqd">*</span></label>
+                        <select id="state" name="state" required>
+                            <option value="WY" selected>Wyoming</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="zip-code">Zip Code <span class="reqd">*</span></label>
+                        <input type="text" id="zip-code" name="zip-code" required>
+                    </div>
+                </div>
+            </fieldset>
+            <hr>
+
+            <fieldset class="form-group customer-type-group">
+                <legend>Please select the type of project you have</legend>
+                <div class="radio-options">
+                    <label for="customer-type">Is your project residential or commercial? <span class="reqd">*</span></label>
+                    <div class="radio-option">
+                        <input class="custom-radio" type="radio" id="residential" name="customer-type"
+                            value="residential" required>
+                        <label for="residential">Residential</label>
+                    </div>
+                    <div class="radio-option">
+                        <input class="custom-radio" type="radio" id="commercial" name="customer-type"
+                            value="commercial">
+                        <label for="commercial">Commercial</label>
+                    </div>
+                </div>
+                <div class="project-types">
+                    <label for="project-type">Project Type <span class="reqd">(optional)</span></label>
+                    <select id="project-type" name="project-type">
+                        <option value="" disabled selected>Select your project type...</option>
+                        <option webc:for="projectType of site.contactFormProjectTypes" :value="projectType"
+                            @text="projectType">
+                        </option>
+                    </select>
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <label for="message">Add a message <span class="reqd">(optional)</span></label>
+                <textarea class="form-textarea" id="message" name="message" rows="4"></textarea>
+            </div>
+            <div class="form-group" style="display:none;" aria-hidden="true">
+                <label for="honeypot">Please leave this field empty</label>
+                <input type="text" id="honeypot" name="honeypot" autocomplete="off" tabindex="-1">
+            </div>
+            <p id="prefill-notice"
+                style="display: none; margin-bottom: 1rem; color: var(--color-primary-700); font-weight: 500;"></p>
+            <button type="submit" class="btn" data-btn-variant="primary">Submit Request</button>
+        </form>
+    </div>
+</div>
+
+<style>
+    .reqd {
+        color: red;
+        font-size: .75rem;
+    }
+
+    .locations-header {
+        line-height: 1.2;
+        background-image: var(--hero-gradient);
+        color: var(--gray-color);
+        padding: 4rem 1rem;
+    }
+
+    .locations-header h1 {
+        color: var(--gray-color);
+        text-wrap: balance;
+    }
+
+    .service-buttons {
+        display: flex;
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .service-buttons a {
+        flex: 1;
+    }
+
+    .contact-page {
+        margin-inline: auto;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .contact-form-container {
+        background-color: var(--color-gray-300);
+        padding: 2rem;
+        width: 100%;
+    }
+
+    .left-col {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding-inline: 1rem;
+    }
+
+    form {
+        background-color: white;
+        border-radius: .5em;
+        display: grid;
+        gap: .75em;
+        padding: 2rem 2rem;
+        inline-size: 100%;
+        max-inline-size: 80ch;
+        margin-inline: auto;
+    }
+
+    hr {
+        margin-block-end: 1.25rem;
+    }
+
+    fieldset {
+        border: none;
+        padding: 0;
+        margin: 0;
+        margin-block-end: 1rem;
+    }
+
+    legend {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: var(--color-blue-violet-700);
+        padding: 0;
+        margin-block-end: 1rem;
+    }
+
+    .form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .form-group label {
+        display: block;
+        font-size: var(--font-size-s);
+        font-weight: var(--font-weight-medium);
+        color: var(--color-gray-800);
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group input[type="tel"],
+    .form-group select,
+    .form-group textarea {
+        display: block;
+        inline-size: 100%;
+        padding-block: 0.5rem;
+        padding-inline: 0.75rem;
+        font-size: var(--font-size-base);
+        border: 1px solid var(--color-gray-300);
+        border-radius: var(--radius-medium);
+        background-color: var(--color-white);
+        color: var(--color-gray-900);
+    }
+
+    .form-group .optional {
+        font-size: var(--font-size-xs);
+        color: var(--color-gray-500);
+        font-weight: var(--font-weight-normal);
+        margin-inline-start: 0.25rem;
+    }
+
+    .form-group select {
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3E%3Cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
+        background-position: right 0.5rem center;
+        background-repeat: no-repeat;
+        background-size: 1.5em 1.5em;
+        padding-inline-end: 2.5rem;
+    }
+
+    textarea {
+        resize: vertical;
+        min-block-size: 80px;
+    }
+
+    @media (min-width: 48em) {
+        .service-buttons a {
+            flex: 0 1 auto;
+        }
+    }
+
+
+
+    /* Styles for Radio Buttons */
+    input[type="radio"] {
+        height: 1rem;
+        width: 1rem;
+    }
+
+    input[type="radio"]:focus {
+        outline: 2px dashed var(--color-secondary-500);
+        background-color: var(--color-secondary-500);
+    }
+
+    .custom-radio {
+        /* hiding browser el */
+        appearance: none;
+        /* Safari support */
+        -webkit-appearance: none;
+        border: .3em solid var(--light-color);
+        background-color: var(--color-gray-300);
+        border-radius: 50%;
+        order: -1;
+        outline: 1px solid var(--color-gray-400);
+    }
+
+    .radio-options {
+        margin-block-end: 2rem;
+    }
+
+    .radio-option {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-block-start: 0.5rem;
+    }
+
+    .radio-option label {
+        order: 1;
+        font-size: var(--font-size-base);
+        font-weight: var(--font-weight-normal);
+    }
+
+    .custom-radio:focus-visible {
+        outline-offset: 0;
+    }
+
+    .custom-radio:hover {
+        outline-color: var(--color-yellow-950);
+    }
+
+    .btn {
+        text-transform: uppercase;
+        justify-content: center;
+    }
+
+    input[type="radio"]:checked {
+        outline: 4px solid;
+        outline-color: var(--color-yellow-900);
+        background-color: var(--color-yellow-900);
+        animation: outline-checked;
+        animation-duration: 0.2s;
+        animation-iteration-count: 4;
+        animation-direction: alternate;
+        animation-timing-function: linear
+    }
+
+    @keyframes outline-checked {
+        0% {
+            outline-offset: 0;
+        }
+
+        100% {
+            outline-offset: -0.4rem;
+        }
+    }
+
+    /* End Radio Button Styles */
+
+    .testimonial {
+        justify-self: center;
+        background-color: var(--color-yellow-950);
+        max-width: 50ch;
+        /* Example background */
+        color: var(--color-primary-950);
+        padding: 1.5rem;
+        border-radius: var(--border-radius-small);
+        margin-block-start: 2rem;
+        /* Space above the testimonial */
+        border-left: 5px solid var(--color-primary-500);
+        /* Accent border */
+        font-style: italic;
+    }
+
+    .testimonial p:first-of-type {
+        margin-bottom: 1rem;
+        /* Space between quote and attribution */
+        /* Optional: Add quotation marks */
+        /* position: relative; */
+        /* padding-left: 1.5em; */
+    }
+
+    /* Optional: Pseudo-element for quotation mark */
+    /* .testimonial p:first-of-type::before {
+        content: '\201C'; /* Left double quote */
+    /* position: absolute; */
+    /* left: 0; */
+    /* top: 0; */
+    /* font-size: 2em; */
+    /* line-height: 1; */
+    /* color: var(--color-flush-orange-500); */
+    /* } */
+
+    .testimonial p:last-of-type {
+        text-align: right;
+        /* Align attribution to the right */
+        font-style: normal;
+        /* Normal style for attribution */
+        font-weight: 500;
+        color: var(--color-primary-800);
+        /* Slightly different color */
+    }
+
+    .contact-image {
+        margin-block-start: 2rem;
+        /* Add some space above the image */
+        width: 100%;
+        /* Allow it to take full width initially */
+        max-width: 450px;
+        /* Constrain max width (adjust as needed) */
+        margin-inline: auto;
+        /* Center the block horizontally */
+    }
+
+    .contact-image img {
+        display: block;
+        /* Remove extra space below */
+        width: 100%;
+        /* Make image fill container width */
+        height: auto;
+        /* Maintain aspect ratio */
+        aspect-ratio: 3 / 2;
+        /* Set a common aspect ratio (adjust if needed) */
+        object-fit: cover;
+        /* Cover the area, crop if necessary */
+        object-position: center;
+        /* Center the image content */
+        border-radius: var(--border-radius-large);
+        /* Use large radius from global styles */
+        box-shadow: var(--shadow-medium);
+        /* Add a medium shadow */
+    }
+</style>
+
+<script>
+    console.log('we\'re loaded and ready for form submissions')
+    document.addEventListener('DOMContentLoaded', function () {
+        const params = new URLSearchParams(window.location.search);
+
+        // Get values from URL parameters
+        const ctaFirstName = params.get('first-name');
+        const ctaLastName = params.get('last-name');
+        const ctaPhone = params.get('phone');
+        const ctaProject = params.get('project');
+        const ctaMessage = params.get('message');
+
+        // Pre-fill contact form fields
+        if (ctaFirstName) {
+            const firstNameField = document.getElementById('first-name');
+            if (firstNameField) {
+                firstNameField.value = ctaFirstName;
+            }
+        }
+
+        if (ctaLastName) {
+            const lastNameField = document.getElementById('last-name');
+            if (lastNameField) {
+                lastNameField.value = ctaLastName;
+            }
+        }
+
+        if (ctaPhone) {
+            const phoneField = document.getElementById('phone');
+            if (phoneField) {
+                phoneField.value = ctaPhone;
+            }
+        }
+
+        if (ctaProject) {
+            const projectTypeField = document.getElementById('project-type');
+            if (projectTypeField) {
+                projectTypeField.value = ctaProject;
+            }
+        }
+
+        if (ctaMessage) {
+            const messageField = document.getElementById('message'); // Assumes contact form message field also has id 'message'
+            if (messageField) {
+                messageField.value = ctaMessage;
+            }
+        }
+        // Clean the URL by removing query parameters
+        window.history.replaceState({}, document.title, window.location.pathname);
+    });
+</script>

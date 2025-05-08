@@ -6,7 +6,7 @@
         Expert Plumbing Solutions with a Commitment to Excellence
       </p>
       <div class="hero-buttons">
-        <a href="tel:3071234567" class="btn" data-btn-variant="primary">Call Now</a>
+        <a :href="'tel:' + site.phone" class="btn" data-btn-variant="primary">Call Now</a>
         <a href="/contact" class="btn" data-btn-variant="secondary">Free Estimate</a>
       </div>
     </div>
