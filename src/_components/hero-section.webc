@@ -3,7 +3,7 @@
     <div class="hero-text">
       <h1 class="heading-1 text-light">Radiant 307 Plumbing</h1>
       <p class="paragraph text-light">
-        Expert Plumbing Solutions with a Commitment to Excellence
+        Top tier boiler, radiant heating, and plumbing services.
       </p>
       <div class="hero-buttons">
         <a :href="'tel:' + site.phone" class="btn" data-btn-variant="primary">Call Now</a>

@@ -49,23 +49,24 @@ const layout = "base.webc";
         <div class="contact-form-container">
             <form method="POST" action="/api/submit-form">
                 <fieldset class="form-group">
+
                     <legend>Contact Information</legend>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="first-name">First name</label>
+                            <label for="first-name">First name <span class="reqd">*</span></label>
                             <input type="text" id="first-name" name="first-name" required>
                         </div>
                         <div class="form-group">
-                            <label for="last-name">Last name</label>
+                            <label for="last-name">Last name <span class="reqd">*</span></label>
                             <input type="text" id="last-name" name="last-name" required>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email">Email <span class="reqd">*</span></label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="phone">Phone</label>
+                        <label for="phone">Phone <span class="reqd">*</span></label>
                         <input type="tel" id="phone" name="phone" required>
                     </div>
                 </fieldset>
@@ -73,23 +74,23 @@ const layout = "base.webc";
                 <fieldset class="form-group">
                     <legend>Location Information</legend>
                     <div class="form-group">
-                        <label for="street-address">Street Address</label>
-                        <input type="text" id="street-address" name="street-address">
+                        <label for="street-address">Street Address <span class="reqd">*</span></label>
+                        <input type="text" id="street-address" required name="street-address">
                     </div>
                     <div class="form-group">
-                        <label for="city">City</label>
-                        <input type="text" id="city" name="city">
+                        <label for="city">City <span class="reqd">*</span></label>
+                        <input type="text" id="city" required name="city">
                     </div>
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="state">State</label>
+                            <label for="state">State <span class="reqd">*</span></label>
                             <select id="state" name="state" required>
                                 <option value="WY" selected>Wyoming</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="zip-code">Zip Code</label>
-                            <input type="text" id="zip-code" name="zip-code">
+                            <label for="zip-code">Zip Code <span class="reqd">*</span></label>
+                            <input type="text" id="zip-code" required name="zip-code">
                         </div>
                     </div>
                 </fieldset>
@@ -98,7 +99,8 @@ const layout = "base.webc";
                 <fieldset class="form-group customer-type-group">
                     <legend>Please select the type of project you have</legend>
                     <div class="radio-options">
-                        <label for="customer-type">Is your project residential or commercial?</label>
+                        <label for="customer-type">Is your project residential or commercial? <span
+                                class="reqd">(optional)</span></label>
                         <div class="radio-option">
                             <input class="custom-radio" type="radio" id="residential" name="customer-type"
                                 value="residential">
@@ -111,7 +113,7 @@ const layout = "base.webc";
                         </div>
                     </div>
                     <div class="project-types">
-                        <label for="project-type">Project Type</label>
+                        <label for="project-type">Project Type <span class="reqd">(optional)</span></label>
                         <select id="project-type" name="project-type">
                             <option value="" disabled selected>Select your project type...</option>
                             <option webc:for="projectType of site.contactFormProjectTypes" :value="projectType"
@@ -121,7 +123,7 @@ const layout = "base.webc";
                     </div>
                 </fieldset>
                 <div class="form-group">
-                    <label for="message">Add a message</label>
+                    <label for="message">Add a message <span class="reqd">(optional)</span></label>
                     <textarea class="form-textarea" id="message" name="message" rows="4"></textarea>
                 </div>
                 <div class="form-group" style="display:none;" aria-hidden="true">
@@ -136,6 +138,11 @@ const layout = "base.webc";
     </div>
 
 <style>
+    .reqd {
+        color: red;
+        font-size: .75rem;
+    }
+
     .locations-header {
         line-height: 1.2;
         background-image: var(--hero-gradient);
@@ -224,7 +231,6 @@ const layout = "base.webc";
     legend {
         font-size: 1.125rem;
         font-weight: 600;
-        color: var(--color-blue-violet-700);
         padding: 0;
         margin-block-end: 1rem;
     }
@@ -308,8 +314,8 @@ const layout = "base.webc";
     }
 
     input[type="radio"]:focus {
-        outline: 2px dashed var(--color-blue-violet-400);
-        background-color: var(--color-blue-violet-400);
+        outline: 2px dashed var(--color-yellow-900);
+        background-color: var(--color-yellow-900);
     }
 
     .custom-radio {

@@ -2,9 +2,9 @@
 <section class="cta-section">
   <div class="container cta-grid">
     <div class="cta-text flow">
-      <h2>Ready to Solve Your Plumbing Problems?</h2>
+      <h2>Is your boiler running as efficiently as it should be?</h2>
       <p>
-        Don't wait for a small leak to become a big disaster. Contact Radiant 307 Plumbing today for fast, reliable
+        Call us for boiler tune ups or if you have other plumbing concerns. Don't wait for a small leak to become a big disaster. Contact Radiant 307 Plumbing today for fast, reliable
         service. Call us directly or fill out the form to schedule an appointment.
       </p>
       <a :href="'tel:' + site.phone" class="cta-phone">Call Now: <span @text="site.phone"></span></a>
