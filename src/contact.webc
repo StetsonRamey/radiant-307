@@ -1,7 +1,10 @@
 ---js
 const title = "Contact Us | Radiant 307 Plumbing | Cheyenne, WY";
+const ogtitle = "Contact Us | Radiant 307 Plumbing | Cheyenne, WY";
 const description = "Contact Radiant 307 Plumbing for professional plumbing and radiant heating services in Cheyenne,\
-WY. Get a quote, schedule an appointment or just say hello.";
+WY. Get a quote by scheduling an appointment.";
+const ogdesc = "Contact Radiant 307 Plumbing for professional plumbing and radiant heating services in Cheyenne,\
+WY. Get a quote by scheduling an appointment.";
 const layout = "base.webc";
 ---
     <!-- 1. Headline -->
@@ -14,7 +17,7 @@ const layout = "base.webc";
                 Professional plumbing for residential and commercial projects.
             </p>
             <div class="service-buttons">
-                <a href="tel:+13075551234" class="btn" data-btn-variant="secondary">Call us Today!</a>
+                <a :href="'tel:' + site.phone" class="btn" data-btn-variant="secondary">Call us Today!</a>
             </div>
         </div>
     </header>
@@ -22,12 +25,12 @@ const layout = "base.webc";
         <div class="left-col">
             <div class="contact-image">
                 <img src="/assets/images/contact-img.jpeg"
-                    alt="A photo of the owner Remington smiling in front of a boilder" />
+                    alt="A photo of the owner Remington smiling in front of a boiler" />
             </div>
             <div class="contact-text flow">
-                <h1>Call me about your plumbing project.</h1>
+                <h2>Call me about your plumbing project.</h2>
                 <p>We provide top notch service at competitive prices. And we're 100% local.</p>
-                <h2>What to expect?</h2>
+                <h3>What to expect?</h3>
                 <ul>
                     <li>Actually talk to the guy in the picture above ⬆️ (Remington)</li>
                     <li>Tell me what you've got going on. I'll answer questions and provide my opinons / recommendations

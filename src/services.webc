@@ -1,7 +1,7 @@
 ---
 layout: "base.webc"
 title: "Our Services | Radiant 307 Plumbing | Cheyenne, WY"
-description: "Comprehensive plumbing and radiant heating services in Cheyenne, WY. Expert residential and commercial plumbing and heating solutions, repairs, and installations."
+description: "Comprehensive plumbing and radiant heating services in Cheyenne, WY. Residential and commercial plumbing and heating solutions, repairs, and installations."
 ---
 
 <!-- Services Page Main Content -->
@@ -16,7 +16,7 @@ description: "Comprehensive plumbing and radiant heating services in Cheyenne, W
         Professional plumbing services for residential and commercial projects.
       </p>
       <div class="service-buttons">
-        <a href="tel:+13075551234" class="btn" data-btn-variant="primary">Call us Today!</a>
+        <a :href="'tel:' + site.phone" class="btn" data-btn-variant="primary">Call us Today!</a>
         <a href="/contact/" class="btn" data-btn-variant="secondary">Request a Quote</a>
       </div>
     </div>

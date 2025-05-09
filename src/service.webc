@@ -12,7 +12,9 @@ return data.service.slug
 eleventyComputed: {
 title: data => data.service["title-tag"] || data.service.title,
 h1: data => data.service.h1,
-description: data => data.service["description"]
+description: data => data.service["metadescription"],
+ogtitle: data => data.service["title-tag"] || data.service.title,
+ogdesc: data => data.service["metadescription"],
 }
 };
 ---

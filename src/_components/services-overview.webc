@@ -7,14 +7,20 @@
     </p>
   </div>
 
-  <div class="services-grid">
-    <div class="service-card flow" webc:for="service of services">
-      <img :src="service.core_services.image" :alt="service.core_services.alt" />
-      <h3 class="heading-2" @text="service.title"></h3>
-      <p class="paragraph truncate" @text="service.description"></p>
-      <a :href="service.slug" class="btn" data-ghost-button @text="service.core_services.heading">Learn More</a>
-    </div>
-  </div>
+  <ul class="services-grid" role="list">
+    <!-- <pre @raw="JSON.stringify(services, null, 2)"></pre> -->
+    <li webc:for="service of services" class="service-card">
+      <a :href="service.slug" clss="flow">
+        <img :src="service.core_services.image" :alt="service.core_services.alt"
+          sizes="(max-width: 768px) 600px, 300px" />
+        <h3>
+          <raw @text="service.title"></raw>
+        </h3>
+        <p @text="service.metadescription" class="paragraph"></p>
+        <a href="service.slug" class="btn" data-ghost-button @text="service.core_services.heading">Learn More</a>
+      </a>
+    </li>
+  </ul>
 </div>
 
 <style webc:scoped>
@@ -41,9 +47,9 @@
     box-shadow: var(--shadow-small);
   }
 
-  .service-card .heading-2 {
-    margin-top: 0;
+  .service-card h3 {
     font-size: 1rem;
+    margin-block-end: 0.5rem;
   }
 
   .service-card .paragraph {
@@ -71,10 +77,6 @@
 
   .service-card img {
     display: block;
-    /* Prevents extra space below image */
-    width: 100%;
-    /* Fill container width */
-    height: 300px;
     /* Consistent height */
     object-fit: cover;
     /* Cover dimensions without distortion */

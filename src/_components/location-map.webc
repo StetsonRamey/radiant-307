@@ -1,5 +1,5 @@
 <div class="map-container">
-    <div id="location-map" class="map" data-lat={lat} data-long={long}></div>
+    <div id="location-map" aria-label="Map of the location" class="map" data-lat={lat} data-long={long}></div>
 </div>
 
 <script webc:type="js">

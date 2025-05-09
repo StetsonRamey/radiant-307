@@ -3,6 +3,7 @@
         "Saddle Ridge": {
             "slug": "/locations/saddle-ridge/",
             "title": "Saddle Ridge",
+            "description": "Trusted plumbing and radiant heating services in Saddle Ridge, Cheyenne. Fast response times, expert solutions, and dedicated local service for your home or business.",
             "location": [
                 {
                     "lat": 41.15425,
@@ -12,7 +13,8 @@
         },
         "Thomas Heights": {
             "slug": "/locations/thomas-heights/",
-            "title": "Thomas Heights",
+            "title": "Thomas Heights", 
+            "description": "Your local plumbing experts in Thomas Heights. From boilers and water heaters to major and minor repairs, we provide reliable service to this cherished Cheyenne community.",
             "location": [
                 {
                     "lat": 41.16874,
@@ -23,6 +25,7 @@
         "Dakota Crossing": {
             "slug": "/locations/dakota-crossing/",
             "title": "Dakota Crossing",
+            "description": "Serving Dakota Crossing with professional plumbing and heating solutions. Quick response times and quality workmanship for all your home comfort needs.",
             "location": [
                 {
                     "lat": 41.15071,
@@ -33,6 +36,7 @@
         "The Pointe": {
             "slug": "/locations/the-pointe/",
             "title": "The Pointe",
+            "description": "Expert plumbing services for The Pointe residents. From water heaters to radiant heating, we're your trusted local solution for all plumbing needs.",
             "location": [
                 {
                     "lat": 41.18565,
@@ -43,6 +47,7 @@
         "Sun Valley": {
             "slug": "/locations/sun-valley/",
             "title": "Sun Valley",
+            "description": "Sun Valley's go-to plumbing team. We deliver professional service, fair pricing, and lasting solutions for all your home's plumbing and heating requirements.",
             "location": [
                 {
                     "lat": 41.14001,
@@ -53,6 +58,7 @@
         "North Star": {
             "slug": "/locations/north-star/",
             "title": "North Star",
+            "description": "Reliable plumbing and heating services for North Star homes. Count on our experienced team for prompt, professional solutions to all your plumbing needs.",
             "location": [
                 {
                     "lat": 41.23436,
@@ -63,6 +69,7 @@
         "Orchard Valley": {
             "slug": "/locations/orchard-valley/",
             "title": "Orchard Valley",
+            "description": "Orchard Valley's trusted plumbing partner. We provide comprehensive plumbing and heating services with the attention to detail your home deserves.",
             "location": [
                 {
                     "lat": 41.09862,
@@ -73,6 +80,7 @@
         "Mustang Ridge": {
             "slug": "/locations/mustang-ridge/",
             "title": "Mustang Ridge",
+            "description": "Professional plumbing services tailored to Mustang Ridge residents. Fast response times and expert solutions for all your home comfort needs.",
             "location": [
                 {
                     "lat": 41.18077,
@@ -83,6 +91,7 @@
         "Buffalo Ridge": {
             "slug": "/locations/buffalo-ridge/",
             "title": "Buffalo Ridge",
+            "description": "Buffalo Ridge's premier plumbing service. From routine maintenance to new system installations, we're here to keep your home's plumbing running smoothly.",
             "location": [
                 {
                     "lat": 41.16662,
@@ -93,6 +102,7 @@
         "Monterey Heights": {
             "slug": "/locations/monterey-heights/",
             "title": "Monterey Heights",
+            "description": "Dedicated plumbing service for Monterey Heights. Expert solutions for all your home's plumbing and heating needs, delivered with professional care.",
             "location": [
                 {
                     "lat": 41.17851,
@@ -103,6 +113,7 @@
         "Ranchettes": {
             "slug": "/locations/ranchettes/",
             "title": "Ranchettes",
+            "description": "Specialized plumbing services for Ranchettes properties. Our experience delivers reliable solutions for your unique plumbing and heating needs.",
             "location": [
                 {
                     "lat": 41.23773,
@@ -113,6 +124,7 @@
         "Rocking Star": {
             "slug": "/locations/rocking-star/",
             "title": "Rocking Star",
+            "description": "Quality plumbing services for Rocking Star residents. Count on our local expertise for all your home's plumbing and heating requirements.",
             "location": [
                 {
                     "lat": 41.24108,
@@ -123,6 +135,7 @@
         "Western Hills": {
             "slug": "/locations/western-hills/",
             "title": "Western Hills",
+            "description": "Western Hills' trusted plumbing experts. We provide comprehensive solutions for all your home's plumbing and heating needs with professional care.",
             "location": [
                 {
                     "lat": 41.18425,
@@ -133,6 +146,7 @@
         "Winchester Hills": {
             "slug": "/locations/winchester-hills/",
             "title": "Winchester Hills",
+            "description": "Professional plumbing services for Winchester Hills. Fast response times and expert solutions to keep your home's systems running efficiently.",
             "location": [
                 {
                     "lat": 41.05922,
@@ -143,6 +157,7 @@
         "Sweetgrass": {
             "slug": "/locations/sweetgrass/",
             "title": "Sweetgrass",
+            "description": "Reliable plumbing and heating services for Sweetgrass homes. Local expertise and professional solutions for all your home comfort needs.",
             "location": [
                 {
                     "lat": 41.09892,

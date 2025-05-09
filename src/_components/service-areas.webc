@@ -6,7 +6,10 @@
     </div>
 
     <!-- Google Map Placeholder -->
-    <div id="maps"></div>
+    <div>
+      <h3>Service Area Map</h2>
+        <div id="maps"></div>
+    </div>
 
     <div class="service-areas-list">
       <div class="wrapper">
@@ -19,7 +22,7 @@
               d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z">
             </path>
           </svg>
-          <h6>Cheyenne Neighborhoods</h6>
+          <h3>Cheyenne Neighborhoods</h6>
         </div>
         <ul>
           <li webc:for="(hood, name) in areas['Cheyenne Neighborhoods']">
@@ -174,7 +177,7 @@
     gap: 0.5rem;
   }
 
-  .wrapper h6 {
+  .wrapper h3 {
     color: var(--color-glare-200);
     font-size: 1.25rem;
     margin: 0;

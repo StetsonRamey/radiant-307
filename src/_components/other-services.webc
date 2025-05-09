@@ -3,7 +3,7 @@
     <div class="other-services-grid">
       <div class="other-services-description">
         <div class="other-services-text">
-          <h3 class="heading-3">Need Something Else?</h3>
+          <h2 class="heading-3">Need Something Else?</h3>
           <p class="paragraph">
             We offer a wide range of plumbing and heating services to keep your
             home comfortable and running smoothly. Explore our other offerings:
@@ -12,7 +12,7 @@
       </div>
 
       <div class="other-services-list">
-        <h2 class="heading-3">Explore Our Other Services</h2>
+        <h3 class="heading-3">Explore Our Other Services</h2>
         <ul>
           <li webc:for="service of services">
             <a :href="service.slug" class="btn" data-ghost-button data-button-radius="hard" @text="service.title">Service Title</a>

@@ -9,6 +9,7 @@ export default function (eleventyConfig) {
 
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     formats: ["webp", "jpeg"],
+    widths: [300, 600, 900, 1200, "auto"],
     urlPath: "/assets/images/",
     htmlOptions: {
       imgAttributes: {

@@ -13,7 +13,12 @@
     <div class="hero-image">
       <img src="/assets/images/hero.jpeg"
         alt="An older model boiler system with storage tanks for domestic hot water and in floor radiant heating"
-        width="800" height="600" loading="eager" />
+        loading="eager"
+        width="800"
+        height="600"
+        sizes="(max-width: 768px) 100vw, 800px"
+        decoding="async"
+        />
     </div>
   </div>
 </div>

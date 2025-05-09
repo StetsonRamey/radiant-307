@@ -25,6 +25,7 @@ function getSlugs() {
                 slugs.push({
                     slug: data.slug,
                     title: `${data.title} Neighborhood`,
+                    description: data.description,
                     lat: data.location[0].lat,
                     long: data.location[0].long
                 });

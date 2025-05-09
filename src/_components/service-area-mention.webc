@@ -1,6 +1,6 @@
 <!-- src/_components/service-area-mention.webc -->
 <section class="service-area-mention-section">
-  <div class="container text-center">
+  <div class="container">
     <h2 class="heading-2">Serving Cheyenne, WY and Surrounding Areas</h2>
     <p class="paragraph mb-4">
       Need help with
@@ -13,9 +13,10 @@
     </p>
 
     <!-- Google Map Placeholder -->
+    <h2>Service Areas</h2>
     <div id="maps" class="service-area-map"></div>
 
-    <a href="/service-areas/" class="btn mt-4" data-btn-variant="primary" data-ghost-button
+    <a href="/locations/" class="btn mt-4" data-btn-variant="primary" data-ghost-button
       >View All Service Areas</a
     >
   </div>
@@ -26,17 +27,17 @@
     padding-block: 4rem;
     background-color: var(--color-gray-100); /* Light background */
     color: var(--dark-text);
+
   }
 
-  .service-area-mention-section .paragraph {
-    max-width: 50ch; /* Limit width for better readability */
-    margin-inline: auto; /* Center the text */
+  .container {
+    max-width: 90ch;
   }
+
 
   #maps {
     height: 400px; /* Slightly shorter map for this component */
     width: 100%;
-    max-width: 800px; /* Limit map width for better centering */
     margin-inline: auto; /* Center the map */
     margin-block: 2rem; /* Space around map */
     border-radius: var(--border-radius-large);
@@ -51,9 +52,6 @@
     margin-top: 1.5rem; /* Utility class for spacing */
   }
 
-  .text-center {
-    text-align: center;
-  }
 </style>
 
 <script>

@@ -13,7 +13,9 @@ return slug
 },
 eleventyComputed: {
 title: data => `${data.location.title} | Radiant 307`,
-description: data => `${data.location.title} | Radiant 307 Plumbing | Plumbing and Radiant Heating Services in Cheyenne, WY.`,
+description: data => data.location.description,
+ogtitle: data => `${data.location.title} | Radiant 307`,
+ogdesc: data => data.location.description,
 locationTitle: data => data.location.title,
 lat: data => data.location.lat,
 long: data => data.location.long,
@@ -21,7 +23,7 @@ long: data => data.location.long,
 };
 ---
 
-<main class="location-main">
+<div class="location-main">
     <!-- 1. Headline -->
     <header class="location-header">
         <div class="container">
@@ -32,7 +34,7 @@ long: data => data.location.long,
                 surrounding areas. We love working with our local community and are always expanding our service area.
             </p>
             <div class="service-buttons">
-                <a href="tel:+13075551234" class="btn" data-btn-variant="primary">Call us Today!</a>
+                <a :href="'tel:' + site.phone" class="btn" data-btn-variant="primary">Call us Today!</a>
                 <a href="/contact/" class="btn" data-btn-variant="secondary">Request a Quote</a>
             </div>
         </div>
@@ -106,7 +108,7 @@ long: data => data.location.long,
             <location-map :@lat="lat" :@long="long"></location-map>
         </div>
     </section>
-</main>
+</div>
 
 <cta-section :icons="icons" :site="site"></cta-section>
 

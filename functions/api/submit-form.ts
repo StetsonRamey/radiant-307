@@ -73,8 +73,8 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
         emailBodyHtml += "</body></html>";
 
         const { data: sendData, error: sendError } = await resend.emails.send({
-            from: 'Radiant 307 Forms <forms@leads.radiant307.com>',
-            to: ['me@stetson.dev'],
+            from: 'Radiant 307 Leads <forms@leads.radiant307.com>',
+            to: ['radiant307@gmail.com', 'me@stetson.dev'],
             subject: emailSubject,
             html: emailBodyHtml
         });

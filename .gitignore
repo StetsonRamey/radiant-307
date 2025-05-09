@@ -36,3 +36,6 @@ Thumbs.db
 
 # Wrangler cache/temp
 .wrangler/
+
+# Plans for AI
+plans/

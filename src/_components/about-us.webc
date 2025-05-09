@@ -3,44 +3,57 @@
   <div class="container about-grid">
     <div class="about-text">
       <h2>About Radiant 307 Plumbing</h2>
-      <p>👋 That's me Remington, the owner of Radiant 307 Plumbing. I've been in the plumbing business for about 10 years and I'm dedicated to providing exceptional plumbing solutions for my clients.</p>
-      <p>If you give us a call, you're going to talk to me.  It will be me who comes out to take a look at your plumbing project or plumbing problem, and it will be me who does the work.  While I specialize in boilers and radiant heating, there isn't anything I can't install or repair, and I'm excited to work with you on your project.</p>
+      <p>👋 That's me Remington, the owner of Radiant 307 Plumbing. I've been in the plumbing business for about 10
+        years and I'm dedicated to providing exceptional plumbing solutions for my clients.</p>
+      <p>If you give us a call, you're going to talk to me. It will be me who comes out to take a look at your plumbing
+        project or plumbing problem, and it will be me who does the work. While I specialize in boilers and radiant
+        heating, there isn't anything I can't install or repair, and I'm excited to work with you on your project.</p>
     </div>
     <div class="about-image-container">
-      <img
-        :src="image"
+      <img :src="image"
         alt="The owner of Radiant 307 Plumbing, Remington, standing in front of a custom boiler and tankless hot water system on a residential project"
-        class="about-image"
-      />
+        class="about-image" sizes="(max-width: 767px) calc(100vw - 40px), 560px" />
     </div>
   </div>
 </div>
 
 <style webc:scoped>
   .about-us-section {
-    padding: 4rem 0; /* Adjust vertical padding as needed */
-    background-color: #ffffff; /* Light background */
-    color: #1f2937; /* Dark text */
+    padding: 4rem 0;
+    /* Adjust vertical padding as needed */
+    background-color: #ffffff;
+    /* Light background */
+    color: #1f2937;
+    /* Dark text */
   }
 
   .container {
-     max-width: 1200px;
-     margin: 0 auto;
-     padding: 0 1rem; /* Standard container padding */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    /* Standard container padding */
   }
 
   .about-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Mobile: single column */
-    gap: 2rem; /* Space between text and image on mobile */
-    align-items: center; /* Vertically align items */
+    grid-template-columns: 1fr;
+    /* Mobile: single column */
+    gap: 2rem;
+    /* Space between text and image on mobile */
+    align-items: center;
+    /* Vertically align items */
   }
 
-  @media (min-width: 768px) { /* Tablet and up: two columns */
+  @media (min-width: 768px) {
+
+    /* Tablet and up: two columns */
     .about-grid {
-      grid-template-columns: 1fr 1fr; /* Equal columns */
-      gap: 3rem; /* Wider gap for larger screens */
+      grid-template-columns: 1fr 1fr;
+      /* Equal columns */
+      gap: 3rem;
+      /* Wider gap for larger screens */
     }
+
     /* Optional: Reverse order on tablet/desktop if needed */
     /* .about-image-container {
       order: -1;
@@ -48,30 +61,41 @@
   }
 
   .about-text h2 {
-    font-size: 2.25rem; /* Tailwind size-3xl */
+    font-size: 2.25rem;
+    /* Tailwind size-3xl */
     font-weight: 600;
     margin-bottom: 1.5rem;
-    color: #111827; /* Slightly darker heading */
+    color: #111827;
+    /* Slightly darker heading */
   }
 
   .about-text p {
-    font-size: 1rem; /* Tailwind size-base */
+    font-size: 1rem;
+    /* Tailwind size-base */
     line-height: 1.6;
     margin-bottom: 1rem;
-    color: #4b5563; /* Gray text */
+    color: #4b5563;
+    /* Gray text */
   }
 
   .about-image-container {
-    border-radius: 8px; /* Slightly rounded corners for the image container */
-    overflow: hidden; /* Ensures image stays within rounded bounds */
-    height: 100%; /* Make container take full height of grid cell */
-    min-height: 300px; /* Ensure minimum height on mobile */
+    border-radius: 8px;
+    /* Slightly rounded corners for the image container */
+    overflow: hidden;
+    /* Ensures image stays within rounded bounds */
+    height: 100%;
+    /* Make container take full height of grid cell */
+    min-height: 300px;
+    /* Ensure minimum height on mobile */
   }
 
   .about-image {
     width: 100%;
-    height: 100%; /* Make image fill the container height */
-    object-fit: cover; /* Scale image nicely while covering */
-    display: block; /* Remove extra space below image */
+    height: 100%;
+    /* Make image fill the container height */
+    object-fit: cover;
+    /* Scale image nicely while covering */
+    display: block;
+    /* Remove extra space below image */
   }
 </style>
