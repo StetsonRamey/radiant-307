@@ -1,5 +1,6 @@
 ---
 layout: "base.webc"
+localMarkup: "local-markup.home"
 ---
 
 <section class="hero-section">

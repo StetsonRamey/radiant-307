@@ -2,29 +2,33 @@
   <div>
     <h2 class="heading-2">Our Services</h2>
     <p class="paragraph">
-      Providing high quality plumbing and HVAC services to Cheyenne and
-      surrounding areas.
+      Providing high quality plumbing, heating, and filtration services to Cheyenne Wyoming.
     </p>
   </div>
 
   <ul class="services-grid" role="list">
     <!-- <pre @raw="JSON.stringify(services, null, 2)"></pre> -->
     <li webc:for="service of services" class="service-card">
-      <a :href="service.slug" clss="flow">
+      <div class="card-content-wrapper">
         <img :src="service.core_services.image" :alt="service.core_services.alt"
           sizes="(max-width: 768px) 600px, 300px" />
         <h3>
           <raw @text="service.title"></raw>
         </h3>
         <p @text="service.metadescription" class="paragraph"></p>
-        <a href="service.slug" class="btn" data-ghost-button @text="service.core_services.heading">Learn More</a>
+      </div>
+      <a :href="service.slug" class="stretched-cover-link">
+        <span class="btn" data-ghost-button @text="service.core_services.heading">Learn More</span>
       </a>
     </li>
   </ul>
 </div>
 
 <style webc:scoped>
+
   .services-grid {
+    --button-shove-left: 1.5rem;
+    --button-shove-top: 1rem;
     display: grid;
     padding-block-start: 2rem;
     grid-template-columns: repeat(3, 1fr);
@@ -33,15 +37,48 @@
   }
 
   .service-card {
-    --flow-space: 0.2rem;
+    position: relative;
+    padding: 2.5rem var(--button-shove-left) 3rem var(--button-shove-left);
+    display: flex;
+    flex-direction: column;
     background-color: var(--light-color);
     border: 1px solid var(--color-primary-600);
     border-radius: 0.5rem;
-    padding: 1.5rem;
     transition: box-shadow 0.3s ease;
+  }
+
+  .service-card .card-content-wrapper {
+    pointer-events: none;
+    z-index: 1;
+    flex-grow: 1;
+  }
+
+  .service-card .stretched-cover-link {
+    position: absolute;
+    top: 0;
+    left: var(--button-shove-left);
+    right: 0;
+    bottom: var(--button-shove-top);
+    z-index: 0;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    text-decoration: none;
   }
+
+  .service-card .stretched-cover-link:hover>span.btn {
+    background: var(--button-hover-bg);
+    color: var(--color-primary-400);
+  }
+
+  .service-card .stretched-cover-link>span {
+    pointer-events: auto;
+    z-index: 2;
+    display: inline-block;
+    margin-top: auto;
+    width: calc(100% - var(--button-shove-left) * 2);
+  }
+
 
   .service-card:hover {
     box-shadow: var(--shadow-small);
@@ -56,11 +93,6 @@
     color: #4b5563;
     line-height: 1.6;
     margin-block-end: 2rem;
-  }
-
-  /* Button Styles for Cards */
-  .service-card .btn {
-    margin-top: auto;
   }
 
   .truncate {

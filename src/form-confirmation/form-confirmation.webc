@@ -3,6 +3,7 @@ layout: base.webc
 title: Thank You for Your Submission! | Radiant 307 Plumbing
 description: We have received your message and will be in touch shortly.
 permalink: /contact/thank-you/
+eleventyExcludeFromCollections: true
 ---
 <div class="container flow">
     <div class="heading">

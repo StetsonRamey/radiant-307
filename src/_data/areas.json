@@ -9,18 +9,250 @@
                     "lat": 41.15425,
                     "long": -104.72141
                 }
-            ]
+            ],
+            "localMarkup": {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "@id": "https://www.plumbingcheyenne.com/locations/saddle-ridge/",
+                "url": "https://www.plumbingcheyenne.com/locations/saddle-ridge/",
+                "name": "Plumbing Services in Saddle Ridge Neighborhood, Cheyenne | Radiant 307",
+                "description": "Radiant 307 provides expert plumbing, boiler, and radiant heating services for homeowners in the Saddle Ridge neighborhood of Cheyenne, WY.",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://www.plumbingcheyenne.com/#website",
+                    "url": "https://www.plumbingcheyenne.com/",
+                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                },
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://www.plumbingcheyenne.com/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Locations",
+                            "item": "https://www.plumbingcheyenne.com/locations/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Saddle Ridge",
+                            "item": "https://www.plumbingcheyenne.com/locations/saddle-ridge/"
+                        }
+                    ]
+                },
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "name": "Plumbing Services Offered in Saddle Ridge",
+                    "description": "Key plumbing services provided by Radiant 307 in the Saddle Ridge neighborhood.",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Boiler Service, Repair, and Replacement in Saddle Ridge",
+                                "url": "https://www.plumbingcheyenne.com/services/boiler-installation-and-repair/",
+                                "description": "Expert boiler installation, repair, and maintenance available for Saddle Ridge residents.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Saddle Ridge",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Tanked and Tankless Water Heater Services in Saddle Ridge",
+                                "url": "https://www.plumbingcheyenne.com/services/water-heater-installation-and-repair/",
+                                "description": "Reliable installation and repair for tanked and tankless water heaters in Saddle Ridge.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Saddle Ridge",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "Service",
+                                "name": "In-Floor Radiant Heating in Saddle Ridge",
+                                "url": "https://www.plumbingcheyenne.com/services/in-floor-radiant-heating/",
+                                "description": "Comfortable and efficient in-floor radiant heating solutions for Saddle Ridge homes.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Saddle Ridge",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
         },
         "Thomas Heights": {
             "slug": "/locations/thomas-heights/",
-            "title": "Thomas Heights", 
+            "title": "Thomas Heights",
             "description": "Your local plumbing experts in Thomas Heights. From boilers and water heaters to major and minor repairs, we provide reliable service to this cherished Cheyenne community.",
             "location": [
                 {
                     "lat": 41.16874,
                     "long": -104.76155
                 }
-            ]
+            ],
+            "localMarkup": {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "@id": "https://www.plumbingcheyenne.com/locations/thomas-heights/",
+                "url": "https://www.plumbingcheyenne.com/locations/thomas-heights/",
+                "name": "Plumbing Services in Thomas Heights Neighborhood, Cheyenne | Radiant 307",
+                "description": "Radiant 307 provides expert plumbing, boiler, and radiant heating services for homeowners in the Thomas Heights neighborhood of Cheyenne, WY.",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://www.plumbingcheyenne.com/#website",
+                    "url": "https://www.plumbingcheyenne.com/",
+                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                },
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://www.plumbingcheyenne.com/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Locations",
+                            "item": "https://www.plumbingcheyenne.com/locations/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Thomas Heights",
+                            "item": "https://www.plumbingcheyenne.com/locations/thomas-heights/"
+                        }
+                    ]
+                },
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "name": "Plumbing Services Offered in Thomas Heights",
+                    "description": "Key plumbing services provided by Radiant 307 in the Thomas Heights neighborhood.",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Boiler Service, Repair, and Replacement in Thomas Heights",
+                                "url": "https://www.plumbingcheyenne.com/services/boiler-installation-and-repair/",
+                                "description": "Expert boiler installation, repair, and maintenance available for Thomas Heights residents.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Thomas Heights",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Tanked and Tankless Water Heater Services in Thomas Heights",
+                                "url": "https://www.plumbingcheyenne.com/services/water-heater-installation-and-repair/",
+                                "description": "Reliable installation and repair for tanked and tankless water heaters in Thomas Heights.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Thomas Heights",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "Service",
+                                "name": "In-Floor Radiant Heating in Thomas Heights",
+                                "url": "https://www.plumbingcheyenne.com/services/in-floor-radiant-heating/",
+                                "description": "Comfortable and efficient in-floor radiant heating solutions for Thomas Heights homes.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Thomas Heights",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
         },
         "Dakota Crossing": {
             "slug": "/locations/dakota-crossing/",
@@ -31,7 +263,123 @@
                     "lat": 41.15071,
                     "long": -104.7397
                 }
-            ]
+            ],
+            "localMarkup": {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "@id": "https://www.plumbingcheyenne.com/locations/dakota-crossing/",
+                "url": "https://www.plumbingcheyenne.com/locations/dakota-crossing/",
+                "name": "Plumbing Services in Dakota Crossing Neighborhood, Cheyenne | Radiant 307",
+                "description": "Radiant 307 provides expert plumbing, boiler, and radiant heating services for homeowners in the Dakota Crossing neighborhood of Cheyenne, WY.",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://www.plumbingcheyenne.com/#website",
+                    "url": "https://www.plumbingcheyenne.com/",
+                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                },
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://www.plumbingcheyenne.com/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Locations",
+                            "item": "https://www.plumbingcheyenne.com/locations/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Dakota Crossing",
+                            "item": "https://www.plumbingcheyenne.com/locations/dakota-crossing/"
+                        }
+                    ]
+                },
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "name": "Plumbing Services Offered in Dakota Crossing",
+                    "description": "Key plumbing services provided by Radiant 307 in the Dakota Crossing neighborhood.",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Boiler Service, Repair, and Replacement in Dakota Crossing",
+                                "url": "https://www.plumbingcheyenne.com/services/boiler-installation-and-repair/",
+                                "description": "Expert boiler installation, repair, and maintenance available for Dakota Crossing residents.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Dakota Crossing",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Tanked and Tankless Water Heater Services in Dakota Crossing",
+                                "url": "https://www.plumbingcheyenne.com/services/water-heater-installation-and-repair/",
+                                "description": "Reliable installation and repair for tanked and tankless water heaters in Dakota Crossing.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Dakota Crossing",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "Service",
+                                "name": "In-Floor Radiant Heating in Dakota Crossing",
+                                "url": "https://www.plumbingcheyenne.com/services/in-floor-radiant-heating/",
+                                "description": "Comfortable and efficient in-floor radiant heating solutions for Dakota Crossing homes.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Dakota Crossing",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
         },
         "The Pointe": {
             "slug": "/locations/the-pointe/",
@@ -42,7 +390,123 @@
                     "lat": 41.18565,
                     "long": -104.80968
                 }
-            ]
+            ],
+            "localMarkup": {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "@id": "https://www.plumbingcheyenne.com/locations/the-pointe/",
+                "url": "https://www.plumbingcheyenne.com/locations/the-pointe/",
+                "name": "Plumbing Services in The Pointe Neighborhood, Cheyenne | Radiant 307",
+                "description": "Radiant 307 provides expert plumbing, boiler, and radiant heating services for homeowners in The Pointe neighborhood of Cheyenne, WY.",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://www.plumbingcheyenne.com/#website",
+                    "url": "https://www.plumbingcheyenne.com/",
+                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                },
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://www.plumbingcheyenne.com/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Locations",
+                            "item": "https://www.plumbingcheyenne.com/locations/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "The Pointe",
+                            "item": "https://www.plumbingcheyenne.com/locations/the-pointe/"
+                        }
+                    ]
+                },
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "name": "Plumbing Services Offered in The Pointe",
+                    "description": "Key plumbing services provided by Radiant 307 in The Pointe neighborhood.",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Boiler Service, Repair, and Replacement in The Pointe",
+                                "url": "https://www.plumbingcheyenne.com/services/boiler-installation-and-repair/",
+                                "description": "Expert boiler installation, repair, and maintenance available for The Pointe residents.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "The Pointe",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Tanked and Tankless Water Heater Services in The Pointe",
+                                "url": "https://www.plumbingcheyenne.com/services/water-heater-installation-and-repair/",
+                                "description": "Reliable installation and repair for tanked and tankless water heaters in The Pointe.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "The Pointe",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "Service",
+                                "name": "In-Floor Radiant Heating in The Pointe",
+                                "url": "https://www.plumbingcheyenne.com/services/in-floor-radiant-heating/",
+                                "description": "Comfortable and efficient in-floor radiant heating solutions for The Pointe homes.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "The Pointe",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
         },
         "Sun Valley": {
             "slug": "/locations/sun-valley/",
@@ -53,7 +517,123 @@
                     "lat": 41.14001,
                     "long": -104.74684
                 }
-            ]
+            ],
+            "localMarkup": {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "@id": "https://www.plumbingcheyenne.com/locations/sun-valley/",
+                "url": "https://www.plumbingcheyenne.com/locations/sun-valley/",
+                "name": "Plumbing Services in Sun Valley Neighborhood, Cheyenne | Radiant 307",
+                "description": "Radiant 307 provides expert plumbing, boiler, and radiant heating services for homeowners in the Sun Valley neighborhood of Cheyenne, WY.",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://www.plumbingcheyenne.com/#website",
+                    "url": "https://www.plumbingcheyenne.com/",
+                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                },
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://www.plumbingcheyenne.com/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Locations",
+                            "item": "https://www.plumbingcheyenne.com/locations/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Sun Valley",
+                            "item": "https://www.plumbingcheyenne.com/locations/sun-valley/"
+                        }
+                    ]
+                },
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "name": "Plumbing Services Offered in Sun Valley",
+                    "description": "Key plumbing services provided by Radiant 307 in the Sun Valley neighborhood.",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Boiler Service, Repair, and Replacement in Sun Valley",
+                                "url": "https://www.plumbingcheyenne.com/services/boiler-installation-and-repair/",
+                                "description": "Expert boiler installation, repair, and maintenance available for Sun Valley residents.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Sun Valley",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Tanked and Tankless Water Heater Services in Sun Valley",
+                                "url": "https://www.plumbingcheyenne.com/services/water-heater-installation-and-repair/",
+                                "description": "Reliable installation and repair for tanked and tankless water heaters in Sun Valley.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Sun Valley",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "Service",
+                                "name": "In-Floor Radiant Heating in Sun Valley",
+                                "url": "https://www.plumbingcheyenne.com/services/in-floor-radiant-heating/",
+                                "description": "Comfortable and efficient in-floor radiant heating solutions for Sun Valley homes.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Sun Valley",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
         },
         "North Star": {
             "slug": "/locations/north-star/",
@@ -64,7 +644,123 @@
                     "lat": 41.23436,
                     "long": -104.81255
                 }
-            ]
+            ],
+            "localMarkup": {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "@id": "https://www.plumbingcheyenne.com/locations/north-star/",
+                "url": "https://www.plumbingcheyenne.com/locations/north-star/",
+                "name": "Plumbing Services in North Star Neighborhood, Cheyenne | Radiant 307",
+                "description": "Radiant 307 provides expert plumbing, boiler, and radiant heating services for homeowners in the North Star neighborhood of Cheyenne, WY.",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://www.plumbingcheyenne.com/#website",
+                    "url": "https://www.plumbingcheyenne.com/",
+                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                },
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://www.plumbingcheyenne.com/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Locations",
+                            "item": "https://www.plumbingcheyenne.com/locations/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "North Star",
+                            "item": "https://www.plumbingcheyenne.com/locations/north-star/"
+                        }
+                    ]
+                },
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "name": "Plumbing Services Offered in North Star",
+                    "description": "Key plumbing services provided by Radiant 307 in the North Star neighborhood.",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Boiler Service, Repair, and Replacement in North Star",
+                                "url": "https://www.plumbingcheyenne.com/services/boiler-installation-and-repair/",
+                                "description": "Expert boiler installation, repair, and maintenance available for North Star residents.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "North Star",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Tanked and Tankless Water Heater Services in North Star",
+                                "url": "https://www.plumbingcheyenne.com/services/water-heater-installation-and-repair/",
+                                "description": "Reliable installation and repair for tanked and tankless water heaters in North Star.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "North Star",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "Service",
+                                "name": "In-Floor Radiant Heating in North Star",
+                                "url": "https://www.plumbingcheyenne.com/services/in-floor-radiant-heating/",
+                                "description": "Comfortable and efficient in-floor radiant heating solutions for North Star homes.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "North Star",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
         },
         "Orchard Valley": {
             "slug": "/locations/orchard-valley/",
@@ -75,7 +771,123 @@
                     "lat": 41.09862,
                     "long": -104.81036
                 }
-            ]
+            ],
+            "localMarkup": {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "@id": "https://www.plumbingcheyenne.com/locations/orchard-valley/",
+                "url": "https://www.plumbingcheyenne.com/locations/orchard-valley/",
+                "name": "Plumbing Services in Orchard Valley Neighborhood, Cheyenne | Radiant 307",
+                "description": "Radiant 307 provides expert plumbing, boiler, and radiant heating services for homeowners in the Orchard Valley neighborhood of Cheyenne, WY.",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://www.plumbingcheyenne.com/#website",
+                    "url": "https://www.plumbingcheyenne.com/",
+                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                },
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://www.plumbingcheyenne.com/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Locations",
+                            "item": "https://www.plumbingcheyenne.com/locations/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Orchard Valley",
+                            "item": "https://www.plumbingcheyenne.com/locations/orchard-valley/"
+                        }
+                    ]
+                },
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "name": "Plumbing Services Offered in Orchard Valley",
+                    "description": "Key plumbing services provided by Radiant 307 in the Orchard Valley neighborhood.",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Boiler Service, Repair, and Replacement in Orchard Valley",
+                                "url": "https://www.plumbingcheyenne.com/services/boiler-installation-and-repair/",
+                                "description": "Expert boiler installation, repair, and maintenance available for Orchard Valley residents.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Orchard Valley",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Tanked and Tankless Water Heater Services in Orchard Valley",
+                                "url": "https://www.plumbingcheyenne.com/services/water-heater-installation-and-repair/",
+                                "description": "Reliable installation and repair for tanked and tankless water heaters in Orchard Valley.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Orchard Valley",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "Service",
+                                "name": "In-Floor Radiant Heating in Orchard Valley",
+                                "url": "https://www.plumbingcheyenne.com/services/in-floor-radiant-heating/",
+                                "description": "Comfortable and efficient in-floor radiant heating solutions for Orchard Valley homes.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Orchard Valley",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
         },
         "Mustang Ridge": {
             "slug": "/locations/mustang-ridge/",
@@ -86,7 +898,123 @@
                     "lat": 41.18077,
                     "long": -104.78449
                 }
-            ]
+            ],
+            "localMarkup": {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "@id": "https://www.plumbingcheyenne.com/locations/mustang-ridge/",
+                "url": "https://www.plumbingcheyenne.com/locations/mustang-ridge/",
+                "name": "Plumbing Services in Mustang Ridge Neighborhood, Cheyenne | Radiant 307",
+                "description": "Radiant 307 provides expert plumbing, boiler, and radiant heating services for homeowners in the Mustang Ridge neighborhood of Cheyenne, WY.",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://www.plumbingcheyenne.com/#website",
+                    "url": "https://www.plumbingcheyenne.com/",
+                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                },
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://www.plumbingcheyenne.com/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Locations",
+                            "item": "https://www.plumbingcheyenne.com/locations/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Mustang Ridge",
+                            "item": "https://www.plumbingcheyenne.com/locations/mustang-ridge/"
+                        }
+                    ]
+                },
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "name": "Plumbing Services Offered in Mustang Ridge",
+                    "description": "Key plumbing services provided by Radiant 307 in the Mustang Ridge neighborhood.",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Boiler Service, Repair, and Replacement in Mustang Ridge",
+                                "url": "https://www.plumbingcheyenne.com/services/boiler-installation-and-repair/",
+                                "description": "Expert boiler installation, repair, and maintenance available for Mustang Ridge residents.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Mustang Ridge",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Tanked and Tankless Water Heater Services in Mustang Ridge",
+                                "url": "https://www.plumbingcheyenne.com/services/water-heater-installation-and-repair/",
+                                "description": "Reliable installation and repair for tanked and tankless water heaters in Mustang Ridge.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Mustang Ridge",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "Service",
+                                "name": "In-Floor Radiant Heating in Mustang Ridge",
+                                "url": "https://www.plumbingcheyenne.com/services/in-floor-radiant-heating/",
+                                "description": "Comfortable and efficient in-floor radiant heating solutions for Mustang Ridge homes.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Mustang Ridge",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
         },
         "Buffalo Ridge": {
             "slug": "/locations/buffalo-ridge/",
@@ -97,7 +1025,123 @@
                     "lat": 41.16662,
                     "long": -104.77681
                 }
-            ]
+            ],
+            "localMarkup": {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "@id": "https://www.plumbingcheyenne.com/locations/buffalo-ridge/",
+                "url": "https://www.plumbingcheyenne.com/locations/buffalo-ridge/",
+                "name": "Plumbing Services in Buffalo Ridge Neighborhood, Cheyenne | Radiant 307",
+                "description": "Radiant 307 provides expert plumbing, boiler, and radiant heating services for homeowners in the Buffalo Ridge neighborhood of Cheyenne, WY.",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://www.plumbingcheyenne.com/#website",
+                    "url": "https://www.plumbingcheyenne.com/",
+                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                },
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://www.plumbingcheyenne.com/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Locations",
+                            "item": "https://www.plumbingcheyenne.com/locations/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Buffalo Ridge",
+                            "item": "https://www.plumbingcheyenne.com/locations/buffalo-ridge/"
+                        }
+                    ]
+                },
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "name": "Plumbing Services Offered in Buffalo Ridge",
+                    "description": "Key plumbing services provided by Radiant 307 in the Buffalo Ridge neighborhood.",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Boiler Service, Repair, and Replacement in Buffalo Ridge",
+                                "url": "https://www.plumbingcheyenne.com/services/boiler-installation-and-repair/",
+                                "description": "Expert boiler installation, repair, and maintenance available for Buffalo Ridge residents.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Buffalo Ridge",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Tanked and Tankless Water Heater Services in Buffalo Ridge",
+                                "url": "https://www.plumbingcheyenne.com/services/water-heater-installation-and-repair/",
+                                "description": "Reliable installation and repair for tanked and tankless water heaters in Buffalo Ridge.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Buffalo Ridge",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "Service",
+                                "name": "In-Floor Radiant Heating in Buffalo Ridge",
+                                "url": "https://www.plumbingcheyenne.com/services/in-floor-radiant-heating/",
+                                "description": "Comfortable and efficient in-floor radiant heating solutions for Buffalo Ridge homes.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Buffalo Ridge",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
         },
         "Monterey Heights": {
             "slug": "/locations/monterey-heights/",
@@ -108,7 +1152,123 @@
                     "lat": 41.17851,
                     "long": -104.82107
                 }
-            ]
+            ],
+            "localMarkup": {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "@id": "https://www.plumbingcheyenne.com/locations/monterey-heights/",
+                "url": "https://www.plumbingcheyenne.com/locations/monterey-heights/",
+                "name": "Plumbing Services in Monterey Heights Neighborhood, Cheyenne | Radiant 307",
+                "description": "Radiant 307 provides expert plumbing, boiler, and radiant heating services for homeowners in the Monterey Heights neighborhood of Cheyenne, WY.",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://www.plumbingcheyenne.com/#website",
+                    "url": "https://www.plumbingcheyenne.com/",
+                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                },
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://www.plumbingcheyenne.com/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Locations",
+                            "item": "https://www.plumbingcheyenne.com/locations/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Monterey Heights",
+                            "item": "https://www.plumbingcheyenne.com/locations/monterey-heights/"
+                        }
+                    ]
+                },
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "name": "Plumbing Services Offered in Monterey Heights",
+                    "description": "Key plumbing services provided by Radiant 307 in the Monterey Heights neighborhood.",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Boiler Service, Repair, and Replacement in Monterey Heights",
+                                "url": "https://www.plumbingcheyenne.com/services/boiler-installation-and-repair/",
+                                "description": "Expert boiler installation, repair, and maintenance available for Monterey Heights residents.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Monterey Heights",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Tanked and Tankless Water Heater Services in Monterey Heights",
+                                "url": "https://www.plumbingcheyenne.com/services/water-heater-installation-and-repair/",
+                                "description": "Reliable installation and repair for tanked and tankless water heaters in Monterey Heights.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Monterey Heights",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "Service",
+                                "name": "In-Floor Radiant Heating in Monterey Heights",
+                                "url": "https://www.plumbingcheyenne.com/services/in-floor-radiant-heating/",
+                                "description": "Comfortable and efficient in-floor radiant heating solutions for Monterey Heights homes.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Monterey Heights",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
         },
         "Ranchettes": {
             "slug": "/locations/ranchettes/",
@@ -119,7 +1279,123 @@
                     "lat": 41.23773,
                     "long": -104.75572
                 }
-            ]
+            ],
+            "localMarkup": {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "@id": "https://www.plumbingcheyenne.com/locations/ranchettes/",
+                "url": "https://www.plumbingcheyenne.com/locations/ranchettes/",
+                "name": "Plumbing Services in Ranchettes Area, Cheyenne | Radiant 307",
+                "description": "Radiant 307 provides expert plumbing, boiler, and radiant heating services for homeowners in the Ranchettes area of Cheyenne, WY.",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://www.plumbingcheyenne.com/#website",
+                    "url": "https://www.plumbingcheyenne.com/",
+                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                },
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://www.plumbingcheyenne.com/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Locations",
+                            "item": "https://www.plumbingcheyenne.com/locations/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Ranchettes",
+                            "item": "https://www.plumbingcheyenne.com/locations/ranchettes/"
+                        }
+                    ]
+                },
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "name": "Plumbing Services Offered in Ranchettes",
+                    "description": "Key plumbing services provided by Radiant 307 in the Ranchettes area.",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Boiler Service, Repair, and Replacement in Ranchettes",
+                                "url": "https://www.plumbingcheyenne.com/services/boiler-installation-and-repair/",
+                                "description": "Expert boiler installation, repair, and maintenance available for Ranchettes residents.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Ranchettes",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Tanked and Tankless Water Heater Services in Ranchettes",
+                                "url": "https://www.plumbingcheyenne.com/services/water-heater-installation-and-repair/",
+                                "description": "Reliable installation and repair for tanked and tankless water heaters in Ranchettes.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Ranchettes",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "Service",
+                                "name": "In-Floor Radiant Heating in Ranchettes",
+                                "url": "https://www.plumbingcheyenne.com/services/in-floor-radiant-heating/",
+                                "description": "Comfortable and efficient in-floor radiant heating solutions for Ranchettes homes.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Ranchettes",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
         },
         "Rocking Star": {
             "slug": "/locations/rocking-star/",
@@ -130,7 +1406,123 @@
                     "lat": 41.24108,
                     "long": -105.00913
                 }
-            ]
+            ],
+            "localMarkup": {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "@id": "https://www.plumbingcheyenne.com/locations/rocking-star/",
+                "url": "https://www.plumbingcheyenne.com/locations/rocking-star/",
+                "name": "Plumbing Services in Rocking Star Neighborhood, Cheyenne | Radiant 307",
+                "description": "Radiant 307 provides expert plumbing, boiler, and radiant heating services for homeowners in the Rocking Star neighborhood of Cheyenne, WY.",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://www.plumbingcheyenne.com/#website",
+                    "url": "https://www.plumbingcheyenne.com/",
+                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                },
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://www.plumbingcheyenne.com/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Locations",
+                            "item": "https://www.plumbingcheyenne.com/locations/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Rocking Star",
+                            "item": "https://www.plumbingcheyenne.com/locations/rocking-star/"
+                        }
+                    ]
+                },
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "name": "Plumbing Services Offered in Rocking Star",
+                    "description": "Key plumbing services provided by Radiant 307 in the Rocking Star neighborhood.",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Boiler Service, Repair, and Replacement in Rocking Star",
+                                "url": "https://www.plumbingcheyenne.com/services/boiler-installation-and-repair/",
+                                "description": "Expert boiler installation, repair, and maintenance available for Rocking Star residents.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Rocking Star",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Tanked and Tankless Water Heater Services in Rocking Star",
+                                "url": "https://www.plumbingcheyenne.com/services/water-heater-installation-and-repair/",
+                                "description": "Reliable installation and repair for tanked and tankless water heaters in Rocking Star.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Rocking Star",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "Service",
+                                "name": "In-Floor Radiant Heating in Rocking Star",
+                                "url": "https://www.plumbingcheyenne.com/services/in-floor-radiant-heating/",
+                                "description": "Comfortable and efficient in-floor radiant heating solutions for Rocking Star homes.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Rocking Star",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
         },
         "Western Hills": {
             "slug": "/locations/western-hills/",
@@ -141,7 +1533,123 @@
                     "lat": 41.18425,
                     "long": -104.8429
                 }
-            ]
+            ],
+            "localMarkup": {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "@id": "https://www.plumbingcheyenne.com/locations/western-hills/",
+                "url": "https://www.plumbingcheyenne.com/locations/western-hills/",
+                "name": "Plumbing Services in Western Hills Neighborhood, Cheyenne | Radiant 307",
+                "description": "Radiant 307 provides expert plumbing, boiler, and radiant heating services for homeowners in the Western Hills neighborhood of Cheyenne, WY.",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://www.plumbingcheyenne.com/#website",
+                    "url": "https://www.plumbingcheyenne.com/",
+                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                },
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://www.plumbingcheyenne.com/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Locations",
+                            "item": "https://www.plumbingcheyenne.com/locations/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Western Hills",
+                            "item": "https://www.plumbingcheyenne.com/locations/western-hills/"
+                        }
+                    ]
+                },
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "name": "Plumbing Services Offered in Western Hills",
+                    "description": "Key plumbing services provided by Radiant 307 in the Western Hills neighborhood.",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Boiler Service, Repair, and Replacement in Western Hills",
+                                "url": "https://www.plumbingcheyenne.com/services/boiler-installation-and-repair/",
+                                "description": "Expert boiler installation, repair, and maintenance available for Western Hills residents.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Western Hills",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Tanked and Tankless Water Heater Services in Western Hills",
+                                "url": "https://www.plumbingcheyenne.com/services/water-heater-installation-and-repair/",
+                                "description": "Reliable installation and repair for tanked and tankless water heaters in Western Hills.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Western Hills",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "Service",
+                                "name": "In-Floor Radiant Heating in Western Hills",
+                                "url": "https://www.plumbingcheyenne.com/services/in-floor-radiant-heating/",
+                                "description": "Comfortable and efficient in-floor radiant heating solutions for Western Hills homes.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Western Hills",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
         },
         "Winchester Hills": {
             "slug": "/locations/winchester-hills/",
@@ -152,7 +1660,123 @@
                     "lat": 41.05922,
                     "long": -104.81427
                 }
-            ]
+            ],
+            "localMarkup": {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "@id": "https://www.plumbingcheyenne.com/locations/winchester-hills/",
+                "url": "https://www.plumbingcheyenne.com/locations/winchester-hills/",
+                "name": "Plumbing Services in Winchester Hills Neighborhood, Cheyenne | Radiant 307",
+                "description": "Radiant 307 provides expert plumbing, boiler, and radiant heating services for homeowners in the Winchester Hills neighborhood of Cheyenne, WY.",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://www.plumbingcheyenne.com/#website",
+                    "url": "https://www.plumbingcheyenne.com/",
+                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                },
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://www.plumbingcheyenne.com/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Locations",
+                            "item": "https://www.plumbingcheyenne.com/locations/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Winchester Hills",
+                            "item": "https://www.plumbingcheyenne.com/locations/winchester-hills/"
+                        }
+                    ]
+                },
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "name": "Plumbing Services Offered in Winchester Hills",
+                    "description": "Key plumbing services provided by Radiant 307 in the Winchester Hills neighborhood.",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Boiler Service, Repair, and Replacement in Winchester Hills",
+                                "url": "https://www.plumbingcheyenne.com/services/boiler-installation-and-repair/",
+                                "description": "Expert boiler installation, repair, and maintenance available for Winchester Hills residents.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Winchester Hills",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Tanked and Tankless Water Heater Services in Winchester Hills",
+                                "url": "https://www.plumbingcheyenne.com/services/water-heater-installation-and-repair/",
+                                "description": "Reliable installation and repair for tanked and tankless water heaters in Winchester Hills.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Winchester Hills",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "Service",
+                                "name": "In-Floor Radiant Heating in Winchester Hills",
+                                "url": "https://www.plumbingcheyenne.com/services/in-floor-radiant-heating/",
+                                "description": "Comfortable and efficient in-floor radiant heating solutions for Winchester Hills homes.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Winchester Hills",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
         },
         "Sweetgrass": {
             "slug": "/locations/sweetgrass/",
@@ -163,7 +1787,123 @@
                     "lat": 41.09892,
                     "long": -104.7815
                 }
-            ]
+            ],
+            "localMarkup": {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "@id": "https://www.plumbingcheyenne.com/locations/sweetgrass/",
+                "url": "https://www.plumbingcheyenne.com/locations/sweetgrass/",
+                "name": "Plumbing Services in Sweetgrass Neighborhood, Cheyenne | Radiant 307",
+                "description": "Radiant 307 provides expert plumbing, boiler, and radiant heating services for homeowners in the Sweetgrass neighborhood of Cheyenne, WY.",
+                "isPartOf": {
+                    "@type": "WebSite",
+                    "@id": "https://www.plumbingcheyenne.com/#website",
+                    "url": "https://www.plumbingcheyenne.com/",
+                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                },
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://www.plumbingcheyenne.com/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Locations",
+                            "item": "https://www.plumbingcheyenne.com/locations/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Sweetgrass",
+                            "item": "https://www.plumbingcheyenne.com/locations/sweetgrass/"
+                        }
+                    ]
+                },
+                "mainEntity": {
+                    "@type": "ItemList",
+                    "name": "Plumbing Services Offered in Sweetgrass",
+                    "description": "Key plumbing services provided by Radiant 307 in the Sweetgrass neighborhood.",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Boiler Service, Repair, and Replacement in Sweetgrass",
+                                "url": "https://www.plumbingcheyenne.com/services/boiler-installation-and-repair/",
+                                "description": "Expert boiler installation, repair, and maintenance available for Sweetgrass residents.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Sweetgrass",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "item": {
+                                "@type": "Service",
+                                "name": "Tanked and Tankless Water Heater Services in Sweetgrass",
+                                "url": "https://www.plumbingcheyenne.com/services/water-heater-installation-and-repair/",
+                                "description": "Reliable installation and repair for tanked and tankless water heaters in Sweetgrass.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Sweetgrass",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "item": {
+                                "@type": "Service",
+                                "name": "In-Floor Radiant Heating in Sweetgrass",
+                                "url": "https://www.plumbingcheyenne.com/services/in-floor-radiant-heating/",
+                                "description": "Comfortable and efficient in-floor radiant heating solutions for Sweetgrass homes.",
+                                "provider": {
+                                    "@type": "Plumber",
+                                    "@id": "https://www.plumbingcheyenne.com/#organization",
+                                    "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating"
+                                },
+                                "areaServed": {
+                                    "@type": "Neighborhood",
+                                    "name": "Sweetgrass",
+                                    "address": {
+                                        "@type": "PostalAddress",
+                                        "addressLocality": "Cheyenne",
+                                        "addressRegion": "WY"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
         }
     }
 }

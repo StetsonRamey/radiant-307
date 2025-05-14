@@ -6,6 +6,36 @@
     "metadescription": "Expert boiler service, repair & replacement in Cheyenne by Radiant 307. Ensure your home stays warm with reliable heating solutions. Call us to learn more!",
     "h1": "Expert Boiler Installation, Repair, and Maintenance in Cheyenne, Wyoming",
     "description": "Radiant 307 Plumbing provides expert boiler installation, repair, and maintenance in Cheyenne, Wyoming.  Whether you need a new boiler installed or an old one repaired or maintained, we are here to help.  We know that a functioning boiler is essential for keeping your home warm and comfortable during the long Wyoming winters.",
+    "localMarkup": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Boiler Installation, Repair, and Maintenance",
+      "name": "Expert Boiler Installation, Repair, and Maintenance",
+      "description": "Radiant 307 offers expert boiler installation, repair, and maintenance services in Cheyenne, WY. We install, repair, and maintain boilers for residential and commercial properties.",
+      "provider": {
+        "@type": "Plumber",
+        "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating",
+        "url": "https://www.plumbingcheyenne.com/#organization"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Cheyenne"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.plumbingcheyenne.com/contact/",
+          "inLanguage": "en-US",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/IOSPlatform",
+            "http://schema.org/AndroidPlatform"
+          ]
+        },
+        "name": "Schedule an Estimate"
+      }
+    },
     "signs": {
       "heading": "Signs Your Boiler Needs Attention",
       "list": [
@@ -85,6 +115,36 @@
     "metadescription": "Reliable tanked & tankless water heater installation, repair & service in Cheyenne. Radiant 307 ensures consistent hot water for your home. Contact us today!",
     "h1": "Water Heater Installation & Repair in Cheyenne, Wyoming",
     "description": "Radiant 307 Plumbing specializes in installing, repairing, and maintaining both tanked and tankless water heaters. Our experienced technicians ensure your home has a reliable and efficient hot water supply all year round.",
+    "localMarkup": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Tanked and Tankless Water Heater Installation, Repair, and Service",
+      "name": "Tanked and Tankless Water Heater Installation, Repair, and Service",
+      "description": "Radiant 307 offers expert tanked and tankless water heater installation, repair, and maintenance services in Cheyenne, WY. We install, repair, and maintain tanked and tankless water heaters for residential and commercial properties.",
+      "provider": {
+        "@type": "Plumber",
+        "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating",
+        "url": "https://www.plumbingcheyenne.com/#organization"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Cheyenne"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.plumbingcheyenne.com/contact/",
+          "inLanguage": "en-US",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/IOSPlatform",
+            "http://schema.org/AndroidPlatform"
+          ]
+        },
+        "name": "Schedule an Estimate"
+      }
+    },
     "signs": {
       "heading": "Signs Your Water Heater Needs Service",
       "list": [
@@ -165,6 +225,36 @@
     "metadescription": "Cheyenne's choice for in-floor radiant heating service & repair. Radiant 307 delivers efficient, even warmth for ultimate home comfort. Get your quote now!",
     "h1": "In-Floor Radiant Heating Installation & Repair in Cheyenne, Wyoming",
     "description": "Experience the comfort of in-floor radiant heating with Radiant 307 Plumbing. We offer professional installation, repair, and maintenance for radiant heating systems, ensuring your home stays warm and energy-efficient during Wyoming's coldest months.",
+    "localMarkup": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "In-Floor Radiant Heating Installation, Repair, and Service",
+      "name": "In-Floor Radiant Heating Installation, Repair, and Service",
+      "description": "Radiant 307 offers expert in-floor radiant heating installation, repair, and maintenance services in Cheyenne, WY. We install, repair, and maintain in-floor radiant heating systems for residential and commercial properties.",
+      "provider": {
+        "@type": "Plumber",
+        "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating",
+        "url": "https://www.plumbingcheyenne.com/#organization"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Cheyenne"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.plumbingcheyenne.com/contact/",
+          "inLanguage": "en-US",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/IOSPlatform",
+            "http://schema.org/AndroidPlatform"
+          ]
+        },
+        "name": "Schedule an Estimate"
+      }
+    },
     "signs": {
       "heading": "Signs Your Radiant Heating Needs Service",
       "list": [
@@ -243,6 +333,36 @@
     "metadescription": "Expert whole house water filter installation & replacement in Cheyenne by Radiant 307. Enjoy cleaner, safer water for your family. Call us to learn more!",
     "h1": "Whole House Water Filter Installation & Replacement in Cheyenne, Wyoming",
     "description": "Ensure your family has access to clean, safe water with our whole house water filter installation and replacement services. Radiant 307 Plumbing uses high-quality filtration systems to remove contaminants and improve water quality for your entire home.",
+    "localMarkup": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Whole House Water Filter Installation, Repair, and Replacement",
+      "name": "Whole House Water Filter Installation, Repair, and Replacement",
+      "description": "Radiant 307 offers expert whole house water filter installation, repair, and replacement services in Cheyenne, WY. We install, repair, and replace whole house water filters for residential and commercial properties.",
+      "provider": {
+        "@type": "Plumber",
+        "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating",
+        "url": "https://www.plumbingcheyenne.com/#organization"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Cheyenne"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.plumbingcheyenne.com/contact/",
+          "inLanguage": "en-US",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/IOSPlatform",
+            "http://schema.org/AndroidPlatform"
+          ]
+        },
+        "name": "Schedule an Estimate"
+      }
+    },
     "signs": {
       "heading": "Signs You Need a Whole House Water Filter",
       "list": [
@@ -320,6 +440,36 @@
     "metadescription": "Protect your appliances with water conditioner installation & repair in Cheyenne from Radiant 307. Enjoy better water quality. Contact us for details!",
     "h1": "Appliance Water Conditioner Installation & Repair in Cheyenne, Wyoming",
     "description": "Improve your water quality and extend the life of your appliances with our appliance water conditioner installation and repair services. Radiant 307 Plumbing provides expert solutions to reduce scale, hardness, and contaminants in your home's water supply.",
+    "localMarkup": {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Appliance Water Conditioner Installation, Repair, and Replacement",
+      "name": "Appliance Water Conditioner Installation, Repair, and Replacement",
+      "description": "Radiant 307 offers appliance water conditioner installation, repair, and replacement services in Cheyenne, WY. We install, repair, and replace appliance water conditioners for residential and commercial properties.",
+      "provider": {
+        "@type": "Plumber",
+        "name": "Radiant 307 Boilers, Plumbing, and Radiant Heating",
+        "url": "https://www.plumbingcheyenne.com/#organization"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Cheyenne"
+      },
+      "potentialAction": {
+        "@type": "ReserveAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.plumbingcheyenne.com/contact/",
+          "inLanguage": "en-US",
+          "actionPlatform": [
+            "http://schema.org/DesktopWebPlatform",
+            "http://schema.org/IOSPlatform",
+            "http://schema.org/AndroidPlatform"
+          ]
+        },
+        "name": "Schedule an Estimate"
+      }
+    },
     "signs": {
       "heading": "Signs You Need a Water Conditioner",
       "list": [

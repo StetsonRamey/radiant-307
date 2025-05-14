@@ -4,7 +4,8 @@ layout: "base.webc",
 pagination: {
 data: "services",
 size: 1,
-alias: "service"
+alias: "service",
+addAllPagesToCollections: true
 },
 permalink: data => {
 return data.service.slug
@@ -15,6 +16,9 @@ h1: data => data.service.h1,
 description: data => data.service["metadescription"],
 ogtitle: data => data.service["title-tag"] || data.service.title,
 ogdesc: data => data.service["metadescription"],
+pageLocalMarkup: data => {
+return data.service.localMarkup
+}
 }
 };
 ---

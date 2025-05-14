@@ -19,7 +19,8 @@
   <meta property="og:locale" content="en_US" />
   <meta property="og:title"
     :content="ogtitle || 'Radiant 307 Plumbing | Plumbing and Radiant Heating Services in Cheyenne, Wyoming'" />
-  <meta property="og:description" :content="ogdesc || 'Professional plumbing and radiant heating services in Cheyenne, WY.'" />
+  <meta property="og:description"
+    :content="ogdesc || 'Professional plumbing and radiant heating services in Cheyenne, WY.'" />
   <meta property="og:image" content="/assets/images/og-img.png" />
   <meta property="og:image:alt" content="The Radiant 307 company logo" />
   <meta property="og:image:width" content="800" />
@@ -30,7 +31,26 @@
   <link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep />
 
 
+  <script type="application/ld+json" webc:keep webc:if="page.url === '/'"
+    :raw="JSON.stringify(site.localMarkup || {})"></script>
+  <script type="application/ld+json" webc:keep webc:if="page.url === '/'"
+    :raw="JSON.stringify(site.webSchema || {})"></script>
+  <script type="application/ld+json" webc:keep webc:if="page.url === '/contact/'"
+    :raw="JSON.stringify(localMarkup.contact || {})"></script>
+  <script type="application/ld+json" webc:keep webc:if="page.url === '/services/'"
+    :raw="JSON.stringify(localMarkup.services || {})"></script>
+  <script type="application/ld+json" webc:keep webc:if="page.url === '/locations/'"
+    :raw="JSON.stringify(localMarkup.locations || {})"></script>
+  <script type="application/ld+json" webc:keep
+    webc:if="page.url.startsWith('/services/') && page.url.length > '/services/'.length"
+    :raw="JSON.stringify(pageLocalMarkup || {})"></script>
+  <script type="application/ld+json" webc:keep
+    webc:if="page.url.startsWith('/locations/') && page.url.length > '/locations/'.length"
+    :raw="JSON.stringify(pageLocalMarkup || {})"></script>
+
+
   <script :src="getBundleFileUrl('js')" webc:keep></script>
+
 </head>
 
 <body>

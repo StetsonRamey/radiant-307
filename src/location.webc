@@ -4,7 +4,8 @@ layout: "base.webc",
 pagination: {
 data: "areas_helper",
 size: 1,
-alias: "location"
+alias: "location",
+addAllPagesToCollections: true
 },
 permalink: data => {
 // Get the slug from the location data
@@ -19,6 +20,7 @@ ogdesc: data => data.location.description,
 locationTitle: data => data.location.title,
 lat: data => data.location.lat,
 long: data => data.location.long,
+pageLocalMarkup: data => data.location.localMarkup
 }
 };
 ---
