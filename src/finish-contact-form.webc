@@ -4,6 +4,7 @@ const description = "Contact Radiant 307 Plumbing for professional plumbing and 
 WY. Get a quote, schedule an appointment or just say hello.";
 const layout = "base.webc";
 const eleventyExcludeFromCollections = true;
+const noindex = true;
 ---
 <!-- 1. Headline -->
 <header class="contact-page locations-header">

@@ -48,6 +48,8 @@
     webc:if="page.url.startsWith('/locations/') && page.url.length > '/locations/'.length"
     :raw="JSON.stringify(pageLocalMarkup || {})"></script>
 
+  <meta webc:if="noindex" name="robots" content="noindex, nofollow" />
+
 
   <script :src="getBundleFileUrl('js')" webc:keep></script>
 
@@ -57,6 +59,9 @@
   <top-banner :site="site" :url="page.url"></top-banner>
   <main @raw="content"></main>
   <footer-section :services="services" :areas="areas" :site="site"></footer-section>
+  <!-- 100% privacy-first analytics -->
+  <script webc:keep async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
 </body>
 
 </html>
