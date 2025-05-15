@@ -28,7 +28,7 @@
                 <circle cx="12" cy="12" r="10"></circle>
                 <polyline points="12 6 12 12 16 14"></polyline>
             </svg>
-            <a @text="site.hours"></a>
+            <span @text="site.hours"></span>
         </div>
     </div>
 </div>
@@ -83,7 +83,8 @@
     }
 
     .top-banner .contact-item a,
-    .top-banner .contact-item svg {
+    .top-banner .contact-item svg,
+    .top-banner .contact-item span {
         color: var(--color-glare-500);
     }
 
@@ -101,7 +102,8 @@
         flex-shrink: 0;
     }
 
-    .contact-item a {
+    .contact-item a,
+    .contact-item span {
         text-decoration: none;
         color: inherit;
     }
