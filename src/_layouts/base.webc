@@ -32,21 +32,21 @@
 
 
   <script type="application/ld+json" webc:keep webc:if="page.url === '/'"
-    :raw="JSON.stringify(site.localMarkup || {})"></script>
+    @text="JSON.stringify(site.localMarkup || {})"></script>
   <script type="application/ld+json" webc:keep webc:if="page.url === '/'"
-    :raw="JSON.stringify(site.webSchema || {})"></script>
+    @text="JSON.stringify(site.webSchema || {})"></script>
   <script type="application/ld+json" webc:keep webc:if="page.url === '/contact/'"
-    :raw="JSON.stringify(localMarkup.contact || {})"></script>
+    @text="JSON.stringify(localMarkup.contact || {})"></script>
   <script type="application/ld+json" webc:keep webc:if="page.url === '/services/'"
-    :raw="JSON.stringify(localMarkup.services || {})"></script>
+    @text="JSON.stringify(localMarkup.services || {})"></script>
   <script type="application/ld+json" webc:keep webc:if="page.url === '/locations/'"
-    :raw="JSON.stringify(localMarkup.locations || {})"></script>
+    @text="JSON.stringify(localMarkup.locations || {})"></script>
   <script type="application/ld+json" webc:keep
     webc:if="page.url.startsWith('/services/') && page.url.length > '/services/'.length"
-    :raw="JSON.stringify(pageLocalMarkup || {})"></script>
+    @text="JSON.stringify(pageLocalMarkup || {})"></script>
   <script type="application/ld+json" webc:keep
     webc:if="page.url.startsWith('/locations/') && page.url.length > '/locations/'.length"
-    :raw="JSON.stringify(pageLocalMarkup || {})"></script>
+    @text="JSON.stringify(pageLocalMarkup || {})"></script>
 
   <meta webc:if="noindex" name="robots" content="noindex, nofollow" />
 
