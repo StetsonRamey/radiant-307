@@ -6,19 +6,23 @@
         Top tier boiler, radiant heating, and plumbing services.
       </p>
       <div class="hero-buttons">
-        <a :href="'tel:' + site.phone" class="btn" data-btn-variant="primary">Call Now</a>
-        <a href="/contact" class="btn" data-btn-variant="secondary">Free Estimate</a>
+        <a :href="'tel:' + site.phone" class="btn" data-btn-variant="primary">
+          Call Now
+        </a>
+        <a href="/contact" class="btn" data-btn-variant="secondary">
+          Free Estimate
+        </a>
       </div>
     </div>
     <div class="hero-image">
-      <img src="/assets/images/hero.jpeg"
+      <img
+        src="/assets/images/hero.jpeg"
         alt="An older model boiler system with storage tanks for domestic hot water and in floor radiant heating"
         loading="eager"
         width="800"
         height="600"
         sizes="(max-width: 768px) 100vw, 800px"
-        decoding="async"
-        />
+        decoding="async" />
     </div>
   </div>
 </div>
@@ -71,7 +75,6 @@
     gap: 1rem;
     margin-top: 1rem;
   }
-
 
   .hero-image {
     flex: 1;

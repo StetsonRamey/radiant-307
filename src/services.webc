@@ -16,22 +16,37 @@ description: "Comprehensive plumbing and radiant heating services in Cheyenne, W
         Professional plumbing services for residential and commercial projects.
       </p>
       <div class="service-buttons">
-        <a :href="'tel:' + site.phone" class="btn" data-btn-variant="primary">Call us Today!</a>
-        <a href="/contact/" class="btn" data-btn-variant="secondary">Request a Quote</a>
+        <a :href="'tel:' + site.phone" class="btn" data-btn-variant="primary">
+          Call us Today!
+        </a>
+        <a href="/contact/" class="btn" data-btn-variant="secondary">
+          Request a Quote
+        </a>
       </div>
     </div>
   </header>
 
   <!-- 2. Introductory Paragraph -->
   <section class="services-intro">
-    <p class="paragraph">
-      Radiant 307 Plumbing offers a wide range of residential and commercial
-      plumbing and heating solutions throughout Cheyenne and the surrounding
-      areas. Our licensed and insured team delivers expert service, upfront
-      pricing, and fast response times—whether you need routine maintenance,
-      emergency repairs, or a brand new installation. Explore our core services
-      below to find the right solution for your home or business.
-    </p>
+    <div class="container intro-grid">
+      <div class="intro-text">
+        <p class="paragraph">
+          Radiant 307 Plumbing offers a wide range of residential and commercial
+          plumbing and heating solutions throughout Cheyenne and the surrounding
+          areas. Our licensed and insured team delivers expert service, upfront
+          pricing, and fast response times—whether you need routine maintenance,
+          emergency repairs, or a brand new installation. Explore our core services
+          below to find the right solution for your home or business.
+        </p>
+      </div>
+      <div class="intro-image-container">
+        <img
+          src="/assets/images/remi-locations.jpg"
+          alt="Radiant 307 Plumbing technician Remington with his equipment and truck in Cheyenne, Wyoming"
+          class="intro-image"
+          sizes="(max-width: 767px) calc(100vw - 40px), 560px" />
+      </div>
+    </div>
   </section>
 
   <!-- 3. Service Listings / Grid -->
@@ -42,18 +57,30 @@ description: "Comprehensive plumbing and radiant heating services in Cheyenne, W
         <li webc:for="service of services" class="service-card">
           <div class="service-card-content">
             <div aria-hidden="true" @raw="service.core_services.icon"></div>
-            <h3 class="heading-4 no-wrap" @text="service.core_services.heading"></h3>
+            <h3
+              class="heading-4 no-wrap"
+              @text="service.core_services.heading"></h3>
             <p class="paragraph">Services we provide:</p>
             <div class="service-pills">
-              <span webc:for="list of service.core_services.list" class="service-pill" @text="list"></span>
+              <span
+                webc:for="list of service.core_services.list"
+                class="service-pill"
+                @text="list"></span>
             </div>
-            <p class="service-card-desc" @text="service.core_services.blurb"></p>
-            <a class="btn" data-ghost-button :href="service.slug" @text="service.core_services.heading"></a>
+            <p
+              class="service-card-desc"
+              @text="service.core_services.blurb"></p>
+            <a
+              class="btn"
+              data-ghost-button
+              :href="service.slug"
+              @text="service.core_services.heading"></a>
           </div>
         </li>
       </ul>
     </div>
   </section>
+  <image-grid></image-grid>
 
   <!-- 4. Why Choose Radiant 307? -->
   <section class="why-choose-us-section">
@@ -61,16 +88,29 @@ description: "Comprehensive plumbing and radiant heating services in Cheyenne, W
       <h2 class="heading-2">Why Choose Radiant 307?</h2>
       <ul class="why-choose-list">
         <li class="why-choose-item">
-          <span @raw="icons.trust" class="icon blue" aria-hidden="true"></span>Vast Experience
+          <span @raw="icons.trust" class="icon blue" aria-hidden="true"></span>
+          Vast Experience
         </li>
         <li class="why-choose-item">
-          <span @raw="icons.experience" class="icon purple" aria-hidden="true"></span>Licensed &amp; Insured
+          <span
+            @raw="icons.experience"
+            class="icon purple"
+            aria-hidden="true"></span>
+          Licensed &amp; Insured
         </li>
         <li class="why-choose-item">
-          <span @raw="icons.pricing" class="icon green" aria-hidden="true"></span>Upfront, Honest Pricing
+          <span
+            @raw="icons.pricing"
+            class="icon green"
+            aria-hidden="true"></span>
+          Upfront, Honest Pricing
         </li>
         <li class="why-choose-item">
-          <span @raw="icons.satisfaction" class="icon orange" aria-hidden="true"></span>Satisfaction Guarantee
+          <span
+            @raw="icons.satisfaction"
+            class="icon orange"
+            aria-hidden="true"></span>
+          Satisfaction Guarantee
         </li>
       </ul>
     </div>
@@ -114,13 +154,49 @@ description: "Comprehensive plumbing and radiant heating services in Cheyenne, W
   }
 
   .services-intro {
+    margin-block-end: 2.5rem;
+    padding-block: 3rem;
+  }
+
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .intro-text {
     max-width: 70ch;
     margin-inline: auto;
-    margin-block-end: 2.5rem;
-    padding: 3rem 1rem;
   }
-  .services-intro .paragraph {
+
+  .intro-text .paragraph {
     font-size: 1.25rem;
+  }
+
+  .intro-image-container {
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+    min-height: 300px;
+  }
+
+  .intro-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    .intro-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    .intro-text {
+      margin-inline: 0;
+    }
   }
 
   .services-listings {
@@ -258,6 +334,7 @@ description: "Comprehensive plumbing and radiant heating services in Cheyenne, W
   }
 </style>
 
-<script async
+<script
+  async
   :src="'https://maps.googleapis.com/maps/api/js?key=' + env.GOOGLE_MAPS_API_KEY + '&loading=async&callback=initMap'"
   webc:keep></script>

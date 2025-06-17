@@ -22,7 +22,18 @@ localMarkup: "local-markup.home"
 <testimonials></testimonials>
 <cta-section :icons="icons" :site="site"></cta-section>
 
-<script async
+<section class="rimi-truck-section">
+  <div class="container">
+    <img
+      src="/assets/images/remi-and-truck.jpg"
+      alt="A profile shot of owner Remington standing in front of his work truck pulling out some tools"
+      class="rimi-truck-image"
+      sizes="(max-width: 768px) calc(100vw - 2rem), 1100px" />
+  </div>
+</section>
+
+<script
+  async
   :src="'https://maps.googleapis.com/maps/api/js?key=' + env.GOOGLE_MAPS_API_KEY + '&loading=async&callback=initMap'"
   webc:keep></script>
 
@@ -37,7 +48,7 @@ localMarkup: "local-markup.home"
     background-image: var(--hero-gradient);
     color: var(--color-glare-500);
     width: 100%;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .services-overview {
@@ -58,5 +69,21 @@ localMarkup: "local-markup.home"
     margin-bottom: 1rem;
     font-size: 2rem;
     color: #111827;
+  }
+
+  .rimi-truck-section {
+    padding: 3rem 0;
+  }
+
+  .rimi-truck-section .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .rimi-truck-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
   }
 </style>

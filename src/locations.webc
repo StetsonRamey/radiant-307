@@ -8,652 +8,723 @@ ogdesc: Expert plumbing and radiant heating services throughout Cheyenne. Local,
 
 <!-- location Page Main Content -->
 <div class="locations-main">
-    <div class="logo" @html="site.logo"></div>
-    <!-- 1. Headline -->
-    <header class="locations-header">
-        <div class="container">
-            <h1 class="heading-1">
-                Radiant 307 Service Areas &nbsp; Cheyenne, WY and Surrounding Areas
-            </h1>
-            <p>
-                Professional plumbing locations for residential and commercial projects.
-            </p>
-            <div class="service-buttons">
-                <a href="tel:+13075551234" class="btn" data-btn-variant="primary">Call us Today!</a>
-                <a href="/contact/" class="btn" data-btn-variant="secondary">Request a Quote</a>
-            </div>
-        </div>
-    </header>
+  <div class="logo" @html="site.logo"></div>
+  <!-- 1. Headline -->
+  <header class="locations-header">
+    <div class="container">
+      <h1 class="heading-1">
+        Radiant 307 Service Areas &nbsp; Cheyenne, WY and Surrounding Areas
+      </h1>
+      <p>
+        Professional plumbing locations for residential and commercial projects.
+      </p>
+      <div class="service-buttons">
+        <a href="tel:+13075551234" class="btn" data-btn-variant="primary">
+          Call us Today!
+        </a>
+        <a href="/contact/" class="btn" data-btn-variant="secondary">
+          Request a Quote
+        </a>
+      </div>
+    </div>
+  </header>
 </div>
 
 <section class="locations-intro">
-    <p class="paragraph container">
+  <div class="container intro-grid">
+    <div class="intro-text">
+      <p class="paragraph">
         Radiant 307 Plumbing proudly serves Cheyenne and the surrounding Wyoming
-        communities with reliable plumbing and heating services. Our service area
-        spans across Laramie County and into parts of northern Colorado, ensuring
-        that more families and businesses have access to our expert solutions.
-        We're deeply committed to our local community and strive to be the go-to
-        plumbing service provider for all residents in our coverage area. Check
-        below to see if your location falls within our service radius.
-    </p>
+        communities with reliable plumbing and heating services. Our service
+        area spans across Laramie County and into parts of northern Colorado,
+        ensuring that more families and businesses have access to our expert
+        solutions. We're deeply committed to our local community and strive to
+        be the go-to plumbing service provider for all residents in our coverage
+        area. Check below to see if your location falls within your service
+        radius.
+      </p>
+    </div>
+    <div class="intro-image-container">
+      <img
+        src="/assets/images/remi-locations.jpg"
+        alt="Radiant 307 Plumbing technician Remington with his equipment and truck in Cheyenne, Wyoming"
+        class="intro-image"
+        sizes="(max-width: 767px) calc(100vw - 40px), 560px" />
+    </div>
+  </div>
 </section>
 
 <section class="service-area-mention-section">
-    <div class="container">
-        <h2 class="heading-2">Serving Cheyenne, WY</h2>
-        <p class="mb-4">Wherever you might be in Cheyenne, we've probably got you
-            covered!</p>
+  <div class="container">
+    <h2 class="heading-2">Serving Cheyenne, WY</h2>
+    <p class="mb-4">
+      Wherever you might be in Cheyenne, we've probably got you covered!
+    </p>
 
-        <!-- Google Map Placeholder -->
-        <h3>Our Service Area</h3>
-        <div id="maps" class="service-area-map"></div>
-    </div>
+    <!-- Google Map Placeholder -->
+    <h3>Our Service Area</h3>
+    <div id="maps" class="service-area-map"></div>
+  </div>
 </section>
 
 <section class="service-areas">
-    <div class="container">
-        <h2 class="heading-2 text-center">Serving All Cheyenne Neighborhoods</h2>
-        <div class="area-grid">
-            <h3 class="heading-3 text-center">Cheyenne Neighborhoods</h3>
-            <div class="service-areas-list">
-                <a webc:for="(hood, name) in areas['Cheyenne Neighborhoods']" :href="name.slug" class="btn"
-                    data-btn-variant="primary" data-button-radius="hard" @text="hood">Cheyenne</a>
-            </div>
-        </div>
+  <div class="container">
+    <h2 class="heading-2 text-center">Serving All Cheyenne Neighborhoods</h2>
+    <div class="area-grid">
+      <h3 class="heading-3 text-center">Cheyenne Neighborhoods</h3>
+      <div class="service-areas-list">
+        <a
+          webc:for="(hood, name) in areas['Cheyenne Neighborhoods']"
+          :href="name.slug"
+          class="btn"
+          data-btn-variant="primary"
+          data-button-radius="hard"
+          @text="hood">
+          Cheyenne
+        </a>
+      </div>
     </div>
+  </div>
 </section>
 
-<section class="services-listings">
-    <div class="services-grid container">
-        <h2 class="heading-2 text-center">Providing All Services to All Areas</h2>
-        <div class="service-card service-card-content">
-            <div class="flex-wrapper" webc:for="service of services">
-                <a :href="service.slug">
-                    <h3 class="heading-4 no-wrap" @text="service.core_services.heading">Service Heading</h3>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                        class="lucide lucide-arrow-right">
-                        <path d="M5 12h14"></path>
-                        <path d="m12 5 7 7-7 7"></path>
-                    </svg>
-                </a>
-                <p class="paragraph">Services we provide:</p>
-                <div class="service-pills">
-                    <span webc:for="serviceName of service.core_services.list" class="service-pill"
-                        @text="serviceName"></span>
-                </div>
-            </div>
-        </div>
+<image-grid></image-grid>
 
+<section class="services-listings">
+  <div class="services-grid container">
+    <h2 class="heading-2 text-center">Providing All Services to All Areas</h2>
+    <div class="service-card service-card-content">
+      <div class="flex-wrapper" webc:for="service of services">
+        <a :href="service.slug">
+          <h3 class="heading-4 no-wrap" @text="service.core_services.heading">
+            Service Heading
+          </h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-arrow-right">
+            <path d="M5 12h14"></path>
+            <path d="m12 5 7 7-7 7"></path>
+          </svg>
+        </a>
+        <p class="paragraph">Services we provide:</p>
+        <div class="service-pills">
+          <span
+            webc:for="serviceName of service.core_services.list"
+            class="service-pill"
+            @text="serviceName"></span>
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <section class="check">
-    <div class="container inner flow">
-        <h2>Don't see your area?</h2>
-        <p class="paragraph">
-            We're always expanding our service area. If you don't see your area listed, please
-            <a href="/contact/" class="link">contact us</a> and we'll be happy to help you.
-        </p>
-    </div>
+  <div class="container inner flow">
+    <h2>Don't see your area?</h2>
+    <p class="paragraph">
+      We're always expanding our service area. If you don't see your area
+      listed, please
+      <a href="/contact/" class="link">contact us</a>
+      and we'll be happy to help you.
+    </p>
+  </div>
 </section>
 
 <cta-section :icons="icons" :site="site"></cta-section>
 
 <style>
-    .logo {
-        max-width: 100px;
-        padding-block-start: 1rem;
-        margin-inline-start: auto;
+  .logo {
+    max-width: 100px;
+    padding-block-start: 1rem;
+    margin-inline-start: auto;
+  }
+
+  .locations-main {
+    background-image: var(--hero-gradient);
+    color: var(--gray-color);
+  }
+
+  .locations-header {
+    line-height: 1.2;
+    padding-block: 4rem;
+  }
+
+  .locations-header h1 {
+    color: var(--gray-color);
+    text-wrap: balance;
+  }
+
+  .service-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    align-items: center;
+    width: 100%;
+    /* Ensure the container takes full width */
+  }
+
+  .service-buttons a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .locations-intro {
+    margin-block-end: 2.5rem;
+    padding-block: 3rem;
+  }
+
+  .intro-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .intro-text {
+    max-width: 70ch;
+    margin-inline: auto;
+  }
+
+  .intro-text .paragraph {
+    font-size: 1.25rem;
+  }
+
+  .intro-image-container {
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+    min-height: 300px;
+  }
+
+  .intro-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    .intro-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
     }
 
-    .locations-main {
-        background-image: var(--hero-gradient);
-        color: var(--gray-color);
+    .intro-text {
+      margin-inline: 0;
+    }
+  }
+
+  .service-area-mention-section {
+    padding-block: 4rem;
+    background-color: var(--color-slate-300);
+    /* Light background */
+    color: var(--dark-text);
+  }
+
+  .service-area-mention-section .paragraph {
+    max-width: 50ch;
+    /* Limit width for better readability */
+    margin-inline: auto;
+    /* Center the text */
+  }
+
+  #maps {
+    height: 600px;
+    /* Slightly shorter map for this component */
+    width: 100%;
+    margin-inline: auto;
+    /* Center the map */
+    margin-block: 1rem 2rem;
+    /* Space around map */
+    border-radius: var(--border-radius-large);
+    border: 1px solid var(--color-blue-violet-400);
+    overflow: hidden;
+    /* Ensure map corners respect border-radius */
+  }
+
+  .service-areas {
+    padding-block: 4rem;
+    background-color: var(--color-primary-400);
+  }
+
+  .service-areas-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    column-gap: 0.75rem;
+    row-gap: 1rem;
+    max-width: 1000px;
+    margin-inline: 0;
+  }
+
+  .service-areas .btn[data-btn-variant="primary"]:hover {
+    background: transparent;
+    color: var(--color-yellow-950);
+    filter: none;
+  }
+
+  .area-grid {
+    margin-block-start: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .area-grid h3 {
+    font-size: 1rem;
+    justify-self: start;
+  }
+
+  @media (min-width: 768px) {
+    .area-grid {
+      grid-template-columns: auto 1fr;
+      gap: 3rem;
     }
 
-    .locations-header {
-        line-height: 1.2;
-        padding-block: 4rem;
-
-    }
-
-    .locations-header h1 {
-        color: var(--gray-color);
-        text-wrap: balance;
+    .area-grid h3 {
+      justify-self: end;
     }
 
     .service-buttons {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        margin-top: 2rem;
-        align-items: center;
-        width: 100%;
-        /* Ensure the container takes full width */
+      flex-direction: row;
+      max-width: 40ch;
     }
+  }
 
-    .service-buttons a {
-        width: 100%;
-        justify-content: center;
-    }
+  .services-grid h2 {
+    margin-block-end: 3rem;
+  }
 
+  .services-grid-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: stretch;
+    /* Ensures all cards fill row height */
+  }
 
-    .locations-intro {
-        max-width: 70ch;
-        margin-inline: auto;
-        margin-block-end: 2.5rem;
-        padding-block: 3rem;
-    }
+  .services-listings {
+    margin-block-end: 3rem;
+    padding-block: 4rem;
+  }
 
-    .locations-intro .paragraph {
-        font-size: 1.25rem;
-    }
+  .flex-wrapper a {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+    align-items: center;
+    text-decoration: none;
+    color: var(--dark-text);
+    transition: color 0.2s ease;
+  }
 
-    .service-area-mention-section {
-        padding-block: 4rem;
-        background-color: var(--color-slate-300);
-        /* Light background */
-        color: var(--dark-text);
-    }
+  .flex-wrapper a:hover {
+    color: var(--color-yellow-orange-400);
+  }
 
-    .service-area-mention-section .paragraph {
-        max-width: 50ch;
-        /* Limit width for better readability */
-        margin-inline: auto;
-        /* Center the text */
-    }
+  .flex-wrapper a svg {
+    transition: transform 0.2s ease;
+  }
 
-    #maps {
-        height: 400px;
-        /* Slightly shorter map for this component */
-        width: 100%;
-        max-width: 800px;
-        /* Limit map width for better centering */
-        margin-inline: auto;
-        /* Center the map */
-        margin-block: 1rem 2rem;
-        /* Space around map */
-        border-radius: var(--border-radius-large);
-        border: 1px solid var(--color-blue-violet-400);
-        overflow: hidden;
-        /* Ensure map corners respect border-radius */
-    }
+  .flex-wrapper a:hover svg {
+    transform: translateX(4px) scale(1.2);
+  }
 
-    .service-areas {
-        padding-block: 4rem;
-        background-color: var(--color-primary-400);
-    }
+  .service-card {
+    margin-inline: auto;
+    height: 100%;
+    border: 1px solid var(--color-primary-950);
+    background: var(--card-background, #fff);
+    border-radius: var(--border-radius, 12px);
+    padding: 2rem 1.5rem;
+  }
 
-    .service-areas-list {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        flex-wrap: wrap;
-        column-gap: .75rem;
-        row-gap: 1rem;
-        max-width: 1000px;
-        margin-inline: 0;
-    }
+  .service-card-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex: 1 1 auto;
+  }
 
-    .service-areas .btn[data-btn-variant="primary"]:hover {
-        background: transparent;
-        color: var(--color-yellow-950);
-        filter: none;
-    }
+  .flex-wrapper {
+    flex: 0 1 calc(30% - 1rem);
+    /* Take up half the container width minus gap */
+    min-width: 250px;
+    /* Minimum width before wrapping */
+  }
 
-    .area-grid {
-        margin-block-start: 4rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
+  .service-card-desc {
+    margin-block: 0.5rem 1.25rem;
+    color: var(--text-secondary-color, #444);
+    font-size: 0.8rem;
+  }
 
+  .service-pills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    container-type: inline-size;
+  }
 
-    .area-grid h3 {
-        font-size: 1rem;
-        justify-self: start;
-    }
+  .service-pill {
+    background-color: var(--color-yellow-950);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    color: var(--color-primary-950);
+    font-weight: 500;
+    font-size: clamp(0.75rem, 0.5rem + 1cqi, 1rem);
+  }
 
-    @media (min-width: 768px) {
-        .area-grid {
-            grid-template-columns: auto 1fr;
-            gap: 3rem;
-        }
+  .check {
+    padding-block: 4rem;
+    background-color: var(--color-secondary-400);
+    margin-block-end: 4rem;
+  }
 
-        .area-grid h3 {
-            justify-self: end;
-        }
+  .container.inner h2 {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
 
-        .service-buttons {
-            flex-direction: row;
-            max-width: 40ch;
-        }
-    }
+  .check .container.inner p,
+  .check .container.inner h2 {
+    color: var(--color-blue-violet-100);
+    max-width: 50ch;
+  }
 
-    .services-grid h2 {
-        margin-block-end: 3rem;
-    }
+  .check .link {
+    color: var(--color-yellow-orange-400);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    transition:
+      color 0.2s ease,
+      text-underline-offset 0.2s ease;
+  }
 
-    .services-grid-list {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
-        gap: 2rem;
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        align-items: stretch;
-        /* Ensures all cards fill row height */
-    }
-
-    .services-listings {
-        margin-block-end: 3rem;
-        padding-block: 4rem;
-    }
-
-    .flex-wrapper a {
-        display: flex;
-        flex-direction: row;
-        gap: .25rem;
-        align-items: center;
-        text-decoration: none;
-        color: var(--dark-text);
-        transition: color 0.2s ease;
-    }
-
-    .flex-wrapper a:hover {
-        color: var(--color-yellow-orange-400);
-    }
-
-    .flex-wrapper a svg {
-        transition: transform 0.2s ease;
-    }
-
-    .flex-wrapper a:hover svg {
-        transform: translateX(4px) scale(1.2);
-    }
-
-    .service-card {
-        margin-inline: auto;
-        height: 100%;
-        border: 1px solid var(--color-primary-950);
-        background: var(--card-background, #fff);
-        border-radius: var(--border-radius, 12px);
-        padding: 2rem 1.5rem;
-    }
-
-    .service-card-content {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 2rem;
-        flex: 1 1 auto;
-    }
-
-    .flex-wrapper {
-        flex: 0 1 calc(30% - 1rem);
-        /* Take up half the container width minus gap */
-        min-width: 250px;
-        /* Minimum width before wrapping */
-    }
-
-    .service-card-desc {
-        margin-block: 0.5rem 1.25rem;
-        color: var(--text-secondary-color, #444);
-        font-size: 0.8rem;
-    }
-
-    .service-pills {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: .35rem;
-        container-type: inline-size;
-    }
-
-    .service-pill {
-        background-color: var(--color-yellow-950);
-        padding: 0.25rem 0.5rem;
-        border-radius: 4px;
-        color: var(--color-primary-950);
-        font-weight: 500;
-        font-size: clamp(0.75rem, 0.5rem + 1cqi, 1rem);
-    }
-
-    .check {
-        padding-block: 4rem;
-        background-color: var(--color-secondary-400);
-        margin-block-end: 4rem;
-    }
-
-    .container.inner h2 {
-        font-size: 3rem;
-        line-height: 1.1;
-    }
-
-    .check .container.inner p,
-    .check .container.inner h2 {
-        color: var(--color-blue-violet-100);
-        max-width: 50ch;
-        margin-inline: auto;
-    }
-
-    .check .link {
-        color: var(--color-yellow-orange-400);
-        text-decoration: underline;
-        text-underline-offset: 0.2em;
-        transition: color 0.2s ease, text-underline-offset 0.2s ease;
-    }
-
-    .check .link:hover {
-        color: var(--color-flush-orange-300);
-        text-underline-offset: 0.3em;
-    }
+  .check .link:hover {
+    color: var(--color-flush-orange-300);
+    text-underline-offset: 0.3em;
+  }
 </style>
 <script>
-    function initMap() {
-        // 1. Define Center and Radius
-        const cityMap = {
-            cheyenne: {
-                coords: { lat: 41.13401, lng: -104.820188 },
-                radius: 4 * 1609.34
-            },
-            // burns: {
-            //     coords: { lat: 41.1908847, lng: -104.3592768 },
-            //     radius: 2 * 1609.34
-            // },
-            // "Pine Bluffs": {
-            //     coords: { lat: 41.179529, lng: -104.067664 },
-            //     radius: 2 * 1609.34
-            // },
-            // "Hillsdale": {
-            //     coords: { lat: 41.21172976832517, lng: -104.47835986577392 },
-            //     radius: 2 * 1609.34
-            // }
-        }
+  function initMap() {
+    // 1. Define Center and Radius
+    const cityMap = {
+      cheyenne: {
+        coords: { lat: 41.13401, lng: -104.820188 },
+        radius: 4 * 1609.34,
+      },
+      // burns: {
+      //     coords: { lat: 41.1908847, lng: -104.3592768 },
+      //     radius: 2 * 1609.34
+      // },
+      // "Pine Bluffs": {
+      //     coords: { lat: 41.179529, lng: -104.067664 },
+      //     radius: 2 * 1609.34
+      // },
+      // "Hillsdale": {
+      //     coords: { lat: 41.21172976832517, lng: -104.47835986577392 },
+      //     radius: 2 * 1609.34
+      // }
+    };
 
-        // 2. Define Custom Map Styles (Optional)
-        // Use https://mapstyle.withgoogle.com/ to generate styles easily!
-        const mapStyles = [
-            {
-                elementType: "geometry",
-                stylers: [
-                    {
-                        color: "#f5f5f5",
-                    },
-                ],
-            },
-            {
-                elementType: "labels.icon",
-                stylers: [
-                    {
-                        visibility: "off",
-                    },
-                ],
-            },
-            {
-                elementType: "labels.text.fill",
-                stylers: [
-                    {
-                        color: "#616161",
-                    },
-                ],
-            },
-            {
-                elementType: "labels.text.stroke",
-                stylers: [
-                    {
-                        color: "#f5f5f5",
-                    },
-                ],
-            },
-            {
-                featureType: "administrative.land_parcel",
-                elementType: "labels",
-                stylers: [
-                    {
-                        visibility: "off",
-                    },
-                ],
-            },
-            {
-                featureType: "administrative.land_parcel",
-                elementType: "labels.text.fill",
-                stylers: [
-                    {
-                        color: "#bdbdbd",
-                    },
-                ],
-            },
-            {
-                featureType: "poi",
-                stylers: [
-                    {
-                        visibility: "off",
-                    },
-                ],
-            },
-            {
-                featureType: "poi",
-                elementType: "geometry",
-                stylers: [
-                    {
-                        color: "#eeeeee",
-                    },
-                ],
-            },
-            {
-                featureType: "poi",
-                elementType: "labels.text",
-                stylers: [
-                    {
-                        visibility: "off",
-                    },
-                ],
-            },
-            {
-                featureType: "poi",
-                elementType: "labels.text.fill",
-                stylers: [
-                    {
-                        color: "#757575",
-                    },
-                ],
-            },
-            {
-                featureType: "poi.business",
-                stylers: [
-                    {
-                        visibility: "off",
-                    },
-                ],
-            },
-            {
-                featureType: "poi.park",
-                elementType: "geometry",
-                stylers: [
-                    {
-                        color: "#e5e5e5",
-                    },
-                ],
-            },
-            {
-                featureType: "poi.park",
-                elementType: "labels.text",
-                stylers: [
-                    {
-                        visibility: "off",
-                    },
-                ],
-            },
-            {
-                featureType: "poi.park",
-                elementType: "labels.text.fill",
-                stylers: [
-                    {
-                        color: "#9e9e9e",
-                    },
-                ],
-            },
-            {
-                featureType: "road",
-                elementType: "geometry",
-                stylers: [
-                    {
-                        color: "#ffffff",
-                    },
-                ],
-            },
-            {
-                featureType: "road.arterial",
-                stylers: [
-                    {
-                        visibility: "off",
-                    },
-                ],
-            },
-            {
-                featureType: "road.arterial",
-                elementType: "labels.text.fill",
-                stylers: [
-                    {
-                        color: "#757575",
-                    },
-                ],
-            },
-            {
-                featureType: "road.highway",
-                elementType: "geometry",
-                stylers: [
-                    {
-                        color: "#dadada",
-                    },
-                ],
-            },
-            {
-                featureType: "road.highway",
-                elementType: "labels",
-                stylers: [
-                    {
-                        visibility: "off",
-                    },
-                ],
-            },
-            {
-                featureType: "road.highway",
-                elementType: "labels.text.fill",
-                stylers: [
-                    {
-                        color: "#616161",
-                    },
-                ],
-            },
-            {
-                featureType: "road.local",
-                stylers: [
-                    {
-                        visibility: "off",
-                    },
-                ],
-            },
-            {
-                featureType: "road.local",
-                elementType: "labels",
-                stylers: [
-                    {
-                        visibility: "off",
-                    },
-                ],
-            },
-            {
-                featureType: "road.local",
-                elementType: "labels.text.fill",
-                stylers: [
-                    {
-                        color: "#9e9e9e",
-                    },
-                ],
-            },
-            {
-                featureType: "transit.line",
-                elementType: "geometry",
-                stylers: [
-                    {
-                        color: "#e5e5e5",
-                    },
-                ],
-            },
-            {
-                featureType: "transit.station",
-                elementType: "geometry",
-                stylers: [
-                    {
-                        color: "#eeeeee",
-                    },
-                ],
-            },
-            {
-                featureType: "water",
-                elementType: "geometry",
-                stylers: [
-                    {
-                        color: "#c9c9c9",
-                    },
-                ],
-            },
-            {
-                featureType: "water",
-                elementType: "labels.text.fill",
-                stylers: [
-                    {
-                        color: "#9e9e9e",
-                    },
-                ],
-            },
-        ];
-        // 3. Create the Map
-        const map = new google.maps.Map(document.getElementById("maps"), {
-            zoom: 11, // Adjust zoom level to fit the radius nicely
-            center: { lat: 41.15828, lng: -104.79838 },
-            styles: mapStyles, // Apply the custom styles
-            mapTypeControl: false, // Optional: hide map type selector
-            streetViewControl: false, // Optional: hide street view pegman
-        });
+    // 2. Define Custom Map Styles (Optional)
+    // Use https://mapstyle.withgoogle.com/ to generate styles easily!
+    const mapStyles = [
+      {
+        elementType: "geometry",
+        stylers: [
+          {
+            color: "#f5f5f5",
+          },
+        ],
+      },
+      {
+        elementType: "labels.icon",
+        stylers: [
+          {
+            visibility: "off",
+          },
+        ],
+      },
+      {
+        elementType: "labels.text.fill",
+        stylers: [
+          {
+            color: "#616161",
+          },
+        ],
+      },
+      {
+        elementType: "labels.text.stroke",
+        stylers: [
+          {
+            color: "#f5f5f5",
+          },
+        ],
+      },
+      {
+        featureType: "administrative.land_parcel",
+        elementType: "labels",
+        stylers: [
+          {
+            visibility: "off",
+          },
+        ],
+      },
+      {
+        featureType: "administrative.land_parcel",
+        elementType: "labels.text.fill",
+        stylers: [
+          {
+            color: "#bdbdbd",
+          },
+        ],
+      },
+      {
+        featureType: "poi",
+        stylers: [
+          {
+            visibility: "off",
+          },
+        ],
+      },
+      {
+        featureType: "poi",
+        elementType: "geometry",
+        stylers: [
+          {
+            color: "#eeeeee",
+          },
+        ],
+      },
+      {
+        featureType: "poi",
+        elementType: "labels.text",
+        stylers: [
+          {
+            visibility: "off",
+          },
+        ],
+      },
+      {
+        featureType: "poi",
+        elementType: "labels.text.fill",
+        stylers: [
+          {
+            color: "#757575",
+          },
+        ],
+      },
+      {
+        featureType: "poi.business",
+        stylers: [
+          {
+            visibility: "off",
+          },
+        ],
+      },
+      {
+        featureType: "poi.park",
+        elementType: "geometry",
+        stylers: [
+          {
+            color: "#e5e5e5",
+          },
+        ],
+      },
+      {
+        featureType: "poi.park",
+        elementType: "labels.text",
+        stylers: [
+          {
+            visibility: "off",
+          },
+        ],
+      },
+      {
+        featureType: "poi.park",
+        elementType: "labels.text.fill",
+        stylers: [
+          {
+            color: "#9e9e9e",
+          },
+        ],
+      },
+      {
+        featureType: "road",
+        elementType: "geometry",
+        stylers: [
+          {
+            color: "#ffffff",
+          },
+        ],
+      },
+      {
+        featureType: "road.arterial",
+        stylers: [
+          {
+            visibility: "off",
+          },
+        ],
+      },
+      {
+        featureType: "road.arterial",
+        elementType: "labels.text.fill",
+        stylers: [
+          {
+            color: "#757575",
+          },
+        ],
+      },
+      {
+        featureType: "road.highway",
+        elementType: "geometry",
+        stylers: [
+          {
+            color: "#dadada",
+          },
+        ],
+      },
+      {
+        featureType: "road.highway",
+        elementType: "labels",
+        stylers: [
+          {
+            visibility: "off",
+          },
+        ],
+      },
+      {
+        featureType: "road.highway",
+        elementType: "labels.text.fill",
+        stylers: [
+          {
+            color: "#616161",
+          },
+        ],
+      },
+      {
+        featureType: "road.local",
+        stylers: [
+          {
+            visibility: "off",
+          },
+        ],
+      },
+      {
+        featureType: "road.local",
+        elementType: "labels",
+        stylers: [
+          {
+            visibility: "off",
+          },
+        ],
+      },
+      {
+        featureType: "road.local",
+        elementType: "labels.text.fill",
+        stylers: [
+          {
+            color: "#9e9e9e",
+          },
+        ],
+      },
+      {
+        featureType: "transit.line",
+        elementType: "geometry",
+        stylers: [
+          {
+            color: "#e5e5e5",
+          },
+        ],
+      },
+      {
+        featureType: "transit.station",
+        elementType: "geometry",
+        stylers: [
+          {
+            color: "#eeeeee",
+          },
+        ],
+      },
+      {
+        featureType: "water",
+        elementType: "geometry",
+        stylers: [
+          {
+            color: "#c9c9c9",
+          },
+        ],
+      },
+      {
+        featureType: "water",
+        elementType: "labels.text.fill",
+        stylers: [
+          {
+            color: "#9e9e9e",
+          },
+        ],
+      },
+    ];
+    // 3. Create the Map
+    const map = new google.maps.Map(document.getElementById("maps"), {
+      zoom: 12, // Adjust zoom level to fit the radius nicely
+      center: { lat: 41.139, lng: -104.79838 },
+      styles: mapStyles, // Apply the custom styles
+      mapTypeControl: false, // Optional: hide map type selector
+      streetViewControl: false, // Optional: hide street view pegman
+    });
 
-        for (const city in cityMap) {
-            const serviceAreaCircle = new google.maps.Circle({
-                strokeColor: "#f6821f", // Red outline
-                strokeOpacity: 0.8,
-                strokeWeight: 1,
-                fillColor: "#fbad41", // Red fill
-                fillOpacity: 0.25, // Semi-transparent fill
-                map: map, // Attach the circle to the map
-                center: cityMap[city].coords,
-                radius: cityMap[city].radius, // Radius in METERS
-            });
-        }
+    for (const city in cityMap) {
+      const serviceAreaCircle = new google.maps.Circle({
+        strokeColor: "#f6821f", // Red outline
+        strokeOpacity: 0.8,
+        strokeWeight: 1,
+        fillColor: "#fbad41", // Red fill
+        fillOpacity: 0.25, // Semi-transparent fill
+        map: map, // Attach the circle to the map
+        center: cityMap[city].coords,
+        radius: cityMap[city].radius, // Radius in METERS
+      });
     }
+  }
 
-    // Add responsive text handling
-    function adjustPillFontSizes() {
-        const pills = document.querySelectorAll('.service-pill');
-        pills.forEach(pill => {
-            // Reset font size first to get natural height
-            pill.style.fontSize = '';
-            const originalHeight = parseInt(window.getComputedStyle(pill).height);
+  // Add responsive text handling
+  function adjustPillFontSizes() {
+    const pills = document.querySelectorAll(".service-pill");
+    pills.forEach((pill) => {
+      // Reset font size first to get natural height
+      pill.style.fontSize = "";
+      const originalHeight = parseInt(window.getComputedStyle(pill).height);
 
-            // If the pill is wrapping (height > ~24px), reduce font size
-            if (originalHeight > 24) {
-                pill.style.fontSize = '0.75rem';
-            }
-        });
-    }
+      // If the pill is wrapping (height > ~24px), reduce font size
+      if (originalHeight > 24) {
+        pill.style.fontSize = "0.75rem";
+      }
+    });
+  }
 
-    // Run on load and resize
-    window.addEventListener('load', adjustPillFontSizes);
-    window.addEventListener('resize', adjustPillFontSizes);
+  // Run on load and resize
+  window.addEventListener("load", adjustPillFontSizes);
+  window.addEventListener("resize", adjustPillFontSizes);
 </script>
 
-<script async
-    :src="'https://maps.googleapis.com/maps/api/js?key=' + env.GOOGLE_MAPS_API_KEY + '&loading=async&callback=initMap'"
-    webc:keep></script>
+<script
+  async
+  :src="'https://maps.googleapis.com/maps/api/js?key=' + env.GOOGLE_MAPS_API_KEY + '&loading=async&callback=initMap'"
+  webc:keep></script>

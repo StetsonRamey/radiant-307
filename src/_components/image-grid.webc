@@ -1,0 +1,92 @@
+<section class="image-grid-section">
+  <div class="container">
+    <div class="image-grid">
+      <div class="image-item image-left">
+        <img
+          src="/assets/images/remi-stack-left.jpg"
+          alt="Placeholder image 1"
+          class="grid-image"
+          sizes="(max-width: 480px) calc(50vw - 30px), (max-width: 767px) calc(50vw - 24px), 600px" />
+      </div>
+      <div class="image-item image-right">
+        <img
+          src="/assets/images/remi-stack-right.jpg"
+          alt="Placeholder image 2"
+          class="grid-image"
+          sizes="(max-width: 480px) calc(50vw - 30px), (max-width: 767px) calc(50vw - 24px), 600px" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style webc:scoped>
+  .image-grid-section {
+    padding-block: 4rem;
+    background-color: var(--color-slate-100);
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    position: relative;
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+
+  .image-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+
+  .image-left {
+    transform: translateY(-2rem);
+    z-index: 2;
+  }
+
+  .image-right {
+    transform: translateY(2rem);
+    z-index: 1;
+  }
+
+  .grid-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+  }
+
+  /* Mobile responsiveness - images scale down but maintain layout */
+  @media (max-width: 767px) {
+    .image-grid {
+      gap: 1rem;
+      max-width: 100%;
+    }
+
+    .image-left {
+      transform: translateY(-1rem);
+    }
+
+    .image-right {
+      transform: translateY(1rem);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .image-grid {
+      gap: 0.75rem;
+    }
+
+    .image-left {
+      transform: translateY(-0.75rem);
+    }
+
+    .image-right {
+      transform: translateY(0.75rem);
+    }
+  }
+</style>

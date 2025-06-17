@@ -317,8 +317,8 @@ const layout = "base.webc";
     }
 
     input[type="radio"]:focus {
-        outline: 2px dashed var(--color-yellow-900);
-        background-color: var(--color-yellow-900);
+        outline: 2px dashed var(--color-secondary-500);
+        background-color: var(--color-secondary-500);
     }
 
     .custom-radio {
@@ -355,7 +355,7 @@ const layout = "base.webc";
     }
 
     .custom-radio:hover {
-        outline-color: var(--color-flush-orange-700);
+        outline-color: var(--color-yellow-950);
     }
 
     .btn {
@@ -365,8 +365,8 @@ const layout = "base.webc";
 
     input[type="radio"]:checked {
         outline: 4px solid;
-        outline-color: var(--color-flush-orange-400);
-        background-color: var(--color-flush-orange-400);
+        outline-color: var(--color-yellow-900);
+        background-color: var(--color-yellow-900);
         animation: outline-checked;
         animation-duration: 0.2s;
         animation-iteration-count: 4;

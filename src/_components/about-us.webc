@@ -3,16 +3,23 @@
   <div class="container about-grid">
     <div class="about-text">
       <h2>About Radiant 307 Plumbing</h2>
-      <p>👋 That's me Remington, the owner of Radiant 307 Plumbing. I've been in the plumbing business for about 10
-        years and I'm dedicated to providing exceptional plumbing solutions for my clients.</p>
-      <p>If you give us a call, you're going to talk to me. It will be me who comes out to take a look at your plumbing
-        project or plumbing problem, and it will be me who does the work. While I specialize in boilers and radiant
-        heating, there isn't anything I can't install or repair, and I'm excited to work with you on your project.</p>
+      <p>
+        👋 I'm Remington, the owner and operator of Radiant 307 Plumbing. As a
+        journeyman plumber, I take pride in delivering reliable, high-quality
+        plumbing solutions.
+      </p>
+      <p>
+        When you reach out, you'll be speaking directly with me—and I'll be the
+        one handling your project from start to finish. While I specialize in
+        boilers and in-floor heating, I'm equipped to tackle any plumbing project. Lets get your project done right!
+      </p>
     </div>
     <div class="about-image-container">
-      <img :src="image"
+      <img
+        :src="image"
         alt="The owner of Radiant 307 Plumbing, Remington, standing in front of a custom boiler and tankless hot water system on a residential project"
-        class="about-image" sizes="(max-width: 767px) calc(100vw - 40px), 560px" />
+        class="about-image"
+        sizes="(max-width: 767px) calc(100vw - 40px), 560px" />
     </div>
   </div>
 </div>
@@ -45,7 +52,6 @@
   }
 
   @media (min-width: 768px) {
-
     /* Tablet and up: two columns */
     .about-grid {
       grid-template-columns: 1fr 1fr;
