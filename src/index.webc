@@ -11,7 +11,7 @@ localMarkup: "local-markup.home"
   <services-overview :@services="services"></services-overview>
 </section>
 <section class="about-us">
-  <about-us image="/assets/images/about.jpeg"></about-us>
+  <about-us image="/assets/images/remi_hi.jpg"></about-us>
 </section>
 <section class="why-us">
   <why-us :site="site"></why-us>

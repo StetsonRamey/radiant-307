@@ -77,6 +77,35 @@ return data.service.localMarkup
   </div>
 </section>
 
+<!-- Gallery Section -->
+<section webc:if="service.gallery?.show" class="gallery-section">
+  <div class="container">
+    <h2 class="heading-2" @text="service.gallery.heading">Our Work Gallery</h2>
+    <div class="gallery-masonry">
+      <div class="gallery-switcher">
+        <div class="gallery-column gallery-flow">
+        <img webc:for="(image, index) of service.gallery.images.filter((_, i) => i % 3 === 0)"
+        :src="image.src"
+        :alt="image.alt"
+        :class="`gallery-image height-${(index * 3 + 1) % 6 + 1}`" />
+        </div>
+        <div class="gallery-column gallery-flow">
+        <img webc:for="(image, index) of service.gallery.images.filter((_, i) => i % 3 === 1)"
+        :src="image.src"
+        :alt="image.alt"
+        :class="`gallery-image height-${(index * 3 + 2) % 6 + 1}`" />
+        </div>
+        <div class="gallery-column gallery-flow">
+        <img webc:for="(image, index) of service.gallery.images.filter((_, i) => i % 3 === 2)"
+        :src="image.src"
+        :alt="image.alt"
+        :class="`gallery-image height-${(index * 3 + 3) % 6 + 1}`" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <testimonials></testimonials>
 <other-services :services="services.filter(s => s.slug !== service.slug)"></other-services>
 <service-area-mention :service="service"></service-area-mention>
@@ -286,6 +315,83 @@ return data.service.localMarkup
       grid-template-columns: 1fr;
       /* Stack to single column */
     }
+  }
+
+  /* === GALLERY SECTION === */
+  .gallery-section {
+    padding-block: 3rem;
+    background-color: var(--color-gray-100);
+  }
+
+  .gallery-section .heading-2 {
+    margin-bottom: 2rem;
+    text-align: center;
+    text-wrap: balance;
+  }
+
+  .gallery-masonry {
+    --gutter: 1.5rem;
+    --flow-space: var(--gutter);
+    --switcher-target-container-width: 20rem;
+  }
+
+  .gallery-switcher {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gutter);
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .gallery-switcher > * {
+    flex-grow: 1;
+    flex-basis: calc(
+      (var(--switcher-target-container-width) - 100%) * 999
+    );
+    min-width: 0;
+  }
+
+  .gallery-column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gutter);
+  }
+
+  .gallery-flow > * + * {
+    margin-block-start: 0;
+  }
+
+  .gallery-image {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  /* Random height variations for masonry effect */
+  .gallery-image.height-1 { height: 250px; }
+  .gallery-image.height-2 { height: 320px; }
+  .gallery-image.height-3 { height: 280px; }
+  .gallery-image.height-4 { height: 380px; }
+  .gallery-image.height-5 { height: 220px; }
+  .gallery-image.height-6 { height: 350px; }
+
+  /* Responsive adjustment for gallery */
+  @media (max-width: 768px) {
+    .gallery-switcher {
+      flex-direction: column;
+    }
+    
+    .gallery-column {
+      width: 100%;
+    }
+
+    /* Adjust heights for mobile */
+    .gallery-image.height-1 { height: 200px; }
+    .gallery-image.height-2 { height: 260px; }
+    .gallery-image.height-3 { height: 230px; }
+    .gallery-image.height-4 { height: 300px; }
+    .gallery-image.height-5 { height: 180px; }
+    .gallery-image.height-6 { height: 280px; }
   }
 </style>
 

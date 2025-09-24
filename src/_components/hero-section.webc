@@ -16,7 +16,7 @@
     </div>
     <div class="hero-image">
       <img
-        src="/assets/images/hero.jpeg"
+        src="/assets/images/remi_hero.jpg"
         alt="An older model boiler system with storage tanks for domestic hot water and in floor radiant heating"
         loading="eager"
         width="800"
