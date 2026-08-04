@@ -74,7 +74,7 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
 
         const { data: sendData, error: sendError } = await resend.emails.send({
             from: 'Radiant 307 Leads <forms@leads.radiant307.com>',
-            to: ['radiant307@gmail.com', 'me@stetson.dev'],
+            to: ['radiant307plumbing@gmail.com', 'me@stetson.dev'],
             subject: emailSubject,
             html: emailBodyHtml
         });
@@ -96,4 +96,4 @@ export const onRequestPost: PagesFunction<Env> = async (context) => {
         if (error.cause) { errorMessage += ` | Cause: ${JSON.stringify(error.cause)}`; }
         return new Response(errorMessage, { status: 500 });
     }
-}; 
+};
