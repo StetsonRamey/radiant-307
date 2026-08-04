@@ -28,8 +28,9 @@ Thumbs.db
 # Curso
 .cursor/
 
-# Cache
-.cache
+# Cache (keep images cache committed for fast Cloudflare Pages builds)
+.cache/*
+!.cache/images
 
 # Dev Vars
 .dev.vars

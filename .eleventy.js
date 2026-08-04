@@ -10,6 +10,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     formats: ["webp", "jpeg"],
     widths: [300, 600, 900, 1200, "auto"],
+    outputDir: ".cache/images/",
     urlPath: "/assets/images/",
     htmlOptions: {
       imgAttributes: {
@@ -18,6 +19,9 @@ export default function (eleventyConfig) {
       },
     },
   });
+
+  // Serve cached images into the build output
+  eleventyConfig.addPassthroughCopy({ ".cache/images": "assets/images" });
 
   eleventyConfig.addWatchTarget("src/**/*.webc");
 

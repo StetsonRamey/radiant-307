@@ -1,20 +1,11 @@
 name = "radiant-307"
 compatibility_date = "2025-04-13"
 compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = "./_site"
 
 [observability]
 enabled = true
-# Bindings allow your Functions to interact with Cloudflare resources.
-# Docs: https://developers.cloudflare.com/pages/functions/bindings/
 
-[vars]
-# Add non-secret environment variables here if needed
-# EXAMPLE_VARIABLE = "example_value"
-
-# Note: RESEND_API_KEY should be set as a SECRET in the Cloudflare Pages dashboard settings,
-# not here in [vars].
-
-
-# Note: For Cloudflare Pages, many configurations like `main` (entry point for workers) or `site` (for static assets)
-# are often handled by the Pages platform itself or through the `wrangler pages dev` command parameters.
-# This wrangler.toml can primarily focus on bindings and compatibility settings for functions.
+  [observability.logs]
+  invocation_logs = true
+  head_sampling_rate = 1
